@@ -65,6 +65,15 @@ Searches for likely 15th-Century Judeo-Italian roots assuming the manuscript was
 node rtl-judeo-italian-parser.js
 ```
 
+#### 4. The Voynichese Encoder (`eva-encoder.js`)
+**[NEW]** Want to write like the 15th-Century Rabbi? This script converts English words back into pseudo-Voynichese (EVA script) using our heuristically generated dictionary.
+
+**Usage:**
+```bash
+node eva-encoder.js "sun sister given heart pain"
+# Output: "shol shory daiin chor dolol"
+```
+
 ## Authorship & License
 Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by various historical inputs including Dr. Bernhart-Königstein's 'Silenen' investigations, Michael A. Greshko's Naibbe mappings, and Tim Carter Clausen's 2026 RTL Rabbi's Field Manual theory.
 
@@ -84,6 +93,15 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 1. **"Naibbe" 密碼理論 (Greshko, 2025/2026):** 我們成功編寫了「Naibbe 逆向模擬器」(`naibbe-simulator.js`)。透過將重複的伏尼契「單字」（如 `qokaiin` 或 `chedy`）壓縮為單一邏輯字元（消除繁複的同音替換偽裝），我們發現文本的二階條件熵 (h2) 從 **2.12 bits/char** 回升至自然語言常見的 **2.56 bits/token**。這證明了手稿「並非」胡言亂語，而是經過高度膨脹的密文。
 2. **「拉比手冊」與由右至左 (RTL) 理論 (Tim Carter Clausen, 2026年2月):** 根據最新的突破，手稿基於猶太草書傳統，採用由右至左 (RTL) 的閱讀方向。字母（如 `t`, `k`）上方的「線圈 (Loop)」其實是希伯來文的 *dagesh*（發音/重音引導標記）。我們加入了 `rtl-judeo-italian-parser.js` 來探索這種 RTL 表達方式，並在文本中找到了隱藏的猶太-義大利語字根，如 `ORO` (金)、`OTTO` (八) 和 `OLIO` (油)。
 3. **Caspari & Faccini 的「義大利速記」映射:** 我們實作了他們的 EVA至拉丁文的字母替換對應框架 (`caspari-translate.js`)。
+
+### 4. 英文轉伏尼契文加密器 (`eva-encoder.js`)
+**[新增]** 想好似 15 世紀的猶太拉比一樣寫暗號嗎？這個小工具能根據我們推導出的字典，將一般的英文單字加密轉換成偽伏尼契文 (EVA)。
+
+**用法:**
+```bash
+node eva-encoder.js "sun sister given heart pain"
+# Output: "shol shory daiin chor dolol"
+```
 
 ## 📂 資料庫結構與使用範例
 
@@ -129,6 +147,15 @@ node trilingual-translator.js --lang=all
 1. **"Naibbe" 密碼理論 (Greshko, 2025/2026):** 我哋寫咗隻「Naibbe 逆向模擬器」(`naibbe-simulator.js`)。只要將手稿入面嗰啲煩死人嘅重複字（例如 `qokaiin` 或者 `chedy`）㩒扁還原做一個字元（即係拆穿佢「繁複同音替換」嘅掩飾），就會見到段字嘅二階條件熵 (h2) 由假到離譜嘅 **2.12 bits/char** 應聲回升去正常人類語言嘅 **2.56 bits/token**。呢個結果完美證明手稿「絕對唔係」前人話嘅無意義亂碼，而係俾人瘋狂拉長咗、極具智慧嘅密碼。
 2. **「拉比隨身手冊」同 RTL (由右至左) 書寫理論 (Tim Carter Clausen, 2026年2月):** 根據 2026 年 2 月最新鮮出爐嘅破解進度，手稿其實係跟猶太人手寫習慣「由右向左」讀嘅。字母頂頭嗰個「圈圈 (Loop)」原來係希伯來文入面嘅 *dagesh*（發音/重音提示）。我哋專登寫咗隻 `rtl-judeo-italian-parser.js` 去 Scan 呢種由右至左嘅寫法，居然真係喺啲字入面抽到出猶太-意大利文嘅字根，例如 `ORO` (金)、`OTTO` (八) 同埋 `OLIO` (油)！
 3. **Caspari & Faccini 嘅「意大利速記」字典:** 我哋將佢哋套「歐洲伏尼契字母 (EVA)」轉拉丁字母嘅 Mapping 寫咗落 Code 度 (`caspari-translate.js`)。
+
+### 4. 英文轉伏尼契密碼機 (`eva-encoder.js`)
+**[新增]** 想學15世紀嘅猶太拉比寫火星文？呢個小工具可以根據我哋度出嚟嘅字典，將普通英文單字加密變做偽伏尼契文 (EVA)。
+
+**點樣 Run:**
+```bash
+node eva-encoder.js "sun sister given heart pain"
+# 佢會 Gen 出: "shol shory daiin chor dolol"
+```
 
 ## 📂 Repo 架構同點樣玩
 

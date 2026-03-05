@@ -1,0 +1,120 @@
+[Line 1] EVA: fachys ykal ar ataiin shol shory cth!res y kor sholdy!
+ITA: faces edal ar acaiin sol sore ctrus e dor solte
+EN: faces edal ar acaiin [sun] [sister/nun] ctrus e dor [sun(verb)]
+ZH: faces edal ar acaiin [太陽] [修女/姊妹] ctrus e dor [太陽(動作)]
+
+[Line 2] EVA: sory ckhar o!r y kair chtaiin shar are cthar cthar dan!
+ITA: sore cdar or e dair ccaiin sar aru ctar ctar tan
+EN: [sister/nun] cdar or e dair ccaiin sar aru ctar ctar tan
+ZH: [修女/姊妹] cdar or e dair ccaiin sar aru ctar ctar tan
+
+[Line 3] EVA: syaiir sheky or ykaiin shod cthoary cthes daraiin sa
+ITA: seaiir sude or edaiin sot ctoare ctus taraiin sa
+EN: seaiir sude or edaiin sot ctoare ctus taraiin sa
+ZH: seaiir sude or edaiin sot ctoare ctus taraiin sa
+
+[Line 4] EVA: o oiin oteey oteos roloty cth*ar daiin otaiin or okan
+ITA: o oiin ocuee ocuos roloce ctar taiin ocaiin or odan
+EN: [the] oiin ocuee ocuos roloce ctar [dose/given] [the dose] or odan
+ZH: [(定冠詞)] oiin ocuee ocuos roloce ctar [劑量/給出] [這劑量] or odan
+
+[Line 5] EVA: dair y chear cthaiin cphar cfhaiin
+ITA: tair e cuar ctaiin cfar cfaiin
+EN: tair e cuar ctaiin cfar cfaiin
+ZH: tair e cuar ctaiin cfar cfaiin
+
+[Line 6] EVA: ydar!aish!y
+ITA: etaraise
+EN: etaraise
+ZH: etaraise
+
+[Line 7] EVA: * odar o !y shol cphoy oydar sh! s cfhoaiin shodary
+ITA:  otar o e sol cfoe oetar s s cfoaiin sotare
+EN: otar [the] e [sun] cfoe oetar s s cfoaiin sotare
+ZH: otar [(定冠詞)] e [太陽] cfoe oetar s s cfoaiin sotare
+
+[Line 8] EVA: yshey shody okcho!y otchol chocthy os!chy dain chor kos
+ITA: esue sote odcoe occol cocte osce tain cor dos
+EN: esue [I know(verb)] odcoe occol cocte osce tain [heart/Corvus] dos
+ZH: esue [我知道(動作)] odcoe occol cocte osce tain [心/烏鴉座] dos
+
+[Line 2551] EVA: sai!n sheey or or al solshey okeedy ldaiin che!cthey okedalor
+ITA: sain suee or or al solsue oduete ltaiin cuctue odutalor
+EN: sain suee or or al solsue oduete ltaiin cuctue odutalor
+ZH: sain suee or or al solsue oduete ltaiin cuctue odutalor
+
+[Line 2552] EVA: qokaiin ol shedy qokeey or shdy
+ITA: qodaiin ol sute qoduee or ste
+EN: [which dose] [the] sute qoduee or ste
+ZH: [哪個劑量] [(定冠詞)] sute qoduee or ste
+
+[Line 2553] EVA: p!olarar okor opcheey yteey opchaly lshedy qofchdal lkodol opa ko!rols
+ITA: polarar odor opcuee ecuee opcale lsute qofctal ldotol opa dorols
+EN: polarar [smell] opcuee ecuee opcale lsute qofctal ldotol opa dorols
+ZH: polarar [氣味] opcuee ecuee opcale lsute qofctal ldotol opa dorols
+
+[Line 2554] EVA: s!csedy keedy cholkeeey otedor okor shedy chedy qokeedy oly shey qo!yky
+ITA: scsute duete coldueue ocutor odor sute cute qoduete ole sue qoede
+EN: scsute duete coldueue ocutor [smell] sute [skin] qoduete ole sue qoede
+ZH: scsute duete coldueue ocutor [氣味] sute [皮膚] qoduete ole sue qoede
+
+[Line 2555] EVA: dchedy qokeedy oteedy chedaiin chey qokeedy olkedy ror oteedy okal
+ITA: tcute qoduete ocuete cutaiin cue qoduete oldute ror ocuete odal
+EN: tcute qoduete ocuete cutaiin [that] qoduete oldute ror ocuete odal
+ZH: tcute qoduete ocuete cutaiin [那個] qoduete oldute ror ocuete odal
+
+[Line 2556] EVA: s!olkeey sor shecthy daiin okar chpchedy cpchy oty olor otchy r!alchl
+ITA: solduee sor sucte taiin odar cpcute cpce oce olor occe ralcl
+EN: solduee sor sucte [dose/given] odar cpcute cpce [the that] olor occe ralcl
+ZH: solduee sor sucte [劑量/給出] odar cpcute cpce [這[那個]] olor occe ralcl
+
+[Line 2557] EVA: s otain okain chcthedy qoteed y!kedy okedy chedy otedy teyteg
+ITA: s ocain odain cctute qocuet edute odute cute ocute cuecug
+EN: s ocain [the dose/given] cctute qocuet edute odute [skin] [the skin] cuecug
+ZH: s ocain [這[劑量/給出]] cctute qocuet edute odute [皮膚] [這皮膚] cuecug
+
+[Line 2558] EVA: qotees olkeey okeedy qoeeedy chckhey sheor aiin otar cheedy lchedy
+ITA: qocues olduee oduete qoueute ccdue suor aiin ocar cuete lcute
+EN: qocues olduee oduete qoueute ccdue suor aiin ocar [that(verb)] lcute
+ZH: qocues olduee oduete qoueute ccdue suor aiin ocar [那個(動作)] lcute
+
+[Line 3804] EVA: daiin o!l!kai!n qokan shar sheky!dy dai!n alkai!nokal aiin s
+ITA: taiin oldain qodan sar sudete tain aldainodal aiin s
+EN: [dose/given] oldain qodan sar sudete tain aldainodal aiin s
+ZH: [劑量/給出] oldain qodan sar sudete tain aldainodal aiin s
+
+[Line 3805] EVA: tar fcheey shos aiin okar olkaiin otalai!nokaiin ar
+ITA: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+EN: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+ZH: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+
+[Line 3806] EVA: dai!n ykaly chalsshedai!n olaiin yokai!n ldy
+ITA: tain edale calssutain olaiin eodain lte
+EN: tain edale calssutain olaiin eodain lte
+ZH: tain edale calssutain olaiin eodain lte
+
+[Line 3807] EVA: qokeey dar chdy kai!nytas!al otai!n
+ITA: qoduee tar cte dainecasal ocain
+EN: qoduee tar cte dainecasal ocain
+ZH: qoduee tar cte dainecasal ocain
+
+[Line 3808] EVA: tolteedy cthoepain oekshy qofchdaiin shoy!far okshy okai!n ar alfshed
+ITA: colcuete ctoupain oudse qofctaiin soefar odse odain ar alfsut
+EN: colcuete ctoupain oudse qofctaiin soefar odse [the dose/given] ar alfsut
+ZH: colcuete ctoupain oudse qofctaiin soefar odse [這[劑量/給出]] ar alfsut
+
+[Line 3809] EVA: okshy tshor qoksh qokai!n otar oty qokedy otal ytchdy qokar am
+ITA: odse csor qods qodain ocar oce qodute ocal eccte qodar am
+EN: odse csor qods [which dose/given] ocar [the that] qodute ocal eccte qodar am
+ZH: odse csor qods [哪個[劑量/給出]] ocar [這[那個]] qodute ocal eccte qodar am
+
+[Line 3810] EVA: tchody qokaiin ychar okai!n sheody chedy chcthy kedy ety dai!n al
+ITA: ccote qodaiin ecar odain suote cute ccte dute uce tain al
+EN: ccote [which dose] ecar [the dose/given] [I know/his(verb)] [skin] ccte dute uce tain al
+ZH: ccote [哪個劑量] ecar [這[劑量/給出]] [我知道/他的(動作)] [皮膚] ccte dute uce tain al
+
+[Line 3811] EVA: tchedy qokal oty shekshey otaldy okshey ytshedy akarar yty chdy
+ITA: ccute qodal oce sudsue ocalte odsue ecsute adarar ece cte
+EN: ccute qodal [the that] sudsue ocalte odsue ecsute adarar ece cte
+ZH: ccute qodal [這[那個]] sudsue ocalte odsue ecsute adarar ece cte
+

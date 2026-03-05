@@ -1,0 +1,779 @@
+A Key to the Voynich Manuscript
+
+Gino Caspari1,2*†, Agnese Faccini3†
+
+1
+    Domestication and Anthropogenic Evolution Research Group, Max Planck Institute of Geoanthropology,
+
+Kahlaische Str. 10, 07745 Jena, Germany
+
+2
+    Institute of Archaeological Sciences, University of Bern, Mittelstrasse 43, 3012 Bern, Switzerland
+
+3
+    Independent Scholar
+
+
+†contributed equally
+*
+caspari@gea.mpg.de
+
+
+Keywords
+Manuscript, Voynich, Decryption, MS408, Cipher, Romance Language, Cryptography
+
+Abstract
+The Voynich Manuscript is a 15th century text which features herbalist, pharmaceutical, balneological, and
+
+astronomical illustrations [1]. Despite numerous attempts over the past 100 years the text has so far resisted
+
+all efforts at decryption. Even the application of sophisticated statistical methods has not led to a clear
+
+identification of the language the text is written in and leaves some chance that it is perhaps an elaborate
+
+hoax [1]. Here we partially decode the Voynich alphabet and provide an identification of the Voynich
+
+language as vernacular Italian (lingua volgare) written in shorthand. We are able to show that the words we
+
+read make sense in the context of the illustrations. We provide a lexical list of 400+ words that can be
+
+consistently read throughout the text in vernacular Italian with our decipherment and show that the text
+
+displays morphological and grammatical features consistent with the language identification. While there
+
+is more work to be done in translating the text, the key to the manuscript’s decipherment is now available.
+Main
+
+The Voynich Manuscript, cataloged as MS408 in Yale University’s Beinecke Rare Book and Manuscript
+
+Library, has remained undeciphered since its acquisition by book dealer W. Voynich near Rome in 1910 or
+
+1911 [1]. The manuscript is written in an unknown script and language, with no direct translation or
+
+decryption to this day despite numerous attempts including ones by specialists of the United States National
+
+Security Agency [cf. 2]. The manuscript’s contents span five distinct thematic sections, including detailed
+
+illustrations of plants, astrological charts, pharmaceutical descriptions, and balneological scenes featuring
+
+human figures immersed in baths. It consists of 116 vellum folios, although several pages are missing [1,
+
+3].
+
+
+Some have proposed that the manuscript is written in a cipher [4, 5, 6] while others have suggested it
+
+possibly might be a hoax with no actual linguistic meaning [7, 8, 9]. However, several linguistic and
+
+statistical analyses have shown that the manuscript's structure is too complex and organized to be mere
+
+gibberish, hinting at a real language or system of encoding [10]. Some suggest it is written in a cipher based
+
+on a known language like Latin, Hebrew, or an early Romance language. Others, such as Bax [11] and
+
+Cheshire [12], have proposed partial decodings, claiming the manuscript uses a blend of different medieval
+
+languages, including Italian, Occitan, and Latin. Still, these attempts have remained controversial and have
+
+not been widely accepted by the academic community. A limited one line solution for Latin has been
+
+proposed by Gibbs [13] and Hauer and Kondrak [14] propose Hebrew as the language of the manuscript.
+
+Bowern and Lindemann [1] most recently point out how many of the proposed solutions exhibit “strong
+
+confirmation bias, omitting any information that does not fit the theory they propose” and focus on
+
+vocabulary while leaving out morphology and syntax [1].
+
+
+Some researchers believe that the manuscript could have been created by multiple authors or scribes, which
+
+might explain inconsistencies in the handwriting and structure [15]. Radiocarbon dating of the vellum by
+the University of Arizona consistently show a calibrated age in the early 15th century [16], however, the
+
+dates remain unpublished and might shift slightly with the availability of a new calibration curve [17].
+
+
+The literature on the identifications of the plants shown in MS408 is extensive as these identifications might
+
+yield hints on the vocabulary appearing in the text. While some claim that the plants are not identifiable
+
+[18], others make extensive comparisons with medieval herbalist codices [19]. Perhaps most
+
+controversially, [20] identifies some of the plants to originate in the Americas. Recently, [21] have
+
+elaborated upon the idea and suggest that therefore New World languages need to be considered as well.
+
+These ideas have been challenged by [1]. The plant illustrations do appear in stylized fashion typical for
+
+15th century manuscripts and are therefore consistent with the radiocarbon dates of the vellum.
+
+
+The main problem with all previous deciphering attempts is that none of them have gone beyond individual
+
+words or lines and deciphered longer passages of text in the context of the illustrations (except for [22]). It
+
+has never been shown that a language proposition was effectively transferable to all parts of the manuscript.
+
+
+In the following we will show a careful bottom-up approach in first deciphering individual words in the
+
+context of illustrations. We then develop the alphabet of MS408. Based on this alphabet, we identify words
+
+from every page of the manuscript. We identify the language and elaborate upon the grammatical and
+
+morphological aspects of the words and word combinations we read.
+
+
+
+Results
+
+Serendipitously, one of the first legible words which allowed us to start this deciphering attempt was the
+
+word POLAR next to a star illustration, indicating we had identified the North Star as a guiding
+
+accumulation of letters for the next steps (Figure 1a). The word consists of familiar letters which can be
+
+read: a π for P, an o for O, a λ for L, an a for A, and an r for R.
+
+
+        Given the initial seemingly successful attempt with identifying star names and the availability of
+
+terms for stars in the chronologically close Almagestum Claudii Ptolemei of 1528 [23], we were able to
+identify further instances which were legible based on the letters identified in POLAR. The Pleiades or
+
+Seven Sisters are immediately apparent from the illustration and while we later noticed that Bax [11] had
+
+correctly proposed the association of this illustration with the Taurus constellation, we independently came
+
+to the same conclusion. However, we read the letter sequence as TOARE not as TAURN [11]. Once it
+
+became clear that “o” at the beginning of words is often an article (as is common in some early vernacular
+
+romance languages), this allowed for the reading of more words. O’CETE likely refers to the constellation
+
+of Cetus and O’COR(vo) possibly refers to the constellation of Corvus (Figure 1d, 1e). Both constellations
+
+are featured in the Almagestum and were thus known at the time of the manuscript’s creation [23].
+
+
+
+
+Figure 1: Initially identified terms for celestial bodies and constellations. A) A star illustration joined by the letters
+POLAR indicating the North Star. B) A star illustration with the letters EXPE (possibly shortened for Experia) a name
+for the Evening Star Venus. C) The Pleiades cluster with the letters TOARE (Taurus) indicating its affiliation with the
+constellation of the bull. D) A star illustration with the letters O’CETE (possibly the Cetus constellation). E) A star
+illustration with the letters O’COR (possibly shortened for the Corvus constellation).
+
+Based on these letters we were then able to develop a partial alphabet which features the most frequent
+
+characters and ligatures and allows for an Italian vernacular reading of the text. We have not been able to
+
+unequivocally decipher some of the rare characters, but the frequently occurring letters allow to read the
+
+majority of words. Folio 66r of MS408 features an itemized list, where individual characters stand for each
+
+item in the list. The assumption that these are all individual characters, allowed us to identify the letter M
+
+which so far had often been read as two or even three separate glyphs.
+Table 1: The key to a lingua volgare reading of MS408
+
+
+    Glyph       Meaning     Explanation                                                 Vocabulary Example
+
+                A           Latin letter “a” like in the word “polar” (Polaris, North
+                            Star).
+
+
+
+
+                B           A rare character in the manuscript, often obscured by
+                            contractions. Here the word “arbor” (tree).
+
+
+
+
+                C           One of the so-called gallows characters, denoting “c”
+                            here in the word “color” (color).
+
+
+
+
+                D           One of the so-called gallows characters denoting “d”
+                            here in the word “odore” (smell).
+
+
+
+
+                E           The number 9, a mirrored “e” like in the word
+                            combination “piente” (abundant).
+
+
+
+
+                F/P         A greek p, pronounced “f” like in the word “o’c(e)fal”
+                            (head) or in the word “polar”.
+
+
+
+
+                G           A rare character, often obfuscated by contractions. Here
+                            o’g(a)mo (marriage, sex). Identification remains
+                            uncertain.
+I     A letter potentially confusable with the letters for “r”
+      and “g”. Here the word combination “p(er)vivi” (for the
+      living)
+
+
+
+
+L     A lambda standing for “l” like in the word “oliar” (to
+      oil).
+
+
+
+
+M     A difficult letter to read, like here in “compie” (to
+      complete / to fill). It is often split in two or even three
+      parts and therefore misidentified as several glyphs.
+
+
+
+
+N     Like “m” a difficult letter to read as the line between
+      two parts is often obscured leading to it being read as
+      “a-r”. Here the word “fornare” (to bake, to roast).
+
+
+O     Latin letter “o”. Like in the word “sorore” (sister, nun).
+      “o” often appears in front of nouns as an article or in
+      front of verbs as a pronoun.
+
+
+
+
+P/F   A greek p, pronounced “p” like in the word “porpor”
+      (purple, crimson).
+
+
+
+
+Q     A “4” almost always followed by the letter “o” forming
+      the word “qo”. Here the word combination “qo
+      exfoliare” (which to exfoliate). Also see “qo sorore”
+      above.
+
+
+
+R     A left-tilted small “r” as in “o’dolor” (pain).
+             S        Like the letter “x” but with only one loop on top, like
+                      here in the word “o’sole” (the sun).
+
+
+
+
+             T        The number 8. Here the word “torpore” (dizziness).
+
+
+
+
+             U        Written as a “c” like here in o’cute (skin). The
+                      identification is particularly clear with the word “qo”
+                      which is usually written without a “u” but appears
+                      occasionally written as “quo” (e.g. folio 43r line 13)
+
+
+
+
+             V        Closely written double “c” like in the word “ovui”
+                      (eggs).
+
+
+
+
+             X / SS   Like the letter “s” but with two loops on top. Here the
+                      word “exfol(ie)” (without leaves).
+
+
+
+
+ Special
+
+Characters
+
+             M~       The letter “m” followed by an additional stroke
+                      indicating the syllable “mo”. Here the word “palmo”
+                      (palm). The glyph most frequently occurs as a verb
+                      ending indicating 1st person plural present tense.
+
+
+
+
+             N~       The letter “n” followed by an additional stroke
+                      indicating the syllable “no” Here the word “c(a)none”
+                      (canon).
+            P̉ /F̉   A “p” or “f” sound with a shortening sign on top. This
+                     glyph exclusively stands for i-related syllables like “pi”,
+                     “fi”. Here the word “fiore” (flower).
+
+
+
+
+Ligatures
+
+            Re       Ligature at the ending of words meaning “re” a
+                     combination of both letters like here in the word
+                     “o’colore” (the color).
+
+
+
+
+            Te       Similar to the re-ligature but with a rounded left side. A
+                     combination of the letters “t” and “e”. Here in the word
+                     “alte” (high).
+
+
+
+
+            CP       A ligature consisting of the letter c and the letter p/f like
+                     here in the word “c(e)pol” (onion).
+
+
+
+
+            DP/DF    A ligature consisting of the letter d and the letter p/f like
+                     here in the word combination “de folie” (of leaves).
+
+
+
+
+            SP       A ligature consisting of the letter s and the letter p/f like
+                     here in the word “s(e)parare” (to divide).
+
+
+
+
+            XP       A ligature combining the letter x and the letter p/f like
+                     here in the word “expuimo” (to spit out?)
+This simple substitution cipher allows for reading the majority of words in MS408. The missing letter H is
+
+not required for vernacular Italian and we have not identified any suitable candidates among the glyphs that
+
+could represent this letter. J and K can be represented by I and C respectively. W does not exist in Latin nor
+
+in vernacular Italian. In Latin Y is only used for Greek loanwords. Z is often written as T in vernacular texts
+
+and therefore not necessarily needed here either.
+
+
+        Based on this reading of the glyphs, we have created a list of 400+ words and word combinations
+
+which can be accessed in the Supplementary Information. It is important to note that we consider all of
+
+these identifications as potential and preliminary. The text is written in shorthand and thus words do need
+
+context for their proper identification. While some words are fully rendered, the majority of them are
+
+contracted and MS408 features some extreme contractions for the most common words as is the case for
+
+other medieval manuscripts written in shorthand.
+
+
+
+Discussion
+
+There have been various and ongoing attempts to produce a transliteration of MS408. R. Zandbergen
+
+provides an excellent overview over the history of development of the transliterations in [24]. We, however,
+
+decided to only work with the manuscript. The reason for this decision is that transliterations like the
+
+Extended Voynich Alphabet (EVA) and Voynich101 (v101) go into a great amount of detail which can
+
+obscure the meaning and ambiguity of individual glyphs: In both EVA and v101, some glyphs which are a
+
+unit, are broken up, some glyphs which should be split, are represented together, and others which are
+
+merely variations of the same letter, are featured separately. These problems and the resulting redundancy
+
+might also be a reason – in addition to the text being written in shorthand – why computational approaches
+
+which rely on machine readable transliterations have so far not been successful.
+
+
+        The vocabulary which we were able to generate, maybe unsurprisingly for a manuscript featuring
+
+herbal illustrations, features a significant number of words related to plants. Plant parts like fiore (flower),
+tal(l)o (shoot), pomo (fruit), ramo (branch) and folie (leaves) are among the most frequent words. The word
+
+flower for example occurs in different spellings as fior, fiore, and fiuor. This adds support to the idea that
+
+the manuscript was written by multiple authors [cf. 15] possibly from different parts of Italy with diverging
+
+dialects. The word for leaf/leaves most commonly occurs in its abbreviated form fol, but occasionally is
+
+fully rendered as folie. We have made a number of potential identifications of plant names such as pino
+
+(pine), orno (mountain ash, sorbus aucuparia), pion(ia) (peonies), sofor(a) (papilionacea), and iss(o)pe
+
+(hyssop, hyssopus officinalis). Related adjectives and adverbs like opimo (fertile), and i(e)male
+
+(overwintering) are featured in the text and a number of other terms relating to vegetation and horticulture
+
+like arbor (tree), tal(l)ete (sucker nursery), and olivete (olive groves) can be found. We also identify a
+
+number of verbs which directly relate to horticulture like potare (to trim, to cut), piotare (to cover with
+
+sods), arare (to plough), colonare (to reclaim land), and possibly also t(err)are (to cover with soil / to
+
+plant). While many of these terms are only potential identifications due to the inherent ambiguity of a
+
+shorthand text, we believe that the quantity of such terms is a strong argument for the identification of the
+
+MS408 language as vernacular Italian.
+
+
+        Although the characters used have to be considered an encrypted alphabet, it is a simple substitution
+
+cipher with separate letters and a small number of ligatures. The problem is that frequently used words are
+
+written in a contracted form – a common practice in medieval manuscripts. The manuscript uses
+
+abbreviations for many words, often indicating only the initial part of a word or the letters forming its root.
+
+Nonetheless, we were able to identify some grammatical and morphological features. At this stage we can
+
+only preliminarily identify some aspects which give further clues regarding the language identification:
+
+
+        A preceding “o” stands for an article when the word is a noun, consistent with many early Romance
+
+languages. This is most clearly illustrated by the word color(e) and o’colore in Table 1. There are a number
+
+of examples where words appear both with and without the article throughout the text. The article “o”
+
+precedes both masculine and feminine singular nouns. This practice of attaching the article to the noun is
+
+also seen in 15th century herbal manuscripts like the Erbario della biblioteca Gambalunga [25].
+        The MS408 language furthermore features additional preceding agglutinations like the word qo
+
+(which/that) which is added to the front of a noun or verb, resulting in many terms starting with the
+
+otherwise unusual letter combination qo. Another likely prefix is the word d(e) (of). There are potentially
+
+other agglutinating syllables like (e)x (from) and ol (to the). Different from modern Italian, MS408 seems
+
+to use just one articulated preposition “ol” (instead of al, allo, alla, ai, etc.) and likely one pronoun for
+
+feminine and masculine singular nouns.
+
+
+        We have not been able to fully make sense of the verbs in the text. Most forms appear to be written
+
+in present tense first person plural like in the cases of pot(a)mo (we cut/trim), alt(a)mo (we grow/increase),
+
+sort(a)mo (we extract), foc(a)mo (we set on fire), etc. The verb essere seems to often be hidden unless it
+
+occurs in other modes or tenses (fui, fusse). The spelled-out forms of essere indicate that we are closer to
+
+vernacular Italian than to Late Latin. An omitted or implied verb “to be” is also common practice in many
+
+vernacular Italian texts.
+
+
+        We also identify a number of word accumulations which create meaning together (Figure 2). Given
+
+the uncertainty regarding the word identifications, these have to be considered with the appropriate
+
+skepticism, but they seem to follow a grammatical structure which is in agreement with an identification of
+
+the language as vernacular Italian. It seems unlikely, that a cipher would yield a meaningful word
+
+combination like o’ d(e)po(r)vi ovui (to lay eggs into) if it were to be completely wrong (Figure 2c).
+
+Furthermore, these word combinations allowed us to identify similar texts which occasionally even feature
+
+the same abbreviations but are not written in cipher. The Carta Balanina (13th century) [26], the Letters of
+
+Andrea di Bartolomeo di Ghino (14th century) [27], and Ghino's herbal manuscript (first half 15th century)
+
+[28] show for example the same use of n(on), pche/pce for p(er)c(h)e, and a single agglutinated p for p(er).
+
+They also feature a plethora of words which are contracted the same way as the vocabulary of MS408:
+
+bott(ega), cint(ali), co(m)p(er)ate, p(ar)te, and others that reveal the same type of shorthand.
+Figure 2: Examples of words which can be read in context: A) folio 2r line 1. B) folio 88r line 13. C) folio
+24r line 15. D) folio 102r line 11-12. E) folio 106r line 47. F) folio 2r line 2 (dashed lines exclude the
+illustration interrupting the text).
+
+
+        Finally, we can hypothesize based on the vocabulary we identified and the historical authors for
+
+which we found the best vocabulary matches that MS408 might have originated somewhere in central Italy
+
+The main authors we find use similar words as in MS408 are Dante Alighieri (Firenze 1265 – Ravenna
+
+1321), Torquato Tasso (Sorrento 1544 – Roma 1595), Giovanni Boccaccio (Certaldo 1313 – Certaldo
+
+1375), Francesco Petrarca, (Arezzo 1304 – Arquà 1374), Ludovico Ariosto (Reggio Emilia 1474 – Ferrara
+
+1533), and Jacopone da Todi (Todi ca. 1230-1236 – Collazzone 1306) (see Supplementary Information).
+
+The majority of authors in whose texts we find correspondences to the MS408 vocabulary stem from Tuscan
+
+cities like Firenze, Siena, and Pisa. Especially in the 14th and 15th century, a large number of herbal
+
+manuscripts was produced in Italy often in volgare or in a Latin full of vernacular terms [29] – the MS408
+
+belongs to this group of manuscripts.
+
+
+
+Conclusion
+
+After more than one hundred years of unsuccessful attempts at deciphering, the key we provide here finally
+
+allows for an identification of the language of MS408 as an Italian vernacular written in shorthand. Given
+
+the frequent claims of deciphering, we want to make it clear that we see the proposed alphabetic cipher as
+
+preliminary and potentially needing substantial corrections as more words are read in context. However,
+
+we uncovered a rich vocabulary related to plants and horticulture consistent with the illustrations seen on
+many pages. MS408 relies on a simple substitution cipher where each glyph stands for a letter of the Latin
+
+alphabet with the exception of some ligatures and abbreviated frequently occurring syllables. The use of a
+
+shorthand characteristic of medieval manuscripts in combination with the cipher and the agglutinating
+
+reductive characteristics of the manuscript is likely the reason why it has proven to be so challenging to
+
+read MS408. While ambiguities remain and there certainly are improvements to be made with regards to
+
+the identifications of vocabulary, we trust that this article is able to provide the basis for future
+
+multidisciplinary studies leading to a proper translation of the Voynich Manuscript.
+
+
+
+Methods
+
+Through an initial identification of the unabbreviated words “polar” and “torpore” we were able to associate
+
+some MS408 glyphs with characters of the Latin alphabet. This reduced the options space for potential
+
+languages consistent with the 15th century date of the manuscript significantly. We hence worked with the
+
+assumption that the text is written in a European language and more likely a romance language like Late
+
+Latin, vernacular Italian, Catalan, Occitan, or French. We then followed a discursive approach: using text
+
+messaging apps the authors discussed the identifications of individual words and expanded the set of
+
+characters available. MS408 features an enumeration list on folio 66r which uses individual glyphs. This
+
+was helpful in identifying individual characters. The glyphs for m, n, mo, and no were particularly difficult
+
+because they are often split into several parts and not easily recognizable as one unit. Rare letters such as b
+
+and g took longer to identify and some uncertainty remains as only few words feature them. Some ligatures
+
+also remain unclear.
+
+
+        We then proceeded to identify individual words throughout the entirety of the manuscript with the
+
+aim of finding readable words on every folio. Reading some of the words in context with other words and
+
+in context with the illustrations allowed us to revise previous assumptions. We created a list of potential
+
+vocabulary (see Supplementary Information). As MS408 is written in shorthand, many of the individual
+
+identifications remain ambiguous. The context can help reduce this ambiguity, but the words supplied in
+the lexical list have to be understood as potential identifications and not as unequivocal readings. We used
+
+solely words which could be identified through the Tesoro della Lingua Italiana delle Origini [30], the
+
+online dictionary of the Accademia della Crusca [31], and Treccani Enciclopedia della Lingua Italiana
+
+[32] to substantiate word identifications. The best identifications are words which have only one or no
+
+contraction and allow for an obvious direct correlation with an illustration on the same folio. Ultimately,
+
+the full context including grammatical structures will need to be taken into account in order to substantiate
+
+the individual identifications. We have provided quotes from authors roughly contemporary with the
+
+manuscript for each word identification, which allows for the words to be read in context in a contemporary
+
+source. Each of the quotes also features other words occurring in the manuscript, showing that these words
+
+form part of a coherent vocabulary.
+
+
+         Shorthand manuscripts are notorious for their ambiguity with regards to word endings and extreme
+
+contractions. It is possible to create a grammatically correct text in vernacular Italian, however, some
+
+uncertainties remain regarding the identifications of individual words due to the abbreviated nature of many
+
+terms.
+References
+
+[1] Bowern, C. L., & Lindemann, L. (2021). The linguistics of the Voynich manuscript. Annual
+
+Review of Linguistics, 7(1), 285-308.
+
+[2] D’Imperio, M. E. (1978). An Application of Cluster Analysis to the Question of “Hands” and
+
+“Languages” in the Voynich Manuscript. National Security Agency.
+
+[3] Davis, L. F. (2020). How many glyphs and how many scribes? Digital paleography and the
+
+Voynich Manuscript. Manuscript Studies: A Journal of the Schoenberg Institute for Manuscript
+
+Studies, 5(1), 164-180.
+
+[4] Sterneck, R., Polish, A., & Bowern, C. (2021). Topic modeling in the Voynich manuscript.
+
+arXiv preprint arXiv:2107.02858.
+
+[5] Layfield, C., van der Plas, L., Rosner, M., & Abela, J. (2020, May). Word Probability
+
+Findings in the Voynich Manuscript. In Proceedings of LT4HALA 2020-1st Workshop on
+
+Language Technologies for Historical and Ancient Languages (pp. 74-78).
+
+[6] Lindemann, L., & Bowern, C. (2020). Character entropy in modern and historical texts:
+
+comparison metrics for an undeciphered manuscript. arXiv preprint arXiv:2010.14697.
+
+[7] Rugg, G., & Taylor, G. (2017). Hoaxing statistical features of the Voynich Manuscript.
+
+Cryptologia, 41(3), 247-268.
+
+[8] Gaskell, D., & Bowern, C. (2022). Gibberish after all? Voynichese is Statistically Similar to
+
+Human-Produced Samples of Meaningless Text. In VOY.
+
+[9] Daruka, I. (2021). On the Voynich manuscript. Cryptologia, 45(1), 44-80.
+[10] Montemurro, M. A., & Zanette, D. H. (2013). Keywords and co-occurrence patterns in the
+
+Voynich manuscript: An information-theoretic analysis. PloS one, 8(6), e66344.
+
+[11] Bax, S. (2014). A proposed partial decoding of the Voynich script. Unpublished manuscript
+
+available online at: https://stephenbax. net/wp-content/uploads/2014/01/Voynich-a-provisional-
+
+partial-decoding-BAX. pdf.
+
+[12] Cheshire, G. (2019). The language and writing system of MS408 (Voynich) explained.
+
+Romance Studies, 37(1), 30-67.
+
+[13] Gibbs, N. (2017). Voynich manuscript: The solution. Times Literary Supplement, 8.
+
+[14] Hauer, B., & Kondrak, G. (2016). Decoding anagrammed texts written in an unknown
+
+language and script. Transactions of the Association for Computational Linguistics, 4, 75-86.
+
+[15] Davis, L. F. (2020). How many glyphs and how many scribes? Digital paleography and the
+
+Voynich Manuscript. Manuscript Studies: A Journal of the Schoenberg Institute for Manuscript
+
+Studies, 5(1), 164-180.
+
+[16] Schmeh, K. (2013). A milestone in Voynich manuscript research: Voynich 100 conference
+in Monte Porzio Catone, Italy. Cryptologia, 37(3), 193-203.
+
+[17] Reimer, P. J., Austin, W. E., Bard, E., Bayliss, A., Blackwell, P. G., Ramsey, C. B., ... &
+
+Talamo, S. (2020). The IntCal20 Northern Hemisphere radiocarbon age calibration curve (0–55
+
+cal kBP). Radiocarbon, 62(4), 725-757.
+
+[18] Taiz, L., & Taiz, S. L. (2011). The biological section of the Voynich manuscript: a textbook
+
+of medieval plant physiology?. Chronica Horticulturae-Subscription, 51(2), 19.
+[19] Sherwood, E. (2013), The Voynich Botanical Plants. Available
+
+http://www.edithsherwood.com/voynich_botanical_plants/ [08.09.2024].
+
+[20] O'Neill, H. (1944). Botanical Observations on the Voynich MS. Speculum, 19(1), 126.
+
+[21] Tucker, A. O., & Janick, J. (2019). Flora of the Voynich Codex. Springer International
+
+Publishing.
+
+[22] Crowe, F. (2022). The Voynich manuscript decoded. Journal of Historical Archaeology and
+
+Anthropological Sciences, 7(3), 94-131.
+
+[23] Claudii Ptolemaei Pheludiensis Alexandrini Almagestum seu magnae constructionis
+
+mathematicae opus plane diuinum latina donatum lingua ab Georgio Trapezuntio usque quaq.
+
+doctissimo. Per Lucam Gauricum Neapolit. diuinae matheseos professorem egregium in alma
+
+vrbe Veneta orbis regina recognitum anno salutis MDXXVIII labente, [Venezia : Lucantonio
+
+Giunta il vecchio] (In vrbe Veneta ... : Luceantonii Iunta officina aere proprio, ac typis excussa,
+
+horoscopante Iouia stella in calce febru. ..., 1528), Biblioteca Nazionale Centrale di Roma
+
+IT\ICCU\CNCE\29477
+
+[24] Zandbergen, R. (2022). Text Analysis - Transliteration of the Text. Available
+
+https://www.voynich.nu/transcr.html#links [09.22.2024].
+
+[25] Herbarium: Libro di Medicamenti e Segreti, SC-MS.8, Biblioteca Gambalunga, Rimini
+
+(Italia).
+
+[26] Carta Balanina, 1 H 7, 2, Archives Départementales de la Haute Corse, Bastia (Corsica).
+
+[27] Ghini Andrea di Bartolomeo di Ghino da Siena a Datini Francesco di Marco, Fondaco di
+
+Pisa, busta 427, inserto 9, codice 301166, Archivio di Stato di Prato (Italia).
+[28] Erbario Mediceo (Ghino’s Herbal Manuscript), MS Redi 165, Biblioteca Medicea
+Laurenziana, Firenze (Italia).
+
+[29] Baltrušaitis, J. (1955). Le moyen âge fantastique. Antiquités et exotismes dans l’art
+
+gothique. Paris: Flammarion.
+
+[30] TLIO (2024). Tesoro della Lingua Italiana delle Origini. Available
+
+http://tlio.ovi.cnr.it/TLIO/ [27.12.2024].
+
+[31] CRUSCA (2018). Grande dizionario della lingua italiana. Available
+
+https://www.gdli.it/ricerca/libera [27.12.2024].
+
+[32] TRECCANI (2024). Vocabolario On Line. Available https://www.treccani.it/ [27.12.2024]
+
+
+
+
+Acknowledgements
+
+We would like to thank Francesca Ughi Faccini for advice regarding Latin and Greek and Thea
+
+Caspari, Jasmin Sekulovski, and Dr. Lauren Erland for plant identifications and advice on
+
+horticultural practices.
+
+
+Data Availability Statement
+
+All data are contained within the manuscript and the supplementary information.
+
+
+Funding Statement
+
+No funding was received for this study.
+Competing Interest
+
+The authors declare no competing interests.
+

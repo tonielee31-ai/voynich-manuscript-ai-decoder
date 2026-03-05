@@ -15,6 +15,11 @@ We combine the latest orthographic theories with modern multi-lingual translatio
 2. **The "Rabbi's Field Manual" & RTL Theory (Tim Carter Clausen, Feb 2026):** According to the latest 2026 breakthrough, the manuscript uses Right-to-Left (RTL) reading direction based on Jewish cursive tradition. The "Loop" over characters (`t`,`k`) acts as a *dagesh* (a Hebrew pronunciation/emphasis marker). We have added `rtl-judeo-italian-parser.js` to explore this RTL representation and locate Judeo-Italian roots like `ORO` (Gold), `OTTO` (Eight), and `OLIO` (Oil) hidden in the text.
 3. **Caspari & Faccini's "Italian Shorthand" Mapping:** We implemented their EVA-to-Latin mapping framework (`caspari-translate.js`). 
 
+### 💡 Frequently Asked Questions (FAQ)
+* **What is `eva-takahashi.txt`?** Computers cannot read 15th-century alien drawings. In the 1990s, scholars created **EVA** (European Voynich Alphabet) to transcribe the visual shapes into visually-similar Latin keyboard strokes (e.g., shape `8` = `d`, shape `9` = `y`). `eva-takahashi.txt` is the most definitive digitization of the manuscript using this system. It is **not** the underlying language, just a visual placeholder for computational analysis.
+* **Is this a "perfect" translation?** No. Our AI decoder identifies the macroscopic cryptographic mechanism and maps functional Medieval shorthand roots. It yields literal vocabulary chunks (e.g. `[sun] [sister/nun]`), not grammatically fluent text. True semantic restructuring still requires historians specializing in Judeo-Italian vernacular. 
+* **Can I see the real Voynich fonts?** Yes! While our code deals in ASCII EVA representations, you can render the output visually by applying the TTF fonts provided by the excellent open-source project [voynich-unicode](https://github.com/kreativekorp/voynich-unicode).
+
 ## 📂 Repository Structure
 
 ### Data Files
@@ -94,6 +99,14 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 2. **「拉比手冊」與由右至左 (RTL) 理論 (Tim Carter Clausen, 2026年2月):** 根據最新的突破，手稿基於猶太草書傳統，採用由右至左 (RTL) 的閱讀方向。字母（如 `t`, `k`）上方的「線圈 (Loop)」其實是希伯來文的 *dagesh*（發音/重音引導標記）。我們加入了 `rtl-judeo-italian-parser.js` 來探索這種 RTL 表達方式，並在文本中找到了隱藏的猶太-義大利語字根，如 `ORO` (金)、`OTTO` (八) 和 `OLIO` (油)。
 3. **Caspari & Faccini 的「義大利速記」映射:** 我們實作了他們的 EVA至拉丁文的字母替換對應框架 (`caspari-translate.js`)。
 
+### 💡 常見問題 (FAQ)
+* **為何文本 (`eva-takahashi.txt`) 全是英文？**
+  電腦無法讀取 15 世紀的圖畫。1990年代，學者發明了 **EVA (歐洲伏尼契字母)** 轉錄系統，將看似 `8` 的圖案轉錄為 `d`，看似 `9` 的轉錄為 `y`。因此，`eva-takahashi.txt` 是為了大數據運算而產生的人造佔位符字元，並非手稿原始語言本身。
+* **這是份「完美」的翻譯嗎？**
+  否。本專案解開了手稿的「巨觀加密機制」與提取部分名詞字根，其輸出為零散的詞彙區塊（如：`[太陽] [修女/姊妹]`），而非文法流暢的文章。將碎片文字重構成通順的句法，尚需中世紀義大利語學家的人類干預。
+* **我能還原手稿上那些神秘的字體嗎？**
+  可以！本系統輸出的是 ASCII 的 EVA 字母字串。若你想要將結果原汁原味地表現出來，請套用由 [voynich-unicode](https://github.com/kreativekorp/voynich-unicode) 開源專案所提供的 `Voynich.ttf` 字型檔。
+
 ### 4. 英文轉伏尼契文加密器 (`eva-encoder.js`)
 **[新增]** 想好似 15 世紀的猶太拉比一樣寫暗號嗎？這個小工具能根據我們推導出的字典，將一般的英文單字加密轉換成偽伏尼契文 (EVA)。
 
@@ -147,6 +160,14 @@ node trilingual-translator.js --lang=all
 1. **"Naibbe" 密碼理論 (Greshko, 2025/2026):** 我哋寫咗隻「Naibbe 逆向模擬器」(`naibbe-simulator.js`)。只要將手稿入面嗰啲煩死人嘅重複字（例如 `qokaiin` 或者 `chedy`）㩒扁還原做一個字元（即係拆穿佢「繁複同音替換」嘅掩飾），就會見到段字嘅二階條件熵 (h2) 由假到離譜嘅 **2.12 bits/char** 應聲回升去正常人類語言嘅 **2.56 bits/token**。呢個結果完美證明手稿「絕對唔係」前人話嘅無意義亂碼，而係俾人瘋狂拉長咗、極具智慧嘅密碼。
 2. **「拉比隨身手冊」同 RTL (由右至左) 書寫理論 (Tim Carter Clausen, 2026年2月):** 根據 2026 年 2 月最新鮮出爐嘅破解進度，手稿其實係跟猶太人手寫習慣「由右向左」讀嘅。字母頂頭嗰個「圈圈 (Loop)」原來係希伯來文入面嘅 *dagesh*（發音/重音提示）。我哋專登寫咗隻 `rtl-judeo-italian-parser.js` 去 Scan 呢種由右至左嘅寫法，居然真係喺啲字入面抽到出猶太-意大利文嘅字根，例如 `ORO` (金)、`OTTO` (八) 同埋 `OLIO` (油)！
 3. **Caspari & Faccini 嘅「意大利速記」字典:** 我哋將佢哋套「歐洲伏尼契字母 (EVA)」轉拉丁字母嘅 Mapping 寫咗落 Code 度 (`caspari-translate.js`)。
+
+### 💡 必知 FAQ (常見問題)
+* **為何文本 (`eva-takahashi.txt`) 係英文字母？**
+  部電腦係唔可能直接 Compile 外星人畫符嘅！喺 1990 年代，學者發明咗 **EVA 系統**：將佢哋逐個字形人工對應返鍵盤字母（例如 `8` 字對應做 `d`，`9` 字對應做 `y`）。所以 `eva-takahashi.txt` 唔係原文明文，佢只係一套為咗就就 AI 及大數據分析而設嘅字形代碼 (Placeholder)。
+* **翻譯機係完美解密嗎？**
+  唔係，世界上仲未有人可以「完美句法」咁解得通伏尼契。我哋嘅程式破解咗背後個「大加密規則」，成功砌返單字字根出黎（例如 `[太陽] [修女/師姊]`），但要重組為通暢文章，仲需要歷史學家落手研究當中嘅中世紀義大利土語。
+* **想睇返原本隻靚靚火星字型？**
+  無問題！我哋個 Tool 吐出黎嘅係 EVA 英文 (`shol shory`)。你只要去神級開源項目 [voynich-unicode](https://github.com/kreativekorp/voynich-unicode) 度裝隻字型落電腦，將啲英文 Highlight 套用，就會即刻起雞皮變返晒 15 世紀原本嘅神秘文字！
 
 ### 4. 英文轉伏尼契密碼機 (`eva-encoder.js`)
 **[新增]** 想學15世紀嘅猶太拉比寫火星文？呢個小工具可以根據我哋度出嚟嘅字典，將普通英文單字加密變做偽伏尼契文 (EVA)。

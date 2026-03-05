@@ -2,7 +2,7 @@
 
 ---
 
-<h1 id="english">🇬🇧 Voynich Manuscript: AI-Driven Cryptanalysis & Trilingual Translation</h1>
+<h1 id="english">Voynich Manuscript: AI-Driven Cryptanalysis & Trilingual Translation</h1>
 
 *(Updated March 2026 - Incorporating the "RTL Judeo-Italian" & "Naibbe Cipher" Theories)*
 
@@ -22,7 +22,8 @@ We combine the latest orthographic theories with modern multi-lingual translatio
 - `word-frequency.json`: Generated frequency lists revealing extreme Zipf's law deviations.
 
 ### Analysis Scripts (Node.js) & Example Usage
-You will need [Node.js](https://nodejs.org/) installed to run the translating and parsing tools.
+
+**Environment Requirements:** These tools have been developed and tested on **Ubuntu Linux (x64)** running **Node.js v23.11** or above.
 
 #### 1. The Trilingual Translator (`trilingual-translator.js`)
 This engine translates the raw manuscript's EVA script into basic Italian phonemes, then uses a heuristic parser bridging root concepts to output into **English, Traditional Chinese (ZHO), and Cantonese (YUE)**.
@@ -61,7 +62,7 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 
 ---
 
-<h1 id="traditional-chinese">🇹🇼/🇭🇰 伏尼契手稿：AI 驅動的密碼分析與三語翻譯</h1>
+<h1 id="traditional-chinese">伏尼契手稿：AI 驅動的密碼分析與三語翻譯</h1>
 
 *(2026年3月更新 - 結合了「由右至左猶太-意大利語」與「Naibbe 密碼」理論)*
 
@@ -75,7 +76,8 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 3. **Caspari & Faccini 的「義大利速記」映射:** 我們實作了他們的 EVA至拉丁文的字母替換對應框架 (`caspari-translate.js`)。
 
 ## 📂 資料庫結構與使用範例
-執行這些翻譯和分析腳本需要預先安裝 [Node.js](https://nodejs.org/)。
+
+**執行環境要求:** 這些工具程式建立並測試於 **Ubuntu Linux (x64)** 作業環境中，建議使用 **Node.js v23.11** 或以上版本。
 
 ### 1. 三語翻譯器 (`trilingual-translator.js`)
 此引擎將原始手稿的 EVA 字母轉換為基本的義大利語音素，然後使用啟發式語意分析器橋接中世紀義大利文字根概念，最後輸出為 **英文、繁體中文 (ZHO) 和 廣東話 (YUE)** 的同步對照翻譯。
@@ -91,7 +93,7 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 
 ---
 
-<h1 id="cantonese">🇭🇰 伏尼契手稿：AI 密碼拆解與三語翻譯 (廣東話版)</h1>
+<h1 id="cantonese">伏尼契手稿：AI 密碼拆解與三語翻譯 (廣東話版)</h1>
 
 *(2026年3月更新 - 結合「由右至左書寫嘅猶太-意大利文」同「Naibbe 密碼」理論)*
 
@@ -103,7 +105,8 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 3. **Caspari & Faccini 嘅「意大利速記」字典:** 我哋將佢哋套「歐洲伏尼契字母 (EVA)」轉拉丁字母嘅 Mapping 寫咗落 Code 度 (`caspari-translate.js`)。
 
 ## 📂 Repo 架構同點樣玩
-你要先裝好部機嘅 [Node.js](https://nodejs.org/) 先可以 Run 呢啲腳本。
+
+**執行環境要求:** 呢啲 Script 已經喺 **Ubuntu Linux (x64)** 上面寫好同測試過，記得要裝 **Node.js v23.11** 或者打後嘅版本先好 Run 啊！
 
 ### 1. 三語同步翻譯器 (`trilingual-translator.js`)
 呢個引擎首先會將原文嘅 EVA 轉做基本意大利文拼音，再用語意分析轉做 **英文、繁體中文同廣東話**。

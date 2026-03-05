@@ -1,0 +1,188 @@
+VOYNICH MANUSCRIPT TRILINGUAL TRANSLATION (ENG, ZHO, YUE)
+=========================================================
+
+=== Folio 1r: Herbal Section ===
+[Line 1] EVA: fachys ykal ar ataiin shol shory cth!res y kor sholdy!
+        ITA: faces edal ar acaiin sol sore ctrus e dor solte
+        ENG: [face/appearance] edal ar acaiin [sun] [sister/nun] ctrus e dor [sun(verb)]
+        ZHO: [面容/外觀] edal ar acaiin [太陽] [修女/姊妹] ctrus e dor [太陽(動作)]
+        YUE: [塊面/樣貌] edal ar acaiin [太陽/個太陽] [修女/阿妹/師姊] ctrus e dor [太陽/個太陽(做嘢)]
+
+[Line 2] EVA: sory ckhar o!r y kair chtaiin shar are cthar cthar dan!
+        ITA: sore cdar or e dair ccaiin sar aru ctar ctar tan
+        ENG: [sister/nun] cdar or e dair ccaiin sar aru ctar ctar tan
+        ZHO: [修女/姊妹] cdar or e dair ccaiin sar aru ctar ctar tan
+        YUE: [修女/阿妹/師姊] cdar or e dair ccaiin sar aru ctar ctar tan
+
+[Line 3] EVA: syaiir sheky or ykaiin shod cthoary cthes daraiin sa
+        ITA: seaiir sude or edaiin sot ctoare ctus taraiin sa
+        ENG: seaiir sude or edaiin sot ctoare ctus taraiin sa
+        ZHO: seaiir sude or edaiin sot ctoare ctus taraiin sa
+        YUE: seaiir sude or edaiin sot ctoare ctus taraiin sa
+
+[Line 4] EVA: o oiin oteey oteos roloty cth*ar daiin otaiin or okan
+        ITA: o oiin ocuee ocuos roloce ctar taiin ocaiin or odan
+        ENG: [the] oiin ocuee ocuos roloce ctar [dose] ocaiin or odan
+        ZHO: [(定冠詞)] oiin ocuee ocuos roloce ctar [劑量/配方] ocaiin or odan
+        YUE: [(隻/個)] oiin ocuee ocuos roloce ctar [份量/幾多劑] ocaiin or odan
+
+[Line 5] EVA: dair y chear cthaiin cphar cfhaiin
+        ITA: tair e cuar ctaiin cfar cfaiin
+        ENG: tair e cuar ctaiin cfar cfaiin
+        ZHO: tair e cuar ctaiin cfar cfaiin
+        YUE: tair e cuar ctaiin cfar cfaiin
+
+[Line 6] EVA: ydar!aish!y
+        ITA: etaraise
+        ENG: etaraise
+        ZHO: etaraise
+        YUE: etaraise
+
+[Line 7] EVA: * odar o !y shol cphoy oydar sh! s cfhoaiin shodary
+        ITA:  otar o e sol cfoe oetar s s cfoaiin sotare
+        ENG: otar [the] e [sun] cfoe oetar s s cfoaiin sotare
+        ZHO: otar [(定冠詞)] e [太陽] cfoe oetar s s cfoaiin sotare
+        YUE: otar [(隻/個)] e [太陽/個太陽] cfoe oetar s s cfoaiin sotare
+
+[Line 8] EVA: yshey shody okcho!y otchol chocthy os!chy dain chor kos
+        ITA: esue sote odcoe occol cocte osce tain cor dos
+        ENG: esue sote odcoe occol cocte osce tain [heart] dos
+        ZHO: esue sote odcoe occol cocte osce tain [心] dos
+        YUE: esue sote odcoe occol cocte osce tain [心臟/個心] dos
+
+[Line 9] EVA: daiin shos cfhol shody
+        ITA: taiin sos cfol sote
+        ENG: [dose] sos cfol sote
+        ZHO: [劑量/配方] sos cfol sote
+        YUE: [份量/幾多劑] sos cfol sote
+
+[Line 10] EVA: dain os teody
+        ITA: tain os cuote
+        ENG: tain os cuote
+        ZHO: tain os cuote
+        YUE: tain os cuote
+
+
+=== Folio 67r: Astronomical Section ===
+[Line 2551] EVA: sai!n sheey or or al solshey okeedy ldaiin che!cthey okedalor
+        ITA: sain suee or or al solsue oduete ltaiin cuctue odutalor
+        ENG: sain suee or or al solsue oduete ltaiin cuctue odutalor
+        ZHO: sain suee or or al solsue oduete ltaiin cuctue odutalor
+        YUE: sain suee or or al solsue oduete ltaiin cuctue odutalor
+
+[Line 2552] EVA: qokaiin ol shedy qokeey or shdy
+        ITA: qodaiin ol sute qoduee or ste
+        ENG: qodaiin [the] sute qoduee or ste
+        ZHO: qodaiin [(定冠詞)] sute qoduee or ste
+        YUE: qodaiin [(隻/個)] sute qoduee or ste
+
+[Line 2553] EVA: p!olarar okor opcheey yteey opchaly lshedy qofchdal lkodol opa ko!rols
+        ITA: polarar odor opcuee ecuee opcale lsute qofctal ldotol opa dorols
+        ENG: polarar [smell] opcuee ecuee opcale lsute qofctal ldotol opa dorols
+        ZHO: polarar [氣味] opcuee ecuee opcale lsute qofctal ldotol opa dorols
+        YUE: polarar [陣味/香氣] opcuee ecuee opcale lsute qofctal ldotol opa dorols
+
+[Line 2554] EVA: s!csedy keedy cholkeeey otedor okor shedy chedy qokeedy oly shey qo!yky
+        ITA: scsute duete coldueue ocutor odor sute cute qoduete ole sue qoede
+        ENG: scsute duete coldueue ocutor [smell] sute [skin] qoduete ole sue qoede
+        ZHO: scsute duete coldueue ocutor [氣味] sute [皮膚] qoduete ole sue qoede
+        YUE: scsute duete coldueue ocutor [陣味/香氣] sute [皮膚/表皮] qoduete ole sue qoede
+
+[Line 2555] EVA: dchedy qokeedy oteedy chedaiin chey qokeedy olkedy ror oteedy okal
+        ITA: tcute qoduete ocuete cutaiin cue qoduete oldute ror ocuete odal
+        ENG: tcute qoduete ocuete cutaiin [that] qoduete oldute ror ocuete odal
+        ZHO: tcute qoduete ocuete cutaiin [那個] qoduete oldute ror ocuete odal
+        YUE: tcute qoduete ocuete cutaiin [嗰個] qoduete oldute ror ocuete odal
+
+[Line 2556] EVA: s!olkeey sor shecthy daiin okar chpchedy cpchy oty olor otchy r!alchl
+        ITA: solduee sor sucte taiin odar cpcute cpce oce olor occe ralcl
+        ENG: solduee sor sucte [dose] odar cpcute cpce [the that] olor occe ralcl
+        ZHO: solduee sor sucte [劑量/配方] odar cpcute cpce [這[那個]] olor occe ralcl
+        YUE: solduee sor sucte [份量/幾多劑] odar cpcute cpce [呢個[嗰個]] olor occe ralcl
+
+[Line 2557] EVA: s otain okain chcthedy qoteed y!kedy okedy chedy otedy teyteg
+        ITA: s ocain odain cctute qocuet edute odute cute ocute cuecug
+        ENG: s ocain [the dose] cctute qocuet edute odute [skin] [the skin] cuecug
+        ZHO: s ocain [這[劑量/配方]] cctute qocuet edute odute [皮膚] [這[皮膚]] cuecug
+        YUE: s ocain [呢個[份量/幾多劑]] cctute qocuet edute odute [皮膚/表皮] [呢個[皮膚/表皮]] cuecug
+
+[Line 2558] EVA: qotees olkeey okeedy qoeeedy chckhey sheor aiin otar cheedy lchedy
+        ITA: qocues olduee oduete qoueute ccdue suor aiin ocar cuete lcute
+        ENG: qocues olduee oduete qoueute ccdue suor aiin ocar [that(verb)] lcute
+        ZHO: qocues olduee oduete qoueute ccdue suor aiin ocar [那個(動作)] lcute
+        YUE: qocues olduee oduete qoueute ccdue suor aiin ocar [嗰個(做嘢)] lcute
+
+[Line 2559] EVA: doteey qo okaiin oteedy otedy cheolchdy okeedy otedy qokedy okedar da
+        ITA: tocuee qo odaiin ocuete ocute cuolcte oduete ocute qodute odutar ta
+        ENG: tocuee [which] odaiin ocuete [the skin] cuolcte oduete [the skin] qodute odutar ta
+        ZHO: tocuee [哪個] odaiin ocuete [這[皮膚]] cuolcte oduete [這[皮膚]] qodute odutar ta
+        YUE: tocuee [邊個] odaiin ocuete [呢個[皮膚/表皮]] cuolcte oduete [呢個[皮膚/表皮]] qodute odutar ta
+
+[Line 2560] EVA: qokeedy ochedy roiin sheedy qokeedy okeedy olor okeedy qol!keeey r al
+        ITA: qoduete ocute roiin suete qoduete oduete olor oduete qoldueue r al
+        ENG: qoduete [the skin] roiin suete qoduete oduete olor oduete qoldueue r al
+        ZHO: qoduete [這[皮膚]] roiin suete qoduete oduete olor oduete qoldueue r al
+        YUE: qoduete [呢個[皮膚/表皮]] roiin suete qoduete oduete olor oduete qoldueue r al
+
+
+=== Folio 88r: Pharmaceutical Section ===
+[Line 3804] EVA: daiin o!l!kai!n qokan shar sheky!dy dai!n alkai!nokal aiin s
+        ITA: taiin oldain qodan sar sudete tain aldainodal aiin s
+        ENG: [dose] oldain qodan sar sudete tain aldainodal aiin s
+        ZHO: [劑量/配方] oldain qodan sar sudete tain aldainodal aiin s
+        YUE: [份量/幾多劑] oldain qodan sar sudete tain aldainodal aiin s
+
+[Line 3805] EVA: tar fcheey shos aiin okar olkaiin otalai!nokaiin ar
+        ITA: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+        ENG: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+        ZHO: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+        YUE: car fcuee sos aiin odar oldaiin ocalainodaiin ar
+
+[Line 3806] EVA: dai!n ykaly chalsshedai!n olaiin yokai!n ldy
+        ITA: tain edale calssutain olaiin eodain lte
+        ENG: tain edale calssutain olaiin eodain lte
+        ZHO: tain edale calssutain olaiin eodain lte
+        YUE: tain edale calssutain olaiin eodain lte
+
+[Line 3807] EVA: qokeey dar chdy kai!nytas!al otai!n
+        ITA: qoduee tar cte dainecasal ocain
+        ENG: qoduee tar cte dainecasal ocain
+        ZHO: qoduee tar cte dainecasal ocain
+        YUE: qoduee tar cte dainecasal ocain
+
+[Line 3808] EVA: tolteedy cthoepain oekshy qofchdaiin shoy!far okshy okai!n ar alfshed
+        ITA: colcuete ctoupain oudse qofctaiin soefar odse odain ar alfsut
+        ENG: colcuete ctoupain oudse qofctaiin soefar odse [the dose] ar alfsut
+        ZHO: colcuete ctoupain oudse qofctaiin soefar odse [這[劑量/配方]] ar alfsut
+        YUE: colcuete ctoupain oudse qofctaiin soefar odse [呢個[份量/幾多劑]] ar alfsut
+
+[Line 3809] EVA: okshy tshor qoksh qokai!n otar oty qokedy otal ytchdy qokar am
+        ITA: odse csor qods qodain ocar oce qodute ocal eccte qodar am
+        ENG: odse csor qods [which dose] ocar [the that] qodute ocal eccte qodar am
+        ZHO: odse csor qods [哪個[劑量/配方]] ocar [這[那個]] qodute ocal eccte qodar am
+        YUE: odse csor qods [邊個[份量/幾多劑]] ocar [呢個[嗰個]] qodute ocal eccte qodar am
+
+[Line 3810] EVA: tchody qokaiin ychar okai!n sheody chedy chcthy kedy ety dai!n al
+        ITA: ccote qodaiin ecar odain suote cute ccte dute uce tain al
+        ENG: ccote qodaiin ecar [the dose] suote [skin] ccte dute uce tain al
+        ZHO: ccote qodaiin ecar [這[劑量/配方]] suote [皮膚] ccte dute uce tain al
+        YUE: ccote qodaiin ecar [呢個[份量/幾多劑]] suote [皮膚/表皮] ccte dute uce tain al
+
+[Line 3811] EVA: tchedy qokal oty shekshey otaldy okshey ytshedy akarar yty chdy
+        ITA: ccute qodal oce sudsue ocalte odsue ecsute adarar ece cte
+        ENG: ccute qodal [the that] sudsue ocalte odsue ecsute adarar ece cte
+        ZHO: ccute qodal [這[那個]] sudsue ocalte odsue ecsute adarar ece cte
+        YUE: ccute qodal [呢個[嗰個]] sudsue ocalte odsue ecsute adarar ece cte
+
+[Line 3812] EVA: otal shedy odaiin chey
+        ITA: ocal sute otaiin cue
+        ENG: ocal sute [the dose] [that]
+        ZHO: ocal sute [這[劑量/配方]] [那個]
+        YUE: ocal sute [呢個[份量/幾多劑]] [嗰個]
+
+[Line 3813] EVA: tshdol qokshy dchdy shedy dkshey chefar otchdy ol shedar chdam
+        ITA: cstol qodse tcte sute tdsue cufar occte ol sutar ctam
+        ENG: cstol qodse tcte sute tdsue cufar occte [the] sutar ctam
+        ZHO: cstol qodse tcte sute tdsue cufar occte [(定冠詞)] sutar ctam
+        YUE: cstol qodse tcte sute tdsue cufar occte [(隻/個)] sutar ctam
+

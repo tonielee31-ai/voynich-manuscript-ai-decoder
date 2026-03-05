@@ -26,14 +26,6 @@ This engine translates the raw manuscript's EVA script into basic Italian phonem
 ```bash
 node trilingual-translator.js
 ```
-*Output snippet:*
-> `[Line 1] EVA: fachys ykal ar ataiin shol shory`  
-> `        ITA: faces edal ar acaiin sol sore`  
-> `        ENG: [face/appearance] edal ar acaiin [sun] [sister/nun]`  
-> `        ZHO: [面容/外觀] edal ar acaiin [太陽] [修女/姊妹]`  
-> `        YUE: [塊面/樣貌] edal ar acaiin [太陽/個太陽] [修女/阿妹/師姊]`  
-
-*(The result will be exported into `translation-trilingual.txt` for your review).*
 
 #### 2. The Naibbe Reverse Simulator (`naibbe-simulator.js`)
 A simulation tool used to test and prove Michael Greshko's *Naibbe Cipher Theory*. It measures the "h2 conditional entropy" before and after mapping repetitive prefixes/suffixes as single structural units.
@@ -42,10 +34,6 @@ A simulation tool used to test and prove Michael Greshko's *Naibbe Cipher Theory
 ```bash
 node naibbe-simulator.js
 ```
-*Output snippet:*
-> `[Baseline] Raw Character Entropy (h2): 2.1234 bits/char`  
-> `[Experiment 1] Naibbe Morphological Compression: 2.5611 bits/token`  
-> `✅ ENTROPY INCREASE DETECTED.`  
 
 #### 3. Right-to-Left Judeo-Italian Parser (`rtl-judeo-italian-parser.js`)
 Searches for likely 15th-Century Judeo-Italian roots assuming the manuscript was written strictly Right-to-Left by a traveling Jewish Rabbi (Tim Carter Clausen, Feb 2026 Theory).
@@ -55,5 +43,7 @@ Searches for likely 15th-Century Judeo-Italian roots assuming the manuscript was
 node rtl-judeo-italian-parser.js
 ```
 
-## Authorship
+## Authorship & License
 Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by various historical inputs including Dr. Bernhart-Königstein's 'Silenen' investigations, Michael A. Greshko's Naibbe mappings, and Tim Carter Clausen's 2026 RTL Rabbi's Field Manual theory.
+
+**License:** MIT License. Feel free to fork, expand upon the dictionaries, or use these statistical tools to further humanity's understanding of the Voynich Manuscript.

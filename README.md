@@ -25,19 +25,29 @@ We combine the latest orthographic theories with modern multi-lingual translatio
 
 **Environment Requirements:** These tools have been developed and tested on **Ubuntu Linux (x64)** running **Node.js v23.11** or above.
 
-#### 1. The Trilingual Translator (`trilingual-translator.js`)
-This engine translates the raw manuscript's EVA script into basic Italian phonemes, then uses a heuristic parser bridging root concepts to output into **English, Traditional Chinese (ZHO), and Cantonese (YUE)**.
+#### 1. The Multi-language Translator (`trilingual-translator.js`)
+This engine translates the raw manuscript's EVA script into basic Italian phonemes, then uses a heuristic parser bridging root concepts to output into **English, Traditional Chinese (ZHO), or Cantonese (YUE)**. 
+
+By default, the script outputs to English only.
 
 **Usage:**
 ```bash
+# Default (English only)
 node trilingual-translator.js
+
+# Output to Traditional Chinese only
+node trilingual-translator.js --lang=zh
+
+# Output to Cantonese only
+node trilingual-translator.js --lang=yue
+
+# Output all 3 languages together
+node trilingual-translator.js --lang=all
 ```
-*Output snippet:*
+*Output snippet (English mode):*
 > `[Line 1] EVA: fachys ykal ar ataiin shol shory`  
 > `        ITA: faces edal ar acaiin sol sore`  
 > `        ENG: [face/appearance] edal ar acaiin [sun] [sister/nun]`  
-> `        ZHO: [面容/外觀] edal ar acaiin [太陽] [修女/姊妹]`  
-> `        YUE: [塊面/樣貌] edal ar acaiin [太陽/個太陽] [修女/阿妹/師姊]`  
 
 #### 2. The Naibbe Reverse Simulator (`naibbe-simulator.js`)
 A simulation tool used to test and prove Michael Greshko's *Naibbe Cipher Theory*. It measures the "h2 conditional entropy" before and after mapping repetitive prefixes/suffixes as single structural units.
@@ -79,9 +89,25 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 
 **執行環境要求:** 這些工具程式建立並測試於 **Ubuntu Linux (x64)** 作業環境中，建議使用 **Node.js v23.11** 或以上版本。
 
-### 1. 三語翻譯器 (`trilingual-translator.js`)
-此引擎將原始手稿的 EVA 字母轉換為基本的義大利語音素，然後使用啟發式語意分析器橋接中世紀義大利文字根概念，最後輸出為 **英文、繁體中文 (ZHO) 和 廣東話 (YUE)** 的同步對照翻譯。
-**用法:** `node trilingual-translator.js`
+### 1. 多語翻譯器 (`trilingual-translator.js`)
+此引擎將原始手稿的 EVA 字母轉換為基本的義大利語音素，然後使用啟發式語意分析器橋接中世紀義大利文字根概念，最後輸出 **英文、繁體中文 (ZHO) 或是 廣東話 (YUE)** 的翻譯。
+
+預設環境下，腳本僅輸出英文翻譯。
+
+**用法:**
+```bash
+# 預設 (僅英文)
+node trilingual-translator.js
+
+# 僅輸出繁體中文
+node trilingual-translator.js --lang=zh
+
+# 僅輸出廣東話
+node trilingual-translator.js --lang=yue
+
+# 同時輸出三種語言
+node trilingual-translator.js --lang=all
+```
 
 ### 2. Naibbe 逆向模擬器 (`naibbe-simulator.js`)
 用以測試並證明 Michael Greshko 的《Naibbe 密碼理論》的模擬工具。它客觀測量了將重複的前綴/後綴映射為單一結構單元前後的「h2 條件熵」劇變。
@@ -108,9 +134,25 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 
 **執行環境要求:** 呢啲 Script 已經喺 **Ubuntu Linux (x64)** 上面寫好同測試過，記得要裝 **Node.js v23.11** 或者打後嘅版本先好 Run 啊！
 
-### 1. 三語同步翻譯器 (`trilingual-translator.js`)
-呢個引擎首先會將原文嘅 EVA 轉做基本意大利文拼音，再用語意分析轉做 **英文、繁體中文同廣東話**。
-**點樣 Run:** `node trilingual-translator.js`
+### 1. 多語翻譯器 (`trilingual-translator.js`)
+呢個引擎首先會將原文嘅 EVA 轉做基本意大利文拼音，再用語意分析轉做 **英文、繁體中文或者廣東話**。
+
+預設情況下，佢只會彈英文翻譯俾你睇。如果有需要可以加指令。
+
+**點樣 Run:**
+```bash
+# 預設 (淨係出英)
+node trilingual-translator.js
+
+# 淨係出繁體中文
+node trilingual-translator.js --lang=zh
+
+# 淨係出廣東話
+node trilingual-translator.js --lang=yue
+
+# 一嘢出晒三種語言對照
+node trilingual-translator.js --lang=all
+```
 
 ### 2. Naibbe 密碼逆向模擬器 (`naibbe-simulator.js`)
 呢隻係用嚟篤爆「伏尼契係騙局」呢個講法嘅測量工具。佢會精準計出合併密碼字根前同後嘅 Entropy (熵值) 戲劇性變化，印證 Naibbe 密碼規則真有其事！

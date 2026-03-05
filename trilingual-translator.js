@@ -1,6 +1,18 @@
 const fs = require('fs');
+const process = require('process');
 
+// Parse command line arguments for language selection
+const args = process.argv.slice(2);
+let targetLang = 'en'; // Default to English
+let showAll = false;
+
+if (args.includes('--lang=zh')) targetLang = 'zh';
+else if (args.includes('--lang=yue')) targetLang = 'yue';
+else if (args.includes('--lang=all')) showAll = true;
+
+// -----------------------------------------------------------------------------
 // Advanced EVA → Italian mapping based on Caspari & Faccini (2025)
+// -----------------------------------------------------------------------------
 const MAP = {
     // Digraphs & Trigraphs
     'cth': 'ct',  'ckh': 'cd',  'cph': 'cf',  'cfh': 'cf',
@@ -15,7 +27,6 @@ const MAP = {
 };
 
 // Heuristic Italian -> EN / ZH (Trad) / YUE (Cantonese) Dictionary
-// Incorporating Caspari's lexical roots and general medieval terminology
 const DICT = {
     // Core Nouns
     'cuor':  { en: 'heart', zh: '心臟', yue: '心臟/個心' },
@@ -99,10 +110,7 @@ function translateEVA(evaWord) {
 function translateLanguage(italianWord) {
     const w = italianWord.toLowerCase();
     
-    // Exact match
     if (DICT[w]) return DICT[w];
-    
-    // Prefix handler (o- = the, qo- = which)
     if (w.startsWith('qo') && DICT[w.slice(2)]) {
         const root = DICT[w.slice(2)];
         return { en: `which ${root.en}`, zh: `哪個[${root.zh}]`, yue: `邊個[${root.yue}]` };
@@ -111,8 +119,6 @@ function translateLanguage(italianWord) {
         const root = DICT[w.slice(1)];
         return { en: `the ${root.en}`, zh: `這[${root.zh}]`, yue: `呢個[${root.yue}]` };
     }
-    
-    // Suffix handler (-te / -in verbs or actions)
     if (w.endsWith('te') && DICT[w.slice(0, -2)]) {
         const root = DICT[w.slice(0, -2)];
         return { en: `${root.en}(verb)`, zh: `${root.zh}(動作)`, yue: `${root.yue}(做嘢)` };
@@ -135,34 +141,47 @@ function processSection(name, startLine, count) {
         const itas = words.map(w => translateEVA(w));
         const langs = itas.map(w => translateLanguage(w));
         
-        let enLine = ''; let zhLine = ''; let yueLine = '';
+        let outEn = ''; let outZh = ''; let outYue = '';
         
         langs.forEach((lang, idx) => {
             if(lang.en !== '?') {
-                enLine += `[${lang.en}] `;
-                zhLine += `[${lang.zh}] `;
-                yueLine += `[${lang.yue}] `;
+                outEn += `[${lang.en}] `;
+                outZh += `[${lang.zh}] `;
+                outYue += `[${lang.yue}] `;
             } else {
-                enLine += itas[idx] + ' ';
-                zhLine += itas[idx] + ' ';
-                yueLine += itas[idx] + ' ';
+                outEn += itas[idx] + ' ';
+                outZh += itas[idx] + ' ';
+                outYue += itas[idx] + ' ';
             }
         });
         
         output += `[Line ${i+1}] EVA: ${lines[i].replace(/<[^>]+>/g, '').trim()}\n`;
         output += `        ITA: ${itas.join(' ')}\n`;
-        output += `        ENG: ${enLine.trim()}\n`;
-        output += `        ZHO: ${zhLine.trim()}\n`;
-        output += `        YUE: ${yueLine.trim()}\n\n`;
+        
+        if (showAll) {
+            output += `        ENG: ${outEn.trim()}\n`;
+            output += `        ZHO: ${outZh.trim()}\n`;
+            output += `        YUE: ${outYue.trim()}\n\n`;
+        } else {
+            if (targetLang === 'en') output += `        ENG: ${outEn.trim()}\n\n`;
+            if (targetLang === 'zh') output += `        ZHO: ${outZh.trim()}\n\n`;
+            if (targetLang === 'yue') output += `        YUE: ${outYue.trim()}\n\n`;
+        }
     }
     return output;
 }
 
-let fullOut = "VOYNICH MANUSCRIPT TRILINGUAL TRANSLATION (ENG, ZHO, YUE)\n";
+let fullOut = "VOYNICH MANUSCRIPT AI TRANSLATOR\n";
+fullOut += "=========================================================\n";
+if (showAll) {
+    fullOut += "Mode: Multilingual (ENG, ZHO, YUE)\n";
+} else {
+    fullOut += `Mode: Target Language Code -> ${targetLang.toUpperCase()}\n`;
+}
 fullOut += "=========================================================\n";
 fullOut += processSection("Folio 1r: Herbal Section", 0, 10);
 fullOut += processSection("Folio 67r: Astronomical Section", 2550, 10);
 fullOut += processSection("Folio 88r: Pharmaceutical Section", 3803, 10);
 
-fs.writeFileSync('/root/.openclaw/workspace/voynich-repo/translation-trilingual.txt', fullOut);
-console.log('✅ TRILINGUAL TRANSLATOR COMPILED SUCCESSFULLY.');
+console.log(fullOut);
+fs.writeFileSync('/root/.openclaw/workspace/voynich-repo/translation-output.txt', fullOut);

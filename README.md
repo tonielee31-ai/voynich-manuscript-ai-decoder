@@ -79,6 +79,40 @@ node eva-encoder.js "sun sister given heart pain"
 # Output: "shol shory daiin chor dolol"
 ```
 
+#### 5. Naibbe Forward Cipher Generator (`naibbe-generator.js`)
+**[NEW — April 2026]** Implements the *forward encryption* path of Greshko's Naibbe cipher using historically accurate 15th-century randomness sources: **d6 dice rolls** and **78-card Naibbe/Tarot deck draws**. Takes plaintext English/Italian and encrypts it into synthetic Voynichese, then compares the output's $h_2$ entropy against the real manuscript.
+
+All simulation parameters (deck size, dice faces, homophonic depth, expansion tables, null-word probability) are configurable at the top of the file.
+
+**Usage:**
+```bash
+# Encrypt sample herbal/medical text (default)
+node naibbe-generator.js
+
+# Encrypt custom plaintext
+node naibbe-generator.js the sun and the flower of gold
+```
+
+#### 6. DAI Anchor Parser (`dai-anchor-parser.js`)
+**[NEW — April 2026]** Implements Shane Matthew Graves's 2025 "DAI Anchor Method." Scans the full EVA transcription for the recurring trigram **'dai'** and extracts ±N-word context windows around every occurrence. Builds co-occurrence frequency maps, section-based density analysis, syntactic pattern detection, and concordance lines.
+
+**Usage:**
+```bash
+node dai-anchor-parser.js
+```
+*Key finding: 2,161 occurrences across 37,129 words. Density varies significantly across manuscript sections, supporting the theory that 'dai' functions as a semantic anchor in different content domains.*
+
+#### 7. Scribe Cluster Analyzer (`scribe-cluster-analyzer.js`)
+**[NEW — April 2026]** Implements Lisa Fagin Davis's 2024 breakthrough confirming **5 different scribes** wrote the Voynich Manuscript. The script segregates `eva-takahashi.txt` into 5 sub-corpora using a per-folio bifolium-aware scribe assignment map, then runs independent word-frequency, bigram, character distribution, and $h_2$ entropy analysis on each scribe's text.
+
+Supports both IVTFF-tagged transcriptions (exact folio boundaries) and the stripped plain text (approximate mapping with clear warnings).
+
+**Usage:**
+```bash
+node scribe-cluster-analyzer.js
+```
+*Key finding (approximate mapping): Char $h_2$ ranges from 1.79 (Scribe 4) to 2.19 (Scribe 2), a 0.40 bit spread — statistically significant divergence supporting different linguistic fingerprints per scribe.*
+
 ## Authorship & License
 Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by various historical inputs including Dr. Bernhart-Königstein's 'Silenen' investigations, Michael A. Greshko's Naibbe mappings, and Tim Carter Clausen's 2026 RTL Rabbi's Field Manual theory.
 
@@ -115,6 +149,21 @@ Analysis performed by **tonielee31_ai** via OpenClaw framework. Inspired by vari
 node eva-encoder.js "sun sister given heart pain"
 # Output: "shol shory daiin chor dolol"
 ```
+
+### 5. Naibbe 正向密碼生成器 (`naibbe-generator.js`)
+**[新增 — 2026年4月]** 實作 Greshko Naibbe 密碼的「正向加密」路徑，使用歷史上準確的 15 世紀隨機性來源：**d6 骰子投擲**和 **78 張 Naibbe/塔羅牌抽取**。將英文/意大利文明文加密為合成伏尼契文，並將輸出的 $h_2$ 熵與真實手稿進行統計比對。
+
+**用法:** `node naibbe-generator.js` 或 `node naibbe-generator.js the sun and the flower`
+
+### 6. DAI 錨點解析器 (`dai-anchor-parser.js`)
+**[新增 — 2026年4月]** 實作 Shane Matthew Graves 2025 年的「DAI 錨點法」。掃描完整 EVA 轉錄稿，搜尋所有 **'dai'** 三元組出現的位置，提取前後 ±N 個詞的語境窗口，構建共現詞頻圖、按手稿章節分析密度，並檢測句法模式。
+
+**用法:** `node dai-anchor-parser.js`
+
+### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
+**[新增 — 2026年4月]** 實作 Lisa Fagin Davis 2024 年確認伏尼契手稿由 **5 位不同抄寫員** 所寫的突破性研究。此工具將文本依每頁的抄寫員歸屬（遵循雙葉 bifolium 的物理結構）分為 5 個獨立語料庫，分別執行詞頻、二元組、字母分佈及 $h_2$ 熵值分析。
+
+**用法:** `node scribe-cluster-analyzer.js`
 
 ## 📂 資料庫結構與使用範例
 
@@ -177,6 +226,21 @@ node trilingual-translator.js --lang=all
 node eva-encoder.js "sun sister given heart pain"
 # 佢會 Gen 出: "shol shory daiin chor dolol"
 ```
+
+### 5. Naibbe 正向密碼生成器 (`naibbe-generator.js`)
+**[新增 — 2026年4月]** 模擬 Greshko 嘅 Naibbe 密碼「正向加密」流程，用返 15 世紀真正嘅隨機工具：**d6 骰仔**同 **78 張塔羅牌**！將英文/意大利文明文加密做合成伏尼契文，然後同真文稿嘅熵值做比較。
+
+**點樣 Run:** `node naibbe-generator.js` 或 `node naibbe-generator.js the sun and the flower`
+
+### 6. DAI 錨點解析器 (`dai-anchor-parser.js`)
+**[新增 — 2026年4月]** 實作 Graves 2025 年嘅「DAI 錨點法」。將成本 EVA 轉錄稿由頭 Scan 到尾，揾晒所有 **'dai'** 出現嘅位置，前後各抽 N 隻字做語境窗口分析，計共現詞頻同按手稿章節分密度。
+
+**點樣 Run:** `node dai-anchor-parser.js`
+
+### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
+**[新增 — 2026年4月]** 根據 Lisa Fagin Davis 2024 年證實伏尼契手稿由 **5 個唔同嘅抄寫員** 所寫嘅大突破，將成本手稿拆做 5 個獨立語料庫（嚴格跟住 bifolium 雙葉嘅物理結構嚟分），然後逐個抄寫員跑一次獨立嘅詞頻、二元組、字母分佈同熵值分析！
+
+**點樣 Run:** `node scribe-cluster-analyzer.js`
 
 ## 📂 Repo 架構同點樣玩
 

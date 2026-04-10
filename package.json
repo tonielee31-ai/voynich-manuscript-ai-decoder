@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node naibbe-generator.js && node dai-anchor-parser.js && node scribe-cluster-analyzer.js",
+    "naibbe-gen": "node naibbe-generator.js",
+    "dai-anchor": "node dai-anchor-parser.js",
+    "scribe-analyze": "node scribe-cluster-analyzer.js",
+    "naibbe-sim": "node naibbe-simulator.js",
+    "translate": "node trilingual-translator.js",
+    "rtl-parse": "node rtl-judeo-italian-parser.js"
   },
   "keywords": [],
   "author": "",

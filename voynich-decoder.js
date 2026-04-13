@@ -590,6 +590,301 @@ function calculateH2(tokenArray) {
     return h2;
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MODULE 6: INDEX OF COINCIDENCE (Friedman 1922)
+// Measures the probability of drawing two identical letters from a text.
+// Natural languages have characteristic IC values:
+//   English: 1.73, Italian: 1.94, French: 2.02, German: 2.05
+//   Random: 1.00
+// The IC is invariant under simple substitution, making it ideal for
+// identifying the source language of ciphertext.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Reference IC values for candidate languages (normalized, c=26 Latin alphabet)
+const LANGUAGE_IC = {
+    italian:    1.94,
+    latin:      1.84,   // Classical Latin (estimated)
+    occitan:    1.96,   // Close to French/Italian
+    french:     2.02,
+    german:     2.05,
+    english:    1.73,
+    spanish:    1.94,
+    random:     1.00,
+};
+
+function calculateIC(chars) {
+    if (chars.length < 2) return 0;
+    const freq = {};
+    const N = chars.length;
+    for (const c of chars) {
+        if (/[a-z]/i.test(c)) {
+            const lower = c.toLowerCase();
+            freq[lower] = (freq[lower] || 0) + 1;
+        }
+    }
+    const letterCount = Object.values(freq).reduce((s, v) => s + v, 0);
+    if (letterCount < 2) return 0;
+    let sum = 0;
+    for (const n of Object.values(freq)) {
+        sum += n * (n - 1);
+    }
+    // Normalized IC: (sum / (N*(N-1))) * c, where c = number of distinct letters used
+    const c = 26; // Latin alphabet
+    return (sum / (letterCount * (letterCount - 1))) * c;
+}
+
+function closestLanguageByIC(ic) {
+    let closest = 'unknown';
+    let minDiff = Infinity;
+    for (const [lang, refIC] of Object.entries(LANGUAGE_IC)) {
+        const diff = Math.abs(ic - refIC);
+        if (diff < minDiff) {
+            minDiff = diff;
+            closest = lang;
+        }
+    }
+    return { language: closest, distance: minDiff };
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MODULE 7: ZIPF'S LAW VALIDATION
+// Natural languages follow Zipf's law: frequency ∝ 1/rank
+// The Zipf exponent (α) for natural language is typically 0.8-1.2
+// Testing this on decoded output validates whether it "looks like" language.
+// ─────────────────────────────────────────────────────────────────────────────
+
+function calculateZipfExponent(words) {
+    const freq = {};
+    for (const w of words) {
+        const lower = w.toLowerCase();
+        if (lower.length > 0) freq[lower] = (freq[lower] || 0) + 1;
+    }
+    const sorted = Object.values(freq).sort((a, b) => b - a);
+    if (sorted.length < 5) return { exponent: 0, r2: 0 };
+
+    // Use top 50 words for linear regression on log-log scale
+    const n = Math.min(50, sorted.length);
+    let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+    for (let i = 0; i < n; i++) {
+        const x = Math.log(i + 1);
+        const y = Math.log(sorted[i]);
+        sumX += x;
+        sumY += y;
+        sumXY += x * y;
+        sumX2 += x * x;
+    }
+    const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+    const intercept = (sumY - slope * sumX) / n;
+
+    // R² goodness of fit
+    const meanY = sumY / n;
+    let ssTot = 0, ssRes = 0;
+    for (let i = 0; i < n; i++) {
+        const x = Math.log(i + 1);
+        const y = Math.log(sorted[i]);
+        const pred = slope * x + intercept;
+        ssTot += (y - meanY) * (y - meanY);
+        ssRes += (y - pred) * (y - pred);
+    }
+    const r2 = ssTot > 0 ? 1 - ssRes / ssTot : 0;
+
+    return { exponent: -slope, r2 }; // negate slope because relationship is inverse
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MODULE 8: N-GRAM CONTEXT COHERENCE
+// Score sequences of decoded words for contextual coherence.
+// Natural language has word-pair correlations; random text does not.
+// Uses collocations common in medieval Italian/Latin medical texts.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const WORD_COLLOCATIONS = new Set([
+    // Italian medical/herbal collocations
+    'acqua calda', 'acqua fredda', 'acqua rosa', 'olio dolce',
+    'olio rosmarino', 'sale fino', 'miele puro', 'vino bianco',
+    'vino rosso', 'polvere fine', 'radice secca', 'foglia verde',
+    'fiore rosso', 'fiore bianco', 'erba buona', 'erba verde',
+    'corpo umido', 'caldo secco', 'freddo umido', 'caldo umido',
+    'sole luna', 'stella sole', 'cor forte', 'sangue puro',
+    'donna nuda', 'acqua fonte', 'vapore caldo', 'bagno caldo',
+    // Latin collocations
+    'aqua calida', 'aqua frigida', 'aqua rosae', 'oleum dulce',
+    'sal finum', 'mel purum', 'vinum album', 'pulvis finus',
+    'radix sicca', 'folium viride', 'flos albus', 'herba bona',
+    'corpus humidum', 'sol luna', 'cor fortis', 'sanguis purus',
+    // Occitan collocations
+    'aiga calda', 'aiga freda', 'oli dolfo', 'sal fin',
+    'mel pur', 'vin blanc', 'erba bona', 'flor blanca',
+]);
+
+function scoreWordPairCoherence(words) {
+    if (words.length < 2) return 0;
+    let matches = 0;
+    for (let i = 0; i < words.length - 1; i++) {
+        const pair = words[i].toLowerCase() + ' ' + words[i+1].toLowerCase();
+        if (WORD_COLLOCATIONS.has(pair)) matches++;
+    }
+    return matches;
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MODULE 9: POSITIONAL LETTER FREQUENCY ANALYSIS
+// In natural languages, certain letters strongly prefer word-initial or
+// word-final positions. Italian words very frequently end in vowels (>70%).
+// Latin words commonly end in -s, -m, -t, -e.
+// This module scores decoded output against these positional expectations.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Italian: Expected initial letter frequencies (approximate)
+const ITALIAN_INITIAL_FREQ = {
+    'c': 0.12, 's': 0.11, 'p': 0.10, 'd': 0.09, 'a': 0.08,
+    'm': 0.07, 'f': 0.06, 'l': 0.06, 'r': 0.05, 'i': 0.04,
+    'n': 0.04, 'v': 0.04, 'b': 0.03, 'g': 0.03, 't': 0.03,
+    'e': 0.02, 'o': 0.02, 'u': 0.01, 'q': 0.01,
+};
+
+// Italian: words ending in vowels is very common (~70%+)
+function scorePositionalFrequency(words) {
+    if (words.length === 0) return { initialScore: 0, finalVowelRatio: 0 };
+
+    const vowels = new Set('aeiou'.split(''));
+    let vowelEndCount = 0;
+    let initialScore = 0;
+
+    for (const w of words) {
+        if (w.length === 0) continue;
+        const firstChar = w[0].toLowerCase();
+        const lastChar = w[w.length - 1].toLowerCase();
+
+        // Score how well initial letters match Italian distribution
+        if (ITALIAN_INITIAL_FREQ[firstChar]) {
+            initialScore += ITALIAN_INITIAL_FREQ[firstChar];
+        }
+
+        // Count vowel-final words
+        if (vowels.has(lastChar)) vowelEndCount++;
+    }
+
+    return {
+        initialScore: initialScore / Math.max(words.length, 1),
+        finalVowelRatio: vowelEndCount / Math.max(words.length, 1)
+    };
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MODULE 10: EM-INSPIRED MAPPING REFINEMENT
+// Inspired by Kevin Knight's Copiale Cipher decryption (2011).
+// Iteratively adjusts EVA→plaintext character mappings to maximize
+// the output's similarity to Italian letter frequency distribution.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Target Italian letter frequencies (approximate, from corpus analysis)
+const ITALIAN_LETTER_FREQ = {
+    'a': 0.1174, 'b': 0.0092, 'c': 0.0450, 'd': 0.0373,
+    'e': 0.1179, 'f': 0.0095, 'g': 0.0164, 'h': 0.0154,
+    'i': 0.1128, 'l': 0.0651, 'm': 0.0251, 'n': 0.0688,
+    'o': 0.0983, 'p': 0.0305, 'q': 0.0051, 'r': 0.0637,
+    's': 0.0498, 't': 0.0562, 'u': 0.0301, 'v': 0.0210,
+    'z': 0.0049,
+};
+
+function emRefineCaspariMap(evaLines, iterations = 3) {
+    // Start with the base Caspari mapping
+    const currentMap = { ...CASPARI_MAP };
+
+    // Decode all lines with current mapping
+    function decodeAll(map) {
+        const allChars = [];
+        for (const line of evaLines) {
+            const words = line.replace(/<[^>]+>/g, '').trim()
+                .split(/[\s.]+/).filter(w => w.length > 0 && !w.startsWith('<'));
+            for (const word of words) {
+                const decoded = caspariDecodeWithMap(word, map);
+                for (const c of decoded.toLowerCase()) {
+                    if (/[a-z]/.test(c)) allChars.push(c);
+                }
+            }
+        }
+        return allChars;
+    }
+
+    function caspariDecodeWithMap(evaWord, map) {
+        let result = '';
+        let i = 0;
+        const w = evaWord.replace(/[!*=%{}]/g, '');
+        while (i < w.length) {
+            let matched = false;
+            if (i + 2 < w.length) {
+                const tri = w.slice(i, i + 3);
+                if (map[tri]) { result += map[tri]; i += 3; matched = true; }
+            }
+            if (!matched && i + 1 < w.length) {
+                const bi = w.slice(i, i + 2);
+                if (map[bi]) { result += map[bi]; i += 2; matched = true; }
+            }
+            if (!matched) { result += map[w[i]] || w[i]; i++; }
+        }
+        return result;
+    }
+
+    // Calculate KL divergence from Italian distribution
+    function klDivergence(chars) {
+        const freq = {};
+        for (const c of chars) freq[c] = (freq[c] || 0) + 1;
+        const total = chars.length;
+        let kl = 0;
+        for (const [letter, targetFreq] of Object.entries(ITALIAN_LETTER_FREQ)) {
+            const observedFreq = (freq[letter] || 0) / total;
+            if (observedFreq > 0 && targetFreq > 0) {
+                kl += observedFreq * Math.log2(observedFreq / targetFreq);
+            }
+        }
+        return kl;
+    }
+
+    let bestKL = Infinity;
+    let bestMap = { ...currentMap };
+
+    // Only adjust single-character mappings (the core cipher)
+    const singleEva = 'aeioydlrnstqkpfmghxv'.split('');
+    const targetLetters = 'aeioutlrnscdpfmghxvq'.split('');
+
+    for (let iter = 0; iter < iterations; iter++) {
+        const chars = decodeAll(currentMap);
+        const kl = klDivergence(chars);
+
+        if (kl < bestKL) {
+            bestKL = kl;
+            bestMap = { ...currentMap };
+        }
+
+        // Try random single-character swaps to reduce KL divergence
+        for (let trial = 0; trial < 20; trial++) {
+            const testMap = { ...currentMap };
+            const idx1 = Math.floor(Math.random() * singleEva.length);
+            const idx2 = Math.floor(Math.random() * targetLetters.length);
+            const evaChar = singleEva[idx1];
+            testMap[evaChar] = targetLetters[idx2];
+
+            const testChars = decodeAll(testMap);
+            const testKL = klDivergence(testChars);
+
+            if (testKL < bestKL) {
+                bestKL = testKL;
+                bestMap = { ...testMap };
+                Object.assign(currentMap, testMap);
+            }
+        }
+    }
+
+    return { map: bestMap, kl: bestKL };
+}
+
 // Check if a word looks like it could be Italian/Latin/Occitan
 function wordPlausibility(word) {
     if (word.length <= 1) return 0.3;
@@ -660,7 +955,7 @@ function wordPlausibility(word) {
 function scoreCandidate(plaintext, method, lineIndex) {
     const text = plaintext.toLowerCase();
     const chars = text.replace(/\s+/g, '').split('');
-    if (chars.length === 0) return { total: 0, h2: '0', vowelRatio: '0%', bigramMatch: '0%', dictMatch: '0%', morphScore: '0%' };
+    if (chars.length === 0) return { total: 0, h2: '0', vowelRatio: '0%', bigramMatch: '0%', dictMatch: '0%', morphScore: '0%', ic: '0', zipf: '0' };
 
     let score = 0;
 
@@ -734,6 +1029,24 @@ function scoreCandidate(plaintext, method, lineIndex) {
     }
     score += Math.min(10, domainBonus);
 
+    // 7. NEW: Index of Coincidence scoring (Friedman 1922)
+    // Italian IC is ~1.94; closer to target = higher score
+    const ic = calculateIC(chars);
+    const icDist = Math.abs(ic - LANGUAGE_IC.italian);
+    if (icDist < 0.15) score += 8;       // Very close to Italian IC
+    else if (icDist < 0.30) score += 4;   // Reasonably close
+    else if (icDist > 0.60) score -= 3;   // Very far from any natural language
+
+    // 8. NEW: Positional frequency analysis (word-initial/final patterns)
+    const posFreq = scorePositionalFrequency(words);
+    if (posFreq.finalVowelRatio > 0.60) score += 5;  // Italian words mostly end in vowels
+    else if (posFreq.finalVowelRatio > 0.45) score += 2;
+    score += Math.round(posFreq.initialScore * 15);     // Initial letter distribution match
+
+    // 9. NEW: N-gram context coherence (word collocations)
+    const collocHits = scoreWordPairCoherence(words);
+    score += Math.min(8, collocHits * 4); // Up to 8 bonus points for collocations
+
     return {
         total: Math.max(0, Math.round(score)),
         h2: h2.toFixed(3),
@@ -741,7 +1054,9 @@ function scoreCandidate(plaintext, method, lineIndex) {
         bigramMatch: (avgBigramScore).toFixed(1),
         dictMatch: (dictRatio * 100).toFixed(1) + '%',
         morphScore: (avgPlausibility * 100).toFixed(1) + '%',
-        domain: domainName
+        domain: domainName,
+        ic: ic.toFixed(3),
+        finalVowelPct: (posFreq.finalVowelRatio * 100).toFixed(0) + '%',
     };
 }
 
@@ -857,8 +1172,9 @@ if (fullRun && !section) {
 const endIdx = Math.min(startLine + numLines, lines.length);
 
 console.log('╔══════════════════════════════════════════════════════════════════════╗');
-console.log('║  VOYNICH MANUSCRIPT MULTI-THEORY DECODER                            ║');
-console.log('║  Naibbe Inverse · Caspari-Faccini · Occitan Hypothesis              ║');
+console.log('║  VOYNICH MANUSCRIPT MULTI-THEORY DECODER V4                         ║');
+console.log('║  10 Modules: Naibbe · Caspari · Occitan · Currier · Scoring         ║');
+console.log('║  + IC Analysis · Zipf · N-gram Coherence · Positional · EM Refine   ║');
 console.log('╚══════════════════════════════════════════════════════════════════════╝\n');
 
 if (section) {
@@ -893,7 +1209,7 @@ for (let i = startLine; i < endIdx; i++) {
 
         if (showDetail) {
             const domainTag = r.score.domain ? ` [${r.score.domain}]` : '';
-            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch} | morph=${r.score.morphScore}${domainTag}`);
+            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | IC=${r.score.ic} | endV=${r.score.finalVowelPct} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch} | morph=${r.score.morphScore}${domainTag}`);
         }
 
         if (!methodScores[r.method]) methodScores[r.method] = { total: 0, count: 0 };
@@ -986,13 +1302,151 @@ if (sortedMatches.length > 0) {
 
 // ── Write output file ───────────────────────────────────────────────────
 
+// ── NEW: Index of Coincidence Analysis (Friedman 1922) ─────────────────
+
+appendOutput('\n=== INDEX OF COINCIDENCE ANALYSIS (Friedman 1922) ===\n');
+
+// IC of raw EVA text
+const evaIC = calculateIC(allEVAChars);
+const evaClosest = closestLanguageByIC(evaIC);
+appendOutput(`Raw EVA text IC:           ${evaIC.toFixed(4)} → closest: ${evaClosest.language} (distance: ${evaClosest.distance.toFixed(3)})`);
+
+// IC of each decoded method
+if (sortedMethods.length > 0) {
+    for (const m of sortedMethods) {
+        const methodLines = [];
+        for (let i = startLine; i < Math.min(startLine + 200, endIdx); i++) {
+            const result = decodeLine(lines[i], i);
+            if (!result) continue;
+            const match = result.results.find(r => r.method === m.method);
+            if (match) methodLines.push(match.plaintext);
+        }
+        const methodChars = methodLines.join(' ').replace(/\s+/g, '').split('');
+        const methodIC = calculateIC(methodChars);
+        const methodClosest = closestLanguageByIC(methodIC);
+        appendOutput(`${m.method.padEnd(27)}IC: ${methodIC.toFixed(4)} → closest: ${methodClosest.language} (distance: ${methodClosest.distance.toFixed(3)})`);
+    }
+}
+
+appendOutput('\nReference IC values:');
+for (const [lang, ic] of Object.entries(LANGUAGE_IC)) {
+    appendOutput(`  ${lang.padEnd(12)} ${ic.toFixed(2)}`);
+}
+
+
+// ── NEW: Zipf's Law Analysis ──────────────────────────────────────────
+
+appendOutput('\n=== ZIPF\'S LAW ANALYSIS ===\n');
+appendOutput('Natural language follows Zipf\'s law (exponent α ≈ 1.0, R² > 0.90)\n');
+
+// Raw EVA word frequencies
+const evaWords = lines.slice(startLine, endIdx).join(' ')
+    .replace(/<[^>]+>/g, '').replace(/[!*=%{}]/g, '')
+    .split(/[\s.]+/).filter(w => w.length > 0);
+const evaZipf = calculateZipfExponent(evaWords);
+appendOutput(`Raw EVA:       α = ${evaZipf.exponent.toFixed(3)}, R² = ${evaZipf.r2.toFixed(4)}`);
+
+// Best method decoded words
+if (sortedMethods.length > 0) {
+    for (const m of sortedMethods) {
+        const methodWords = [];
+        for (let i = startLine; i < Math.min(startLine + 200, endIdx); i++) {
+            const result = decodeLine(lines[i], i);
+            if (!result) continue;
+            const match = result.results.find(r => r.method === m.method);
+            if (match) methodWords.push(...match.plaintext.split(/\s+/).filter(w => w.length > 0));
+        }
+        const mZipf = calculateZipfExponent(methodWords);
+        appendOutput(`${m.method.padEnd(15)}α = ${mZipf.exponent.toFixed(3)}, R² = ${mZipf.r2.toFixed(4)}`);
+    }
+}
+appendOutput(`\nInterpretation: α ≈ 1.0 and R² > 0.90 indicates natural language.`);
+
+
+// ── NEW: EM-Refined Mapping (if full run) ─────────────────────────────
+
+if (fullRun || numLines >= 100) {
+    appendOutput('\n=== EM-INSPIRED MAPPING REFINEMENT (Knight 2011) ===\n');
+    appendOutput('Iteratively adjusting Caspari mapping to minimize KL divergence from Italian...\n');
+
+    const sampleLines = lines.slice(startLine, Math.min(startLine + 500, endIdx));
+    const emResult = emRefineCaspariMap(sampleLines, 5);
+
+    appendOutput(`Final KL divergence from Italian: ${emResult.kl.toFixed(4)}`);
+    appendOutput(`\nRefined character mappings (changed from base Caspari):`);
+
+    let changes = 0;
+    for (const [evaChar, plainChar] of Object.entries(emResult.map)) {
+        if (evaChar.length === 1 && CASPARI_MAP[evaChar] && CASPARI_MAP[evaChar] !== plainChar) {
+            appendOutput(`  EVA '${evaChar}' → '${plainChar}' (was '${CASPARI_MAP[evaChar]}')`);
+            changes++;
+        }
+    }
+    if (changes === 0) {
+        appendOutput('  No improvements found — base Caspari mapping is already optimal.');
+    } else {
+        appendOutput(`\n${changes} character mapping(s) refined.`);
+
+        // Decode a sample with the refined map to demonstrate improvement
+        appendOutput(`\nSample decoded lines with EM-refined mapping:`);
+        const emSampleStart = startLine;
+        const emSampleEnd = Math.min(emSampleStart + 5, endIdx);
+        for (let i = emSampleStart; i < emSampleEnd; i++) {
+            const evaLine = lines[i];
+            const words = evaLine.replace(/<[^>]+>/g, '').trim()
+                .split(/[\s.]+/).filter(w => w.length > 0 && !w.startsWith('<'));
+            const emDecoded = words.map(w => {
+                let result = '';
+                let j = 0;
+                const clean = w.replace(/[!*=%{}]/g, '');
+                while (j < clean.length) {
+                    let matched = false;
+                    if (j + 2 < clean.length) {
+                        const tri = clean.slice(j, j+3);
+                        if (emResult.map[tri]) { result += emResult.map[tri]; j += 3; matched = true; }
+                    }
+                    if (!matched && j + 1 < clean.length) {
+                        const bi = clean.slice(j, j+2);
+                        if (emResult.map[bi]) { result += emResult.map[bi]; j += 2; matched = true; }
+                    }
+                    if (!matched) { result += emResult.map[clean[j]] || clean[j]; j++; }
+                }
+                return result;
+            });
+            appendOutput(`  [Line ${i+1}] ${emDecoded.join(' ').slice(0, 70)}`);
+        }
+    }
+}
+
+
+// ── NEW: Positional Frequency Summary ──────────────────────────────────
+
+appendOutput('\n=== POSITIONAL FREQUENCY ANALYSIS ===\n');
+
+if (sortedMethods.length > 0) {
+    for (const m of sortedMethods) {
+        const methodWords = [];
+        for (let i = startLine; i < Math.min(startLine + 200, endIdx); i++) {
+            const result = decodeLine(lines[i], i);
+            if (!result) continue;
+            const match = result.results.find(r => r.method === m.method);
+            if (match) methodWords.push(...match.plaintext.split(/\s+/).filter(w => w.length > 0));
+        }
+        const pf = scorePositionalFrequency(methodWords);
+        appendOutput(`${m.method.padEnd(27)}Vowel-final: ${(pf.finalVowelRatio * 100).toFixed(1)}% | Init. dist. match: ${pf.initialScore.toFixed(3)}`);
+    }
+    appendOutput(`\nTarget: Italian has ~70% vowel-final words.`);
+}
+
+
 if (outputFile) {
     fs.writeFileSync(outputFile, fullOutput);
     console.log(`\nOutput written to ${outputFile}`);
 }
 
-appendOutput('\n=== DECODING COMPLETE ===');
-appendOutput(`Processed ${totalLines} lines using 3 decoding methods.`);
+appendOutput('\n=== DECODING COMPLETE (V4: 10-Module Analysis) ===');
+appendOutput(`Processed ${totalLines} lines using 3 decoding methods + 5 new analysis modules.`);
+appendOutput('New in V4: IC Analysis, Zipf\'s Law, N-gram Coherence, Positional Freq, EM Refinement');
 appendOutput('Use --detail for per-line scoring breakdown.');
 appendOutput('Use --section=A or --section=B for Currier A/B split analysis.');
 appendOutput('Use --full for complete manuscript processing.');

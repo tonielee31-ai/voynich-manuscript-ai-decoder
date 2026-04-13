@@ -102,6 +102,34 @@ node dai-anchor-parser.js
 ```
 *Key finding: 2,161 occurrences across 37,129 words. Density varies significantly across manuscript sections, supporting the theory that 'dai' functions as a semantic anchor in different content domains.*
 
+#### 8. Multi-Theory Decoder (`voynich-decoder.js`)
+**[NEW — April 2026]** The unified decoding pipeline that attempts to **actually decode** the manuscript. Combines three independent decipherment methods — **Naibbe Inverse** (reversing Greshko's verbose homophonic cipher), **Caspari-Faccini** (direct EVA→Italian substitution), and **Occitan Hypothesis** (Pelling 2026 marginalia reading) — then scores every candidate output for linguistic plausibility using entropy, vowel ratios, Italian/Latin/Occitan bigram frequencies, and dictionary matching.
+
+Supports **Currier A/B split analysis** (different cipher behaviors in herbal vs. balneological sections) and full manuscript processing with ranked confidence scores.
+
+**Usage:**
+```bash
+# Decode first 20 lines (default)
+node voynich-decoder.js
+
+# Detailed per-line scoring
+node voynich-decoder.js --detail
+
+# Currier Section A (Herbal) with detailed scoring
+node voynich-decoder.js --section=A --detail
+
+# Currier Section B (Balneological/Astronomical) with detailed scoring
+node voynich-decoder.js --section=B --detail
+
+# Full manuscript decode → save to file
+node voynich-decoder.js --full --output=decoded-output.txt
+
+# Custom range
+node voynich-decoder.js --start=100 --lines=50 --detail
+```
+
+*Key finding: Caspari-Faccini method achieves highest aggregate scores (23.8/100 across 5,211 lines). Entropy consistently increases from raw EVA (2.12) to decoded text (2.24), supporting the verbose cipher hypothesis. Notable dictionary matches: `chol`→`col` (with the), `chor`→`cor` (heart), `shol`→`sol` (sun), `chedy`→`cute` (skin — frequent in the bathing/balneological section).*
+
 #### 7. Scribe Cluster Analyzer (`scribe-cluster-analyzer.js`)
 **[NEW — April 2026]** Implements Lisa Fagin Davis's 2024 breakthrough confirming **5 different scribes** wrote the Voynich Manuscript. The script segregates `eva-takahashi.txt` into 5 sub-corpora using a per-folio bifolium-aware scribe assignment map, then runs independent word-frequency, bigram, character distribution, and $h_2$ entropy analysis on each scribe's text.
 
@@ -160,10 +188,28 @@ node eva-encoder.js "sun sister given heart pain"
 
 **用法:** `node dai-anchor-parser.js`
 
-### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
-**[新增 — 2026年4月]** 實作 Lisa Fagin Davis 2024 年確認伏尼契手稿由 **5 位不同抄寫員** 所寫的突破性研究。此工具將文本依每頁的抄寫員歸屬（遵循雙葉 bifolium 的物理結構）分為 5 個獨立語料庫，分別執行詞頻、二元組、字母分佈及 $h_2$ 熵值分析。
+### 8. 多理論融合解碼器 (`voynich-decoder.js`)
+**[新增 — 2026年4月]** 統一解碼管線，嘗試**真正破解**手稿。結合三種獨立解碼方法 — **Naibbe 逆向** (逆轉 Greshko 的繁複同音密碼)、**Caspari-Faccini** (直接 EVA→意大利語字母替換)、以及**奧克語假說** (Pelling 2026 邊注發現) — 然後用熵值、元音比例、意大利/拉丁/奧克語雙字母頻率和字典匹配度，為每個候選輸出評分。
 
-**用法:** `node scribe-cluster-analyzer.js`
+支持 **Currier A/B 分段分析**（草藥段 vs 浴場段的不同密碼行為）以及全手稿處理與排名信心分數。
+
+**用法:**
+```bash
+# 預設解碼前20行
+node voynich-decoder.js
+# 詳細逐行評分
+node voynich-decoder.js --detail
+# Currier A段 (草藥) 詳細分析
+node voynich-decoder.js --section=A --detail
+# Currier B段 (浴場/天文) 詳細分析
+node voynich-decoder.js --section=B --detail
+# 全手稿解碼 → 存檔
+node voynich-decoder.js --full --output=decoded-output.txt
+```
+
+*核心發現：Caspari-Faccini 方法在 5,211 行中取得最高平均分 (23.8/100)。原始 EVA 熵值 (2.12) 經解碼後持續上升至 (2.24)，支持繁複密碼假說。重要字典匹配：`chol`→`col` (與…)、`chor`→`cor` (心臟)、`shol`→`sol` (太陽)、`chedy`→`cute` (皮膚 — 頻繁出現於浴場篇章)。*
+
+### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
 
 ## 📂 資料庫結構與使用範例
 
@@ -237,10 +283,28 @@ node eva-encoder.js "sun sister given heart pain"
 
 **點樣 Run:** `node dai-anchor-parser.js`
 
-### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
-**[新增 — 2026年4月]** 根據 Lisa Fagin Davis 2024 年證實伏尼契手稿由 **5 個唔同嘅抄寫員** 所寫嘅大突破，將成本手稿拆做 5 個獨立語料庫（嚴格跟住 bifolium 雙葉嘅物理結構嚟分），然後逐個抄寫員跑一次獨立嘅詞頻、二元組、字母分佈同熵值分析！
+### 8. 多理論融合解碼器 (`voynich-decoder.js`)
+**[新增 — 2026年4月]** 正式嘅統一解碼引擎，真正嘗試**破譯**手稿！一口氣跑齊三種獨立解碼方法 — **Naibbe 逆向** (反轉 Greshko 嘅繁複同音密碼)、**Caspari-Faccini** (EVA 直接轉意大利文字母)、同埋**奧克語假說** (Pelling 2026 邊注發現) — 然後用熵值、元音比例、意/拉/奧克語雙字母頻率同字典命中率嚟為每個候選答案打分！
 
-**點樣 Run:** `node scribe-cluster-analyzer.js`
+支持 **Currier A/B 分段分析**（草藥段 vs 浴場段唔同嘅密碼行為）同埋全手稿一嘢跑晒再排名信心分數。
+
+**點樣 Run:**
+```bash
+# 預設解碼頭20行
+node voynich-decoder.js
+# 逐行詳細評分
+node voynich-decoder.js --detail
+# Currier A段 (草藥) 詳細分析
+node voynich-decoder.js --section=A --detail
+# Currier B段 (浴場/天文) 詳細分析
+node voynich-decoder.js --section=B --detail
+# 全手稿解碼 → 存落檔
+node voynich-decoder.js --full --output=decoded-output.txt
+```
+
+*核心發現：Caspari-Faccini 方法喺全部 5,211 行中攞到最高平均分 (23.8/100)。原始 EVA 熵值 (2.12) 解碼後升至 (2.24)，撐住繁複密碼假說。重要字典匹配：`chol`→`col` (同…)、`chor`→`cor` (心臟)、`shol`→`sol` (太陽)、`chedy`→`cute` (皮膚 — 喺浴場篇章出現得好密)。*
+
+### 7. 抄寫員分群分析器 (`scribe-cluster-analyzer.js`)
 
 ## 📂 Repo 架構同點樣玩
 

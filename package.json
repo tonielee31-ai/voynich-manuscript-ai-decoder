@@ -9,7 +9,12 @@
     "scribe-analyze": "node scribe-cluster-analyzer.js",
     "naibbe-sim": "node naibbe-simulator.js",
     "translate": "node trilingual-translator.js",
-    "rtl-parse": "node rtl-judeo-italian-parser.js"
+    "rtl-parse": "node rtl-judeo-italian-parser.js",
+    "decode": "node voynich-decoder.js",
+    "decode-detail": "node voynich-decoder.js --detail",
+    "decode-a": "node voynich-decoder.js --section=A --detail",
+    "decode-b": "node voynich-decoder.js --section=B --detail",
+    "decode-full": "node voynich-decoder.js --full --output=decoded-output.txt"
   },
   "keywords": [],
   "author": "",

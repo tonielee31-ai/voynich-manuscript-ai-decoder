@@ -190,66 +190,202 @@ function caspariDecode(evaWord) {
 // Uses Caspari letter mapping but scores against Occitan vocabulary
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Common Occitan words (botanical/medical context, ~14th-15th century)
+// ═══════════════════════════════════════════════════════════════════════════
+// EXPANDED VOCABULARY DATABASES
+// Medieval 15th-century Italian, Latin, & Occitan — curated for the VM's
+// likely content domains: herbal medicine, astrology, bathing, recipes.
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Common Occitan words (~14th-15th century, medical/botanical/astronomical)
 const OCCITAN_WORDS = new Set([
-    // Articles & pronouns
+    // ── Articles, pronouns, prepositions ──
     'lo', 'la', 'los', 'las', 'li', 'le', 'un', 'una', 'de', 'del', 'al',
     'que', 'qui', 'qual', 'en', 'es', 'o', 'e', 'a', 'per', 'se', 'si',
-    'ben', 'tot', 'mai', 'cal', 'pas', 'ont', 'son', 'lor', 'nos',
-    // Botanical/medical terms
+    'ben', 'tot', 'mai', 'cal', 'pas', 'ont', 'son', 'lor', 'nos', 'vos',
+    'el', 'als', 'des', 'sus', 'jos', 'ab', 'am', 'dan', 'tro', 'pro',
+    'tant', 'molt', 'plus', 'mens', 'ren', 'res', 'aquel', 'aquesta',
+    'so', 'sa', 'sos', 'sas', 'mon', 'ma', 'mos', 'mas', 'ton', 'ta',
+    // ── Botanical/herbal terms ──
     'flor', 'fuelha', 'raitz', 'erba', 'planta', 'aiga', 'oli', 'sal',
     'mel', 'ros', 'rosa', 'vin', 'pan', 'lait', 'uelh', 'cor', 'man',
     'cap', 'pel', 'os', 'sang', 'carn', 'peis', 'color', 'odor', 'calor',
     'dolor', 'amor', 'honor', 'arbor', 'sol', 'luna', 'aur', 'fer',
-    // Verbs (infinitive)
+    'flors', 'fuelhas', 'raitz', 'grana', 'fuolha', 'frucha', 'fruch',
+    'escorsa', 'suc', 'poma', 'pomier', 'oliver', 'laurier', 'figuier',
+    'notz', 'amenla', 'poma', 'pefo', 'moric', 'ordi', 'froment',
+    'safra', 'pefo', 'gingibre', 'cummin', 'anis', 'fenolh', 'menta',
+    'salvia', 'comfrei', 'verbena', 'lavanda', 'ruda', 'absinti',
+    'coriandre', 'canela', 'girofle', 'mostarda', 'pefo', 'opi',
+    'balsamina', 'viola', 'liri', 'ortiga', 'plantain', 'achi',
+    // ── Medical/body terms ──
+    'cors', 'testa', 'front', 'uelhs', 'nas', 'boca', 'dent', 'lenga',
+    'gorja', 'col', 'espatla', 'bras', 'det', 'peitrina', 'ventre',
+    'esquina', 'camba', 'genolh', 'pe', 'tallon', 'costela', 'ossamenta',
+    'nervi', 'vena', 'polmon', 'fetge', 'estomac', 'budel', 'renh',
+    'vesiga', 'matriu', 'pols', 'febre', 'mal', 'plaga', 'nafra',
+    'enfladura', 'apostema', 'dolor', 'malautia', 'remedi', 'cura',
+    // ── Astrology/astronomy ──
+    'estela', 'cel', 'planeta', 'signe', 'aries', 'taur', 'gemini',
+    'cancer', 'leo', 'virgo', 'libra', 'escorpion', 'sagitari',
+    'capricorn', 'aquari', 'peisses', 'saturne', 'jupiter', 'mars',
+    'venus', 'mercuri', 'luna', 'sol', 'eclipsi', 'conjunction',
+    // ── Verbs (infinitive) ──
     'far', 'dir', 'dar', 'aver', 'esser', 'metre', 'penre', 'batre',
-    'bolir', 'cozer', 'talhar', 'mesclar', 'oliar',
-    // Adjectives
-    'bon', 'bel', 'gran', 'pauc', 'blanc', 'nòu', 'aut',
-    // Medical terms from Pelling's reading
+    'bolir', 'cozer', 'talhar', 'mesclar', 'oliar', 'curar', 'guarir',
+    'lavar', 'secar', 'moler', 'fondre', 'destillar', 'infuzir',
+    'temprar', 'aplicar', 'beire', 'manjar', 'dormir', 'purgar',
+    'sanhar', 'anar', 'venir', 'tornar', 'trobar', 'vezer', 'auzir',
+    // ── Adjectives ──
+    'bon', 'bel', 'gran', 'pauc', 'blanc', 'nòu', 'aut', 'bas',
+    'fort', 'dofo', 'caud', 'freg', 'sec', 'umit', 'dur', 'mol',
+    'verd', 'roge', 'negre', 'groc', 'blau', 'ros', 'clar', 'escur',
+    // ── Numbers ──
+    'un', 'dos', 'tres', 'quatre', 'cinc', 'seis', 'set', 'uech', 'nòu', 'detz',
+    // ── Pelling's f17r marginalia reading ──
     'meilhor', 'aller', 'lucent', 'balsamina',
-    // Additional herbal Occitan
-    'salvia', 'menta', 'fenolh', 'comfrei', 'verbena', 'lavanda',
-    'ruda', 'absinti', 'coriandre', 'gingembre', 'canela', 'safran',
+    // ── Bathing/water terms ──
+    'banh', 'aiga', 'font', 'tina', 'vapor', 'calda', 'freda',
 ]);
 
-// Common Italian words (medical/botanical 15th century context)
+// Common Italian words (15th century medical/botanical/astronomical context)
 const ITALIAN_WORDS = new Set([
-    // Articles & pronouns
+    // ── Articles, pronouns, prepositions ──
     'il', 'lo', 'la', 'le', 'li', 'un', 'una', 'di', 'del', 'al', 'da',
     'che', 'chi', 'cui', 'per', 'con', 'in', 'su', 'se', 'si', 'non',
-    'e', 'o', 'a', 'ma', 'ne', 'ci', 'vi', 'ni', 'no', 'co',
-    // Nouns
-    'cuore', 'sole', 'fiore', 'colore', 'odore', 'dolore', 'amore',
-    'arbore', 'acqua', 'olio', 'sale', 'miele', 'vino', 'pane',
-    'latte', 'uovo', 'ossa', 'sangue', 'carne', 'pelle', 'cute',
-    'occhio', 'mano', 'capo', 'foglia', 'radice', 'erba', 'pianta',
-    'seme', 'frutto', 'fiore', 'rosa', 'palmo', 'luna', 'stella',
-    'oro', 'ferro', 'fuoco', 'terra', 'aria', 'torpore',
-    // Verbs
+    'e', 'o', 'a', 'ma', 'ne', 'ci', 'vi', 'ni', 'no', 'co', 'mi', 'ti',
+    'nel', 'del', 'dal', 'col', 'sul', 'alla', 'della', 'nella', 'sulla',
+    'allo', 'dello', 'nello', 'sullo', 'dallo',
+    'questo', 'quella', 'tutti', 'ogni', 'suo', 'sua', 'suoi', 'loro',
+    'poi', 'ora', 'ancora', 'sempre', 'anche', 'come', 'dove', 'quando',
+    'molto', 'poco', 'tanto', 'quanto', 'primo', 'secondo', 'altro',
+    // ── Body parts (critical for medical text) ──
+    'cuore', 'cor', 'testa', 'capo', 'fronte', 'occhio', 'occhi',
+    'naso', 'bocca', 'dente', 'denti', 'lingua', 'gola', 'collo',
+    'spalla', 'braccio', 'mano', 'mani', 'dito', 'dita', 'petto',
+    'seno', 'ventre', 'stomaco', 'schiena', 'gamba', 'ginocchio',
+    'piede', 'piedi', 'tallone', 'costola', 'osso', 'ossa',
+    'nervo', 'vena', 'sangue', 'polmone', 'fegato', 'intestino',
+    'rene', 'reni', 'vescica', 'matrice', 'polso', 'cute', 'pelle',
+    'carne', 'pelo', 'capello', 'capelli', 'unghia',
+    // ── Plants & herbs (herbal section vocabulary) ──
+    'fiore', 'fiori', 'foglia', 'foglie', 'radice', 'radici',
+    'erba', 'erbe', 'pianta', 'piante', 'seme', 'semi', 'frutto',
+    'frutti', 'corteccia', 'succo', 'rosa', 'rose', 'giglio',
+    'viola', 'lavanda', 'salvia', 'menta', 'rosmarino', 'basilico',
+    'timo', 'origano', 'finocchio', 'cumino', 'anice', 'zafferano',
+    'cannella', 'garofano', 'mostarda', 'oppio', 'balsamo',
+    'ortica', 'piantaggine', 'assenzio', 'camomilla', 'verbena',
+    'ruta', 'alloro', 'olivo', 'fico', 'noce', 'mandorla', 'pomo',
+    'albero', 'arbore', 'palmo', 'palma', 'quercia', 'cipresso',
+    // ── Medical/pharmaceutical terms ──
+    'ricetta', 'dose', 'cura', 'rimedio', 'polvere', 'decotto',
+    'infuso', 'unguento', 'sciroppo', 'impiastro', 'pillola',
+    'medicina', 'veleno', 'antidoto', 'febbre', 'male', 'malattia',
+    'dolore', 'torpore', 'gonfiore', 'piaga', 'ferita', 'tosse',
+    'catarro', 'peste', 'gotta', 'paralisi', 'epilessia',
+    'sorore', 'canone', 'compie', 'pervivi',
+    // ── Substances & ingredients ──
+    'acqua', 'olio', 'sale', 'miele', 'vino', 'aceto', 'latte',
+    'uovo', 'uova', 'burro', 'cera', 'grasso', 'resina', 'gomma',
+    'zolfo', 'mercurio', 'arsenico', 'antimonio', 'allume', 'vitriolo',
+    'oro', 'argento', 'ferro', 'rame', 'piombo', 'stagno',
+    'colore', 'odore', 'sapore', 'calore', 'fuoco', 'terra', 'aria',
+    // ── Astronomy/astrology ──
+    'sole', 'sol', 'luna', 'stella', 'stelle', 'cielo', 'pianeta',
+    'segno', 'ariete', 'toro', 'gemelli', 'cancro', 'leone',
+    'vergine', 'bilancia', 'scorpione', 'sagittario', 'capricorno',
+    'acquario', 'pesci', 'saturno', 'giove', 'marte', 'venere',
+    'mercurio', 'eclisse', 'congiunzione', 'ascendente',
+    'polar', 'toare',
+    // ── Verbs (common 15th-c medical/recipe language) ──
     'dare', 'fare', 'dire', 'avere', 'essere', 'mettere', 'prendere',
     'bollire', 'cuocere', 'tagliare', 'mescolare', 'oliare', 'fornare',
-    // Medical
-    'ricetta', 'dose', 'cura', 'rimedio', 'polvere', 'decotto',
-    'sorore', 'canone', 'compie', 'pervivi',
-    // Adjectives & others
+    'lavare', 'seccare', 'macinare', 'fondere', 'distillare',
+    'infondere', 'temperare', 'applicare', 'bere', 'mangiare',
+    'dormire', 'purgare', 'sanare', 'guarire', 'curare',
+    'andare', 'venire', 'tornare', 'trovare', 'vedere', 'udire',
+    // ── Adjectives ──
     'buono', 'bello', 'grande', 'piccolo', 'bianco', 'nuovo', 'alto',
-    'dolce', 'forte', 'ogni', 'tale', 'quale', 'come', 'quando',
-    'poi', 'ora', 'col', 'sol', 'cor',
+    'dolce', 'forte', 'ogni', 'tale', 'quale', 'basso', 'caldo',
+    'freddo', 'secco', 'umido', 'duro', 'molle', 'verde', 'rosso',
+    'nero', 'giallo', 'chiaro', 'scuro', 'puro', 'fino', 'sottile',
+    // ── Numbers ──
+    'uno', 'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto',
+    'nove', 'dieci', 'venti', 'trenta', 'cento', 'mille',
+    // ── Measures & cooking ──
+    'oncia', 'libra', 'dramma', 'grano', 'manipolo', 'pugillo',
+    'parte', 'parti', 'tanto', 'quanto', 'mezzo', 'terzo', 'quarto',
+    // ── Bathing/balneological section ──
+    'bagno', 'acqua', 'fonte', 'vasca', 'vapore', 'calda', 'fredda',
+    'sudore', 'nudo', 'nuda', 'donna', 'donne', 'corpo', 'corpi',
 ]);
 
-// Common Latin words (medical/botanical)
+// Common Latin words (medical/botanical manuscript vocabulary)
 const LATIN_WORDS = new Set([
+    // ── Function words ──
     'et', 'in', 'de', 'ad', 'per', 'cum', 'non', 'est', 'ut', 'ex',
-    'ab', 'qui', 'quae', 'quod', 'hoc', 'aut', 'sed', 'vel',
-    'aqua', 'oleum', 'sal', 'mel', 'vinum', 'herba', 'radix',
-    'flos', 'folium', 'semen', 'fructus', 'cortex', 'color',
-    'odor', 'dolor', 'calor', 'arbor', 'sol', 'luna', 'stella',
-    'aurum', 'ferrum', 'ignis', 'terra', 'aer', 'cor', 'manus',
-    'caput', 'os', 'sanguis', 'caro', 'pellis', 'oculus',
+    'ab', 'qui', 'quae', 'quod', 'hoc', 'aut', 'sed', 'vel', 'sic',
+    'ita', 'tam', 'tum', 'nunc', 'ubi', 'cur', 'quam', 'qua', 'quo',
+    'si', 'nec', 'neque', 'atque', 'ac', 'autem', 'enim', 'ergo',
+    'igitur', 'tamen', 'vero', 'quidem', 'ipse', 'ille', 'hic',
+    'is', 'ea', 'id', 'nos', 'vos', 'ego', 'tu', 'se', 'sui',
+    // ── Body parts ──
+    'cor', 'caput', 'frons', 'oculus', 'oculi', 'nasus', 'os', 'oris',
+    'dens', 'dentes', 'lingua', 'guttur', 'collum', 'humerus',
+    'brachium', 'manus', 'digitus', 'pectus', 'venter', 'dorsum',
+    'crus', 'genu', 'pes', 'pedis', 'costa', 'costae', 'ossa',
+    'nervus', 'vena', 'sanguis', 'pulmo', 'hepar', 'iecur',
+    'intestinum', 'ren', 'renes', 'vesica', 'uterus', 'cutis',
+    'pellis', 'caro', 'carnis', 'pilus', 'unguis',
+    // ── Plants & herbs ──
+    'flos', 'floris', 'flores', 'folium', 'folia', 'radix', 'radicis',
+    'herba', 'herbae', 'planta', 'semen', 'semina', 'fructus',
+    'cortex', 'succus', 'rosa', 'rosae', 'lilium', 'viola',
+    'lavandula', 'salvia', 'mentha', 'rosmarinus', 'basilicum',
+    'thymus', 'origanum', 'foeniculum', 'cuminum', 'anisum',
+    'crocus', 'cinnamomum', 'caryophyllum', 'sinapis', 'opium',
+    'balsamum', 'urtica', 'plantago', 'absinthium', 'chamomilla',
+    'verbena', 'ruta', 'laurus', 'oliva', 'ficus', 'nux', 'pomum',
+    'arbor', 'arboris', 'palma', 'quercus', 'cupressus',
+    // ── Medical/pharmaceutical ──
     'recipe', 'dosis', 'cura', 'remedium', 'pulvis', 'decoctum',
+    'infusum', 'unguentum', 'sirupus', 'emplastrum', 'pilula',
+    'medicina', 'venenum', 'antidotum', 'febris', 'morbus',
+    'dolor', 'doloris', 'tumor', 'ulcus', 'vulnus', 'tussis',
+    'catarrhus', 'pestis', 'podagra', 'paralysis', 'epilepsia',
+    'calor', 'caloris', 'color', 'coloris', 'odor', 'odoris',
+    'sapor', 'saporis', 'humor', 'humoris',
+    // ── Substances ──
+    'aqua', 'aquae', 'oleum', 'sal', 'salis', 'mel', 'mellis',
+    'vinum', 'acetum', 'lac', 'lactis', 'ovum', 'ova', 'butyrum',
+    'cera', 'adeps', 'resina', 'gummi', 'sulphur', 'mercurius',
+    'arsenicum', 'antimonium', 'alumen', 'vitriolum',
+    'aurum', 'argentum', 'ferrum', 'cuprum', 'plumbum', 'stannum',
+    'ignis', 'terra', 'terrarum', 'aer', 'aeris',
+    // ── Astronomy/astrology ──
+    'sol', 'solis', 'luna', 'lunae', 'stella', 'stellae', 'caelum',
+    'planeta', 'signum', 'aries', 'taurus', 'gemini', 'cancer',
+    'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricornus',
+    'aquarius', 'pisces', 'saturnus', 'iuppiter', 'mars', 'venus',
+    'mercurius', 'eclipsis', 'coniunctio', 'ascendens',
+    // ── Verbs ──
     'dare', 'facere', 'dicere', 'habere', 'esse', 'ponere',
-    'bullire', 'coquere', 'secare', 'miscere', 'oleo',
+    'bullire', 'coquere', 'secare', 'miscere', 'oleo', 'lavare',
+    'siccare', 'molere', 'fundere', 'destillare', 'infundere',
+    'temperare', 'applicare', 'bibere', 'edere', 'dormire',
+    'purgare', 'sanare', 'curare', 'ire', 'venire',
+    // ── Adjectives ──
+    'bonus', 'bona', 'bonum', 'magnus', 'magna', 'parvus', 'parva',
+    'albus', 'alba', 'novus', 'nova', 'altus', 'alta', 'dulcis',
+    'fortis', 'omnis', 'talis', 'qualis', 'calidus', 'calida',
+    'frigidus', 'siccus', 'humidus', 'durus', 'mollis', 'viridis',
+    'ruber', 'rubra', 'niger', 'nigra', 'flavus', 'clarus', 'purus',
+    // ── Numbers ──
+    'unus', 'duo', 'tres', 'quattuor', 'quinque', 'sex', 'septem',
+    'octo', 'novem', 'decem', 'centum', 'mille',
+    // ── Measures ──
+    'uncia', 'libra', 'drachma', 'granum', 'manipulus', 'pugillus',
+    'pars', 'partis', 'tantum', 'quantum', 'dimidium', 'tertium',
 ]);
 
 
@@ -269,11 +405,11 @@ const CURRIER_SECTIONS = {
 
 
 // ─────────────────────────────────────────────────────────────────────────────
-// MODULE 5: LINGUISTIC SCORER
-// Scores candidate plaintext for linguistic plausibility
+// MODULE 5: ENHANCED LINGUISTIC SCORER
+// Scores candidate plaintext for linguistic plausibility using multiple metrics
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Character bigram frequencies for Italian (approximate, normalized)
+// Character bigram frequencies for Italian (approximate, normalized to relative weights)
 const ITALIAN_BIGRAMS = {
     'al': 28, 'an': 32, 'ar': 26, 'at': 20, 'co': 24, 'de': 30,
     'di': 28, 'el': 22, 'en': 26, 'er': 30, 'es': 18, 'ia': 20,
@@ -283,7 +419,69 @@ const ITALIAN_BIGRAMS = {
     'te': 22, 'ti': 20, 'to': 22, 'un': 14, 'nt': 16, 'ol': 12,
     'pe': 14, 'se': 16, 'so': 10, 'ss': 10, 'tt': 8, 'uo': 10,
     'ch': 12, 'ci': 10, 'ce': 8, 'gi': 8, 'sc': 6, 'qu': 8,
+    // Additional frequent Italian bigrams
+    'ca': 14, 'cu': 8, 'da': 12, 'do': 10, 'fi': 8, 'fo': 8,
+    'ma': 14, 'me': 16, 'mi': 12, 'mo': 10, 'na': 14, 'ni': 12,
+    'pa': 12, 'po': 12, 'pr': 8, 'sa': 12, 'su': 8, 'tr': 10,
+    'tu': 6, 'ur': 8, 'us': 6, 'ut': 6, 'va': 8, 've': 10,
+    'vi': 8, 'vo': 6, 'za': 4, 'zi': 4, 'ac': 8, 'ad': 6,
+    'am': 8, 'ap': 4, 'as': 8, 'av': 6, 'be': 6, 'bi': 4,
+    'bo': 6, 'br': 6, 'bu': 4, 'cc': 6, 'cr': 4, 'dr': 4,
+    'du': 4, 'fa': 8, 'fe': 8, 'fr': 6, 'fu': 6, 'ga': 6,
+    'ge': 6, 'gl': 4, 'gn': 4, 'gr': 6, 'gu': 4, 'im': 6,
+    'is': 8, 'it': 8, 'lu': 6, 'mp': 6, 'mu': 4, 'nd': 8,
+    'ng': 4, 'nu': 4, 'oc': 4, 'og': 4, 'om': 6, 'op': 4,
+    'os': 6, 'ot': 6, 'ov': 4, 'pi': 8, 'pl': 4, 'ru': 6,
+    'rr': 4, 'sp': 6, 'sq': 4, 'sv': 2, 'te': 22,
 };
+
+// Forbidden consonant clusters in Italian/Latin (never appear word-initially)
+// If output has these, it's less likely to be natural language
+const FORBIDDEN_CLUSTERS = new Set([
+    'bk', 'bz', 'cb', 'cd', 'cf', 'cg', 'ck', 'cm', 'cn', 'cp', 'ct',
+    'cv', 'cw', 'cx', 'cz', 'db', 'dc', 'df', 'dg', 'dk', 'dl', 'dm',
+    'dn', 'dp', 'dt', 'dv', 'dw', 'dx', 'dz', 'fb', 'fc', 'fd', 'fg',
+    'fj', 'fk', 'fm', 'fn', 'fp', 'fv', 'fw', 'fx', 'fz', 'gb', 'gc',
+    'gd', 'gf', 'gk', 'gp', 'gt', 'gv', 'gw', 'gx', 'gz', 'hb', 'hc',
+    'hd', 'hf', 'hg', 'hj', 'hk', 'hl', 'hm', 'hn', 'hp', 'hq', 'hr',
+    'hs', 'ht', 'hv', 'hw', 'hx', 'hz', 'jb', 'jc', 'jd', 'jf', 'jg',
+    'jh', 'jk', 'jl', 'jm', 'jn', 'jp', 'jq', 'jr', 'js', 'jt', 'jv',
+    'jw', 'jx', 'jz', 'kb', 'kc', 'kd', 'kf', 'kg', 'kj', 'kp', 'kq',
+    'ks', 'kt', 'kv', 'kw', 'kx', 'kz', 'lb', 'lc', 'ld', 'lf', 'lg',
+    'lh', 'lj', 'lk', 'lm', 'ln', 'lp', 'lq', 'lr', 'ls', 'lt', 'lv',
+    'lw', 'lx', 'lz', 'mc', 'md', 'mf', 'mg', 'mh', 'mj', 'mk', 'ml',
+    'mn', 'mq', 'mr', 'ms', 'mt', 'mv', 'mw', 'mx', 'mz', 'nb', 'nc',
+    'nd', 'nf', 'ng', 'nh', 'nj', 'nk', 'nl', 'nm', 'nn', 'np', 'nq',
+    'nr', 'ns', 'nt', 'nv', 'nw', 'nx', 'nz', 'pb', 'pc', 'pd', 'pf',
+    'pg', 'pj', 'pk', 'pm', 'pn', 'pp', 'pq', 'pt', 'pv', 'pw', 'px',
+    'pz', 'rb', 'rc', 'rd', 'rf', 'rg', 'rh', 'rj', 'rk', 'rl', 'rm',
+    'rn', 'rp', 'rq', 'rr', 'rs', 'rt', 'rv', 'rw', 'rx', 'rz',
+    'sb', 'sd', 'sf', 'sg', 'sj', 'sk', 'sl', 'sm', 'sn', 'sv', 'sw',
+    'sx', 'sz', 'tb', 'tc', 'td', 'tf', 'tg', 'tj', 'tk', 'tl', 'tm',
+    'tn', 'tp', 'tq', 'ts', 'tt', 'tv', 'tw', 'tx', 'tz', 'vb', 'vc',
+    'vd', 'vf', 'vg', 'vh', 'vj', 'vk', 'vl', 'vm', 'vn', 'vp', 'vq',
+    'vs', 'vt', 'vw', 'vx', 'vz', 'wb', 'wc', 'wd', 'wf', 'wg', 'wh',
+    'wj', 'wk', 'wl', 'wm', 'wn', 'wp', 'wq', 'wr', 'ws', 'wt', 'wv',
+    'wx', 'wz', 'xb', 'xc', 'xd', 'xf', 'xg', 'xh', 'xj', 'xk', 'xl',
+    'xm', 'xn', 'xp', 'xq', 'xr', 'xs', 'xt', 'xv', 'xw', 'xz',
+    'zb', 'zc', 'zd', 'zf', 'zg', 'zh', 'zj', 'zk', 'zl', 'zm', 'zn',
+    'zp', 'zq', 'zr', 'zs', 'zt', 'zv', 'zw', 'zx',
+]);
+
+// Common Italian word endings (morphological patterns)
+const ITALIAN_SUFFIXES = [
+    'ore', 'one', 'ione', 'ura', 'ata', 'ato', 'ita', 'ito', 'ale', 'ile',
+    'are', 'ere', 'ire', 'mente', 'ezza', 'anza', 'enza',
+    'olo', 'ola', 'ello', 'ella', 'etto', 'etta', 'ino', 'ina',
+    'oso', 'osa', 'ente', 'ante', 'ivo', 'iva',
+];
+
+// Common Italian word beginnings (prefixes)
+const ITALIAN_PREFIXES = [
+    'con', 'col', 'cor', 'com', 'de', 'di', 'in', 'im', 'pre', 'per',
+    'pro', 'tra', 'ri', 'dis', 'mis', 'mal', 'ben', 'sol', 'sul',
+    'al', 'ol', 'or', 'ar', 'es', 'so',
+];
 
 function calculateH2(tokenArray) {
     if (tokenArray.length < 3) return 0;
@@ -312,56 +510,140 @@ function calculateH2(tokenArray) {
     return h2;
 }
 
-// Score a candidate plaintext string for linguistic plausibility
-function scoreCandidate(plaintext, method) {
-    const text = plaintext.toLowerCase();
-    const chars = text.replace(/\s+/g, '').split('');
+// Check if a word looks like it could be Italian/Latin/Occitan
+function wordPlausibility(word) {
+    if (word.length <= 1) return 0.3;
+    const w = word.toLowerCase();
+
     let score = 0;
 
-    // 1. Character entropy (h2) — natural language should be ~3.0-4.5
-    const h2 = calculateH2(chars);
-    if (h2 >= 2.5 && h2 <= 5.0) score += 20;
-    else if (h2 >= 1.5 && h2 <= 6.0) score += 10;
-
-    // 2. Vowel/consonant ratio — natural language ~35-45% vowels
-    const vowels = chars.filter(c => 'aeiou'.includes(c)).length;
-    const vowelRatio = vowels / Math.max(chars.length, 1);
-    if (vowelRatio >= 0.30 && vowelRatio <= 0.50) score += 15;
-    else if (vowelRatio >= 0.20 && vowelRatio <= 0.55) score += 8;
-
-    // 3. Italian bigram frequency match
-    let bigramHits = 0;
-    for (let i = 0; i < chars.length - 1; i++) {
-        const bi = chars[i] + chars[i+1];
-        if (ITALIAN_BIGRAMS[bi]) bigramHits++;
+    // Exact dictionary match (highest value)
+    if (ITALIAN_WORDS.has(w) || LATIN_WORDS.has(w) || OCCITAN_WORDS.has(w)) {
+        return 1.0;
     }
-    const bigramRatio = bigramHits / Math.max(chars.length - 1, 1);
-    score += Math.round(bigramRatio * 30);
 
-    // 4. Dictionary word matching
-    const words = text.split(/\s+/).filter(w => w.length > 1);
-    let dictHits = 0;
-    for (const w of words) {
-        if (ITALIAN_WORDS.has(w) || LATIN_WORDS.has(w) || OCCITAN_WORDS.has(w)) {
-            dictHits++;
+    // Suffix matching (Italian morphology)
+    for (const suf of ITALIAN_SUFFIXES) {
+        if (w.endsWith(suf) && w.length > suf.length + 1) {
+            score += 0.3;
+            break;
         }
-        // Partial match: check if word starts with a dictionary entry
-        for (const dictWord of [...ITALIAN_WORDS, ...LATIN_WORDS, ...OCCITAN_WORDS]) {
-            if (dictWord.length >= 4 && w.startsWith(dictWord)) {
-                dictHits += 0.5;
+    }
+
+    // Prefix matching
+    for (const pre of ITALIAN_PREFIXES) {
+        if (w.startsWith(pre) && w.length > pre.length + 1) {
+            score += 0.15;
+            break;
+        }
+    }
+
+    // Stem matching: check if any dict word is a substring or vice versa
+    for (const dictWord of ITALIAN_WORDS) {
+        if (dictWord.length >= 4 && w.length >= 4) {
+            if (w.startsWith(dictWord.slice(0, 4)) || dictWord.startsWith(w.slice(0, 4))) {
+                score += 0.25;
                 break;
             }
         }
     }
-    const dictRatio = dictHits / Math.max(words.length, 1);
-    score += Math.round(dictRatio * 35);
+
+    // Vowel-consonant alternation (Italian tends toward CV patterns)
+    const vowels = 'aeiou';
+    let cvAlternations = 0;
+    for (let i = 0; i < w.length - 1; i++) {
+        const isV = vowels.includes(w[i]);
+        const nextIsV = vowels.includes(w[i+1]);
+        if (isV !== nextIsV) cvAlternations++;
+    }
+    const altRatio = cvAlternations / Math.max(w.length - 1, 1);
+    if (altRatio > 0.6) score += 0.15; // Good CV alternation
+
+    // Penalize forbidden consonant clusters
+    for (let i = 0; i < w.length - 1; i++) {
+        if (!vowels.includes(w[i]) && !vowels.includes(w[i+1])) {
+            const cluster = w[i] + w[i+1];
+            if (FORBIDDEN_CLUSTERS.has(cluster)) {
+                score -= 0.2;
+            }
+        }
+    }
+
+    // Italian words commonly end in vowels
+    if (vowels.includes(w[w.length - 1])) score += 0.1;
+
+    return Math.max(0, Math.min(1, score));
+}
+
+// Score a candidate plaintext string for linguistic plausibility
+function scoreCandidate(plaintext, method) {
+    const text = plaintext.toLowerCase();
+    const chars = text.replace(/\s+/g, '').split('');
+    if (chars.length === 0) return { total: 0, h2: '0', vowelRatio: '0%', bigramMatch: '0%', dictMatch: '0%', morphScore: '0%' };
+
+    let score = 0;
+
+    // 1. Character entropy (h2) — natural language should be ~3.0-4.5
+    const h2 = calculateH2(chars);
+    if (h2 >= 2.5 && h2 <= 5.0) score += 15;
+    else if (h2 >= 1.5 && h2 <= 6.0) score += 8;
+
+    // 2. Vowel/consonant ratio — Italian ~47% vowels, Latin ~42%
+    const vowels = chars.filter(c => 'aeiou'.includes(c)).length;
+    const vowelRatio = vowels / chars.length;
+    if (vowelRatio >= 0.38 && vowelRatio <= 0.52) score += 12;
+    else if (vowelRatio >= 0.30 && vowelRatio <= 0.55) score += 6;
+    else if (vowelRatio < 0.20 || vowelRatio > 0.65) score -= 5;
+
+    // 3. Italian bigram frequency match
+    let bigramScore = 0;
+    let bigramCount = 0;
+    for (let i = 0; i < chars.length - 1; i++) {
+        const bi = chars[i] + chars[i+1];
+        bigramCount++;
+        if (ITALIAN_BIGRAMS[bi]) {
+            bigramScore += ITALIAN_BIGRAMS[bi];
+        }
+    }
+    const avgBigramScore = bigramScore / Math.max(bigramCount, 1);
+    score += Math.min(20, Math.round(avgBigramScore * 1.5));
+
+    // 4. Word-level plausibility scoring (enhanced dictionary + morphology)
+    const words = text.split(/\s+/).filter(w => w.length > 0);
+    let totalPlausibility = 0;
+    let exactDictHits = 0;
+    for (const w of words) {
+        const plaus = wordPlausibility(w);
+        totalPlausibility += plaus;
+        if (plaus >= 1.0) exactDictHits++;
+    }
+    const avgPlausibility = totalPlausibility / Math.max(words.length, 1);
+    score += Math.round(avgPlausibility * 35);
+    const dictRatio = exactDictHits / Math.max(words.length, 1);
+    score += Math.round(dictRatio * 18);
+
+    // 5. Consonant cluster penalty
+    let clusterPenalty = 0;
+    for (const w of words) {
+        let consonantRun = 0;
+        for (const c of w) {
+            if ('aeiou'.includes(c)) {
+                consonantRun = 0;
+            } else {
+                consonantRun++;
+                if (consonantRun >= 4) clusterPenalty++; // 4+ consonants in a row is unlikely
+            }
+        }
+    }
+    score -= Math.min(10, clusterPenalty * 2);
 
     return {
-        total: Math.round(score),
+        total: Math.max(0, Math.round(score)),
         h2: h2.toFixed(3),
         vowelRatio: (vowelRatio * 100).toFixed(1) + '%',
-        bigramMatch: (bigramRatio * 100).toFixed(1) + '%',
-        dictMatch: (dictRatio * 100).toFixed(1) + '%'
+        bigramMatch: (avgBigramScore).toFixed(1),
+        dictMatch: (dictRatio * 100).toFixed(1) + '%',
+        morphScore: (avgPlausibility * 100).toFixed(1) + '%'
     };
 }
 
@@ -512,7 +794,7 @@ for (let i = startLine; i < endIdx; i++) {
         appendOutput(`  ${marker} ${r.method.padEnd(22)} → ${r.plaintext.slice(0, 55)}${r.plaintext.length > 55 ? '...' : ''}`);
 
         if (showDetail) {
-            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch}`);
+            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch} | morph=${r.score.morphScore}`);
         }
 
         if (!methodScores[r.method]) methodScores[r.method] = { total: 0, count: 0 };

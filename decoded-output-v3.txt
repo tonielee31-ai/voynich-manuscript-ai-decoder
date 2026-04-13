@@ -102,7 +102,7 @@
 [Line 21] EVA: otol daiiin
   ★ Naibbe Inverse         → otol ti
     Naibbe (nulls stripped) → otol ti
-    Caspari-Faccini        → ocol taiiin
+    Caspari-Faccini        → ocol taiin
 
 [Line 22] EVA: cpho shaiin shokcheey chol tshodeesy shey pydeey chy ro d*
   ★ Naibbe Inverse         → p sa soce co tshodeesy s pydeey c ro t
@@ -170,8 +170,8 @@
     Naibbe Inverse         → q o cuu jo to beedo to too edo to lce
 
 [Line 35] EVA: okol shol kol kechy chol kychol cthol chody chol daiin
-  ★ Naibbe Inverse         → oo so do duc co deco bo ce co t
-    Caspari-Faccini        → odol sol dol duce col decol ctol cote col taiin
+  ★ Caspari-Faccini        → odol sol dol duce col decol ctol cote col taiin
+    Naibbe Inverse         → oo so do duc co deco bo ce co t
     Naibbe (nulls stripped) → oo so do duc co deco bo ce co
 
 [Line 36] EVA: shor okol chol dol ky darshol dchor otcho dar shody
@@ -270,7 +270,7 @@
     Naibbe (nulls stripped) → s coo jo ct
 
 [Line 55] EVA: kchor shy daiiin chckhoys shey dor chol daiin
-  ★ Caspari-Faccini        → dcor se taiiin ccdoes sue tor col taiin
+  ★ Caspari-Faccini        → dcor se taiin ccdoes sue tor col taiin
     Naibbe (nulls stripped) → dco se ti chckhoys s to co
     Naibbe Inverse         → dco se ti chckhoys s to co t
 
@@ -300,8 +300,8 @@
     Naibbe (nulls stripped) → ejo co ta qotcham ca
 
 [Line 61] EVA: ochor qocheor chol daiin cthy
-  ★ Naibbe (nulls stripped) → oco qjo co be
-    Caspari-Faccini        → ocor quocuor col taiin cte
+  ★ Caspari-Faccini        → ocor quocuor col taiin cte
+    Naibbe (nulls stripped) → oco qjo co be
     Naibbe Inverse         → oco qjo co t be
 
 [Line 62] EVA: schey chor chal cham cham cho
@@ -470,9 +470,9 @@
     Naibbe (nulls stripped) → tco co so bo shtchy chaiinschoraiin cm
 
 [Line 95] EVA: otchol chol chy chaiin qotaiindaiin shain
-  ★ Naibbe Inverse         → otchol co c ca qotaiindaiin sn
+  ★ Caspari-Faccini        → occol col ce caiin quocaiintaiin sain
+    Naibbe Inverse         → otchol co c ca qotaiindaiin sn
     Naibbe (nulls stripped) → otchol co c ca qotaiindaiin sn
-    Caspari-Faccini        → occol col ce caiin quocaiintaiin sain
 
 [Line 96] EVA: qotchol chy yty daiin !okaiin cthy=
   ★ Caspari-Faccini        → quoccol ce ece taiin odaiin cte
@@ -630,7 +630,7 @@
     Caspari-Faccini        → quocouee duee cuo dce sote
 
 [Line 127] EVA: k!o!cheor chor ytchey pshod chols chodaiin ytoiiin daiin
-  ★ Caspari-Faccini        → docuor cor eccue psot cols cotaiin ecoiiin taiin
+  ★ Caspari-Faccini        → docuor cor eccue psot cols cotaiin ecoiin taiin
     Naibbe Inverse         → dojo co ytchey pshod chols ct ytoiiin t
     Naibbe (nulls stripped) → dojo co ytchey pshod chols ct ytoiiin
 
@@ -645,14 +645,14 @@
     Naibbe (nulls stripped) → qotcho ytor otchor tir q taco to
 
 [Line 130] EVA: qotor shees otol ykoiin shol daiin cthor okchy taiin
-  ★ Naibbe Inverse         → qotor shees otol edoi so t bo oc taiin
+  ★ Caspari-Faccini        → quocor sues ocol edoiin sol taiin ctor odce caiin
+    Naibbe Inverse         → qotor shees otol edoi so t bo oc taiin
     Naibbe (nulls stripped) → qotor shees otol edoi so bo oc taiin
-    Caspari-Faccini        → quocor sues ocol edoiin sol taiin ctor odce caiin
 
 [Line 131] EVA: shokeeol chor cheotol otchol daiin dal chol chotaiin
-  ★ Naibbe (nulls stripped) → souo co cheotol otchol ta co chotaiin
+  ★ Caspari-Faccini        → sodueol cor cuocol occol taiin tal col cocaiin
+    Naibbe (nulls stripped) → souo co cheotol otchol ta co chotaiin
     Naibbe Inverse         → souo co cheotol otchol t ta co chotaiin
-    Caspari-Faccini        → sodueol cor cuocol occol taiin tal col cocaiin
 
 [Line 132] EVA: otol chol dairodg
   ★ Caspari-Faccini        → ocol col tairotg
@@ -665,9 +665,9 @@
     Naibbe (nulls stripped) → foar e so coo po co chckhchopchol otcham
 
 [Line 134] EVA: daiin chckhy chor chor kar cthycthor chotols
-  ★ Naibbe (nulls stripped) → cxe co co da bebo chotols
+  ★ Caspari-Faccini        → taiin ccde cor cor dar ctector cocols
+    Naibbe (nulls stripped) → cxe co co da bebo chotols
     Naibbe Inverse         → t cxe co co da bebo chotols
-    Caspari-Faccini        → taiin ccde cor cor dar ctector cocols
 
 [Line 135] EVA: poeear kshor choky os cheoee!sykeor ytaiin dar
   ★ Naibbe Inverse         → poeear dso co os cheoeesykeor ytaiin ta
@@ -715,9 +715,9 @@
     Naibbe (nulls stripped) → eca ocat coa
 
 [Line 144] EVA: or shol cthom chor cthy
-  ★ Naibbe Inverse         → o so bm co be
+  ★ Caspari-Faccini        → or sol ctom cor cte
+    Naibbe Inverse         → o so bm co be
     Naibbe (nulls stripped) → o so bm co be
-    Caspari-Faccini        → or sol ctom cor cte
 
 [Line 145] EVA: qocthol qodaiin cthy
   ★ Caspari-Faccini        → quoctol quotaiin cte
@@ -980,7 +980,7 @@
     Caspari-Faccini        → taiin cuee cueotan tecuocte odsuo tol tairt
 
 [Line 197] EVA: shol cheodaiin daiin doytchody chot choty otariin
-  ★ Caspari-Faccini        → sol cuotaiin taiin toeccote coc coce ocariin
+  ★ Caspari-Faccini        → sol cuotaiin taiin toeccote coc coce ocarin
     Naibbe Inverse         → so jot t doytchody chot choty otariin
     Naibbe (nulls stripped) → so jot doytchody chot choty otariin
 
@@ -1015,9 +1015,9 @@
     Naibbe (nulls stripped) → co tc qda cla jan cky ca ca
 
 [Line 204] EVA: okar cphaiin chaiin eldaiin chor cha rcheal!cham
-  ★ Naibbe Inverse         → oa pa ca ult co ca rjaca
+  ★ Caspari-Faccini        → odar cfaiin caiin ultaiin cor ca rcualcam
+    Naibbe Inverse         → oa pa ca ult co ca rjaca
     Naibbe (nulls stripped) → oa pa ca ult co ca rjaca
-    Caspari-Faccini        → odar cfaiin caiin ultaiin cor ca rcualcam
 
 [Line 205] EVA: sair cheain cphol darshol kaiin shol kaiin dai!kam
   ★ Naibbe Inverse         → sair jn po taso da so da tda
@@ -1070,9 +1070,9 @@
     Naibbe (nulls stripped) → s dcota s ba chotain re
 
 [Line 215] EVA: okchol kshchol chol chol cthaiin dain
-  ★ Naibbe Inverse         → oco dsco co co ba tn
+  ★ Caspari-Faccini        → odcol dscol col col ctaiin tain
+    Naibbe Inverse         → oco dsco co co ba tn
     Naibbe (nulls stripped) → oco dsco co co ba tn
-    Caspari-Faccini        → odcol dscol col col ctaiin tain
 
 [Line 216] EVA: shol orchlchokchy chol cthor chaiin
   ★ Naibbe Inverse         → so oclcoc co bo ca
@@ -1180,9 +1180,9 @@
     Naibbe (nulls stripped) → tco qa cda bo co co po dyoty qda e
 
 [Line 237] EVA: ykey chor ykaiin daiin cthy otaiin okyoeees daiin
-  ★ Naibbe Inverse         → ede co eda t be otaiin okyoeees t
+  ★ Caspari-Faccini        → edue cor edaiin taiin cte ocaiin odeoueus taiin
+    Naibbe Inverse         → ede co eda t be otaiin okyoeees t
     Naibbe (nulls stripped) → ede co eda be otaiin okyoeees
-    Caspari-Faccini        → edue cor edaiin taiin cte ocaiin odeoueus taiin
 
 [Line 238] EVA: ytey tchy kaiin cthor otol oty toldy=
   ★ Caspari-Faccini        → ecue cce daiin ctor ocol oce colte
@@ -1190,7 +1190,7 @@
     Naibbe (nulls stripped) → ytey tchy da bo otol oty toldy
 
 [Line 239] EVA: pchor ypcheey qotor ypchy olcfholy tearchty daiiin
-  ★ Caspari-Faccini        → pcor epcuee quocor epce olcfole cuarcce taiiin
+  ★ Caspari-Faccini        → pcor epcuee quocor epce olcfole cuarcce taiin
     Naibbe Inverse         → pchor ypcheey qotor ypchy ofoe tearchty ti
     Naibbe (nulls stripped) → pchor ypcheey qotor ypchy ofoe tearchty ti
 
@@ -1265,14 +1265,14 @@
     Naibbe (nulls stripped) → tc qdco edca yty btn tr a
 
 [Line 254] EVA: qotchor chor otol chol cholorchol daiin dar
-  ★ Naibbe (nulls stripped) → qotchor co otol co cooco ta
+  ★ Caspari-Faccini        → quoccor cor ocol col colorcol taiin tar
+    Naibbe (nulls stripped) → qotchor co otol co cooco ta
     Naibbe Inverse         → qotchor co otol co cooco t ta
-    Caspari-Faccini        → quoccor cor ocol col colorcol taiin tar
 
 [Line 255] EVA: oykchor shor chor chy kaiiin dychodaiin
-  ★ Naibbe Inverse         → oedco so co c dai ect
+  ★ Caspari-Faccini        → oedcor sor cor ce daiin tecotaiin
+    Naibbe Inverse         → oedco so co c dai ect
     Naibbe (nulls stripped) → oedco so co c dai ect
-    Caspari-Faccini        → oedcor sor cor ce daiiin tecotaiin
 
 [Line 256] EVA: oqotar otor cfhy cthor osainytoiin
   ★ Naibbe Inverse         → oqotar otor fe bo osainytoiin
@@ -1395,9 +1395,9 @@
     Naibbe (nulls stripped) → torshor opchy so e qopchy so opchor dypchy tcm
 
 [Line 280] EVA: dchol chol dol shkchy ydal shy ykchy qotey daiin s y
-  ★ Naibbe (nulls stripped) → tco co to sdc eta se edc qotey s e
+  ★ Caspari-Faccini        → tcol col tol sdce etal se edce quocue taiin s e
+    Naibbe (nulls stripped) → tco co to sdc eta se edc qotey s e
     Naibbe Inverse         → tco co to sdc eta se edc qotey t s e
-    Caspari-Faccini        → tcol col tol sdce etal se edce quocue taiin s e
 
 [Line 281] EVA: s y dchor shaiin oeees ykor chor ytshy ykchy kchy dar
   ★ Caspari-Faccini        → s e tcor saiin oueus edor cor ecse edce dce tar
@@ -1497,7 +1497,7 @@
 [Line 300] EVA: o ykeey soiiin chok qokchy da okol
   ★ Naibbe Inverse         → o ede soiiin co qdc t oo
     Naibbe (nulls stripped) → o ede soiiin co qdc t oo
-    Caspari-Faccini        → o eduee soiiin cod quodce ta odol
+    Caspari-Faccini        → o eduee soiin cod quodce ta odol
 
 [Line 301] EVA: ydaiin ol!chy kchor daiin olol
   ★ Naibbe Inverse         → et oc dco t oo
@@ -1645,7 +1645,7 @@
     Naibbe (nulls stripped) → obn qda chosodaiin bl s e
 
 [Line 330] EVA: ychain chckhhy okshysaiiin dol!chds
-  ★ Caspari-Faccini        → ecain ccdhe odsesaiiin tolcts
+  ★ Caspari-Faccini        → ecain ccdhe odsesaiin tolcts
     Naibbe Inverse         → ecn chckhhy okshysaiiin dolchds
     Naibbe (nulls stripped) → ecn chckhhy okshysaiiin dolchds
 
@@ -1725,14 +1725,14 @@
     Naibbe (nulls stripped) → sor co boi be qda
 
 [Line 346] EVA: soloiin cheor chol daiin cthy
-  ★ Naibbe Inverse         → soloiin jo co t be
-    Caspari-Faccini        → soloiin cuor col taiin cte
+  ★ Caspari-Faccini        → soloiin cuor col taiin cte
+    Naibbe Inverse         → soloiin jo co t be
     Naibbe (nulls stripped) → soloiin jo co be
 
 [Line 347] EVA: daiin cthor chol chor
   ★ Naibbe (nulls stripped) → bo co co
-    Naibbe Inverse         → t bo co co
     Caspari-Faccini        → taiin ctor col cor
+    Naibbe Inverse         → t bo co co
 
 [Line 348] EVA: pocheody qopchey sykaiin opchy dor ychy daiin dychor orom
   ★ Caspari-Faccini        → pocuote quopcue sedaiin opce tor ece taiin tecor orom
@@ -1917,7 +1917,7 @@
 [Line 384] EVA: otchol cthar okaiin chol daiiin
   ★ Naibbe Inverse         → otchol ba oa co ti
     Naibbe (nulls stripped) → otchol ba oa co ti
-    Caspari-Faccini        → occol ctar odaiin col taiiin
+    Caspari-Faccini        → occol ctar odaiin col taiin
 
 [Line 385] EVA: ychod!y chotom
   ★ Caspari-Faccini        → ecote cocom
@@ -1965,9 +1965,9 @@
     Naibbe (nulls stripped) → qde dca e cot sy
 
 [Line 394] EVA: ycheol shol kchol chol!taiin ol
-  ★ Naibbe Inverse         → ejo so dco choltaiin o
+  ★ Caspari-Faccini        → ecuol sol dcol colcaiin ol
+    Naibbe Inverse         → ejo so dco choltaiin o
     Naibbe (nulls stripped) → ejo so dco choltaiin
-    Caspari-Faccini        → ecuol sol dcol colcaiin ol
 
 [Line 395] EVA: oytor okeor okar okol doiir!am
   ★ Caspari-Faccini        → oecor oduor odar odol toiiram
@@ -1980,14 +1980,14 @@
     Caspari-Faccini        → quodcuo quodoiir ctuol col
 
 [Line 397] EVA: oy choy koaiin chckhey ol chor
-  ★ Naibbe (nulls stripped) → oe ce doa cxe co
-    Caspari-Faccini        → oe coe doaiin ccdue ol cor
+  ★ Caspari-Faccini        → oe coe doaiin ccdue ol cor
+    Naibbe (nulls stripped) → oe ce doa cxe co
     Naibbe Inverse         → oe ce doa cxe o co
 
 [Line 398] EVA: ykeor chol chol cthol chkor sheol
-  ★ Naibbe Inverse         → eduo co co bo cdo so
+  ★ Caspari-Faccini        → eduor col col ctol cdor suol
+    Naibbe Inverse         → eduo co co bo cdo so
     Naibbe (nulls stripped) → eduo co co bo cdo so
-    Caspari-Faccini        → eduor col col ctol cdor suol
 
 [Line 399] EVA: olo r okeeol chodaiin okeol tchory
   ★ Caspari-Faccini        → olo r odueol cotaiin oduol ccore
@@ -2195,9 +2195,9 @@
     Caspari-Faccini        → quodco de ctar tor can tar
 
 [Line 440] EVA: or chor daky dal chor dor!l shy
-  ★ Naibbe Inverse         → o co tde ta co tol se
+  ★ Caspari-Faccini        → or cor tade tal cor torl se
+    Naibbe Inverse         → o co tde ta co tol se
     Naibbe (nulls stripped) → o co tde ta co tol se
-    Caspari-Faccini        → or cor tade tal cor torl se
 
 [Line 441] EVA: qotchor dy dor y tchy!kchy shdaiin
   ★ Caspari-Faccini        → quoccor te tor e ccedce staiin
@@ -2216,8 +2216,8 @@
 
 [Line 444] EVA: ykchor chor daiin daiinol
   ★ Naibbe (nulls stripped) → edco co to
-    Naibbe Inverse         → edco co t to
     Caspari-Faccini        → edcor cor taiin taiinol
+    Naibbe Inverse         → edco co t to
 
 [Line 445] EVA: os!octhor y!tchor
   ★ Caspari-Faccini        → osoctor eccor
@@ -2271,8 +2271,8 @@
 
 [Line 455] EVA: daiin chor daiin qokor y okchan
   ★ Naibbe (nulls stripped) → co qdo e ocan
-    Naibbe Inverse         → t co t qdo e ocan
     Caspari-Faccini        → taiin cor taiin quodor e odcan
+    Naibbe Inverse         → t co t qdo e ocan
 
 [Line 456] EVA: qotol dar okchor daiin cthor otam
   ★ Naibbe (nulls stripped) → qotol ta oco bo otam
@@ -2325,9 +2325,9 @@
     Caspari-Faccini        → coues odcor quocol cuee taiin ce coiin taiin
 
 [Line 466] EVA: ocho!l!shod daiin choteol chol dol shol otaiin
-  ★ Naibbe (nulls stripped) → ocost choteol co to so otaiin
+  ★ Caspari-Faccini        → ocolsot taiin cocuol col tol sol ocaiin
+    Naibbe (nulls stripped) → ocost choteol co to so otaiin
     Naibbe Inverse         → ocost t choteol co to so otaiin
-    Caspari-Faccini        → ocolsot taiin cocuol col tol sol ocaiin
 
 [Line 467] EVA: schodain cheo r cheody
   ★ Caspari-Faccini        → scotain cuo r cuote
@@ -2340,9 +2340,9 @@
     Caspari-Faccini        → fcotues sote quoccue quodcue quocfe codolte
 
 [Line 469] EVA: ochoaiin chor s!ody pchodaiin chetody choky dchy toy
-  ★ Naibbe Inverse         → oca co sody pchodaiin chetody co tc toy
+  ★ Caspari-Faccini        → ocoaiin cor sote pcotaiin cucote code tce coe
+    Naibbe Inverse         → oca co sody pchodaiin chetody co tc toy
     Naibbe (nulls stripped) → oca co sody pchodaiin chetody co tc toy
-    Caspari-Faccini        → ocoaiin cor sote pcotaiin cucote code tce coe
 
 [Line 470] EVA: dchod qoteeody ytchy qot!shey dchaiin chol!ody
   ★ Caspari-Faccini        → tcot quocueote ecce quocsue tcaiin colote
@@ -2365,9 +2365,9 @@
     Caspari-Faccini        → faiis ar odoe se pofocue opce quope colte opete cfe
 
 [Line 474] EVA: sos ykaiin cheol chol choiin checthy otol chol chodaiin oty
-  ★ Naibbe Inverse         → sos eda jo co ci jbe otol co ct oty
+  ★ Caspari-Faccini        → sos edaiin cuol col coiin cucte ocol col cotaiin oce
+    Naibbe Inverse         → sos eda jo co ci jbe otol co ct oty
     Naibbe (nulls stripped) → sos eda jo co ci jbe otol co ct oty
-    Caspari-Faccini        → sos edaiin cuol col coiin cucte ocol col cotaiin oce
 
 [Line 475] EVA: okchy sho kchol shol chcthy qoty chy tol shy qotchy
   ★ Caspari-Faccini        → odce so dcol sol ccte quoce ce col se quocce
@@ -2385,7 +2385,7 @@
     Naibbe (nulls stripped) → tshol folchol otor so shos fshodchy otchy cpe e
 
 [Line 478] EVA: doiiin chockhy dar cheockhy shos cheos char cthaiin
-  ★ Caspari-Faccini        → toiiin cocde tar cuocde sos cuos car ctaiin
+  ★ Caspari-Faccini        → toiin cocde tar cuocde sos cuos car ctaiin
     Naibbe Inverse         → toi cxe ta joxe shos cheos ca ba
     Naibbe (nulls stripped) → toi cxe ta joxe shos cheos ca ba
 
@@ -2550,7 +2550,7 @@
     Naibbe (nulls stripped) → dco so tso s da ctoe ytaiin olotchy pa
 
 [Line 511] EVA: dchor oty daiin ctholy qoky chotaiin chocthydoiiin dchor
-  ★ Caspari-Faccini        → tcor oce taiin ctole quode cocaiin coctetoiiin tcor
+  ★ Caspari-Faccini        → tcor oce taiin ctole quode cocaiin coctetoiin tcor
     Naibbe Inverse         → tco oty t boe qde chotaiin cbetoi tco
     Naibbe (nulls stripped) → tco oty boe qde chotaiin cbetoi tco
 
@@ -2860,9 +2860,9 @@
     Naibbe (nulls stripped) → sshey otam sa bm o
 
 [Line 573] EVA: y cheol chol daiin chol s
-  ★ Naibbe (nulls stripped) → e jo co co s
+  ★ Caspari-Faccini        → e cuol col taiin col s
+    Naibbe (nulls stripped) → e jo co co s
     Naibbe Inverse         → e jo co t co s
-    Caspari-Faccini        → e cuol col taiin col s
 
 [Line 574] EVA: yol tol chol shom otaiphy=
   ★ Caspari-Faccini        → eol col col som ocaiphe
@@ -2995,8 +2995,8 @@
     Caspari-Faccini        → poueaiin quode se taiin quopcue occue quofcor sos
 
 [Line 600] EVA: dchor cthor chor daiin s okeeaiin daiin ckhey daiin
-  ★ Naibbe Inverse         → tco bo co t s oua t xe t
-    Caspari-Faccini        → tcor ctor cor taiin s odueaiin taiin cdue taiin
+  ★ Caspari-Faccini        → tcor ctor cor taiin s odueaiin taiin cdue taiin
+    Naibbe Inverse         → tco bo co t s oua t xe t
     Naibbe (nulls stripped) → tco bo co s oua xe
 
 [Line 601] EVA: orcho kchor chol daiin shcfhor daiin dshey daiity
@@ -3075,7 +3075,7 @@
     Caspari-Faccini        → susu aiin suos cuote ocal
 
 [Line 616] EVA: pchedar qodary o*iiin pcheety s!air shedy ypchedy ypchdy qopy shdy
-  ★ Caspari-Faccini        → pcutar quotare oiiin pcuece sair sute epcute epcte quop...
+  ★ Caspari-Faccini        → pcutar quotare oiin pcuece sair sute epcute epcte quope...
     Naibbe Inverse         → pchedar qtae oi pcheety sair se ypchedy ypchdy qopy se
     Naibbe (nulls stripped) → pchedar qtae oi pcheety sair ypchedy ypchdy qopy se
 
@@ -3107,7 +3107,7 @@
 [Line 622] EVA: pchedy dar cheoet chy sair chees odaiiin chkeeey ykey sheey
   ★ Naibbe Inverse         → pchedy ta cheoet c sair chees oti cdue ede se
     Naibbe (nulls stripped) → pchedy ta cheoet c sair chees oti cdue ede se
-    Caspari-Faccini        → pcute tar cuouc ce sair cues otaiiin cdueue edue suee
+    Caspari-Faccini        → pcute tar cuouc ce sair cues otaiin cdueue edue suee
 
 [Line 623] EVA: teeedy okeeos cheeos ysaiin okcheey keody s!aiin cheeos qokes ory
   ★ Caspari-Faccini        → cueute odueos cueos esaiin odcuee duote saiin cueos quo...
@@ -3130,9 +3130,9 @@
     Caspari-Faccini        → te coain sol tain tar sodettcol ctue ts
 
 [Line 627] EVA: chol shy keol chol shy shol chydaiin chey dam
-  ★ Naibbe Inverse         → co se duo co se so ct ce ta
+  ★ Caspari-Faccini        → col se duol col se sol cetaiin cue tam
+    Naibbe Inverse         → co se duo co se so ct ce ta
     Naibbe (nulls stripped) → co se duo co se so ct ce ta
-    Caspari-Faccini        → col se duol col se sol cetaiin cue tam
 
 [Line 628] EVA: qokey chor char chy dchy keeychos cthody
   ★ Caspari-Faccini        → quodue cor car ce tce dueecos ctote
@@ -3170,7 +3170,7 @@
     Naibbe (nulls stripped) → qotchey shes s e c tchey e
 
 [Line 635] EVA: chol daiiin chees chos ctey dan
-  ★ Caspari-Faccini        → col taiiin cues cos ccue tan
+  ★ Caspari-Faccini        → col taiin cues cos ccue tan
     Naibbe Inverse         → co ti chees chos ctey tn
     Naibbe (nulls stripped) → co ti chees chos ctey tn
 
@@ -3270,9 +3270,9 @@
     Caspari-Faccini        → eccol tuee ecuol tuaiin
 
 [Line 655] EVA: kshol qooiiin shor pchoiiin shepchy qoty dy shory
-  ★ Naibbe Inverse         → dso qoi so pchoiiin shepchy qoty e soe
+  ★ Caspari-Faccini        → dsol quooiin sor pcoiin supce quoce te sore
+    Naibbe Inverse         → dso qoi so pchoiiin shepchy qoty e soe
     Naibbe (nulls stripped) → dso qoi so pchoiiin shepchy qoty e soe
-    Caspari-Faccini        → dsol quooiiin sor pcoiiin supce quoce te sore
 
 [Line 656] EVA: ykcholy qoty chy dy qokchol chor tchy qokchody cheor o
   ★ Caspari-Faccini        → edcole quoce ce te quodcol cor cce quodcote cuor o
@@ -3292,7 +3292,7 @@
 [Line 659] EVA: otol chol daiin chkaiin shoiin qotchey qotshey daiiin
   ★ Naibbe (nulls stripped) → otol co cda si qotchey qotshey ti
     Naibbe Inverse         → otol co t cda si qotchey qotshey ti
-    Caspari-Faccini        → ocol col taiin cdaiin soiin quoccue quocsue taiiin
+    Caspari-Faccini        → ocol col taiin cdaiin soiin quoccue quocsue taiin
 
 [Line 660] EVA: daiin chkaiin
   ★ Caspari-Faccini        → taiin cdaiin
@@ -3342,7 +3342,7 @@
 [Line 669] EVA: chokshy shocthy shor shor daiinqokaiiin
   ★ Naibbe Inverse         → cose sbe so so tqdai
     Naibbe (nulls stripped) → cose sbe so so tqdai
-    Caspari-Faccini        → codse socte sor sor taiinquodaiiin
+    Caspari-Faccini        → codse socte sor sor taiinquodaiin
 
 [Line 670] EVA: qokchy chol shokchy qokaiin choetychoty kaiin
   ★ Caspari-Faccini        → quodce col sodce quodaiin coucecoce daiin
@@ -3525,9 +3525,9 @@
     Caspari-Faccini        → oese cuocol cfoaiin cfue
 
 [Line 706] EVA: qotchor chor sheey cheol sos
-  ★ Naibbe Inverse         → qotchor co se jo sos
+  ★ Caspari-Faccini        → quoccor cor suee cuol sos
+    Naibbe Inverse         → qotchor co se jo sos
     Naibbe (nulls stripped) → qotchor co se jo sos
-    Caspari-Faccini        → quoccor cor suee cuol sos
 
 [Line 707] EVA: sho sheoldy otcheor daiin
   ★ Caspari-Faccini        → so suolte occuor taiin
@@ -3585,9 +3585,9 @@
     Caspari-Faccini        → taiir sueo sctue oduol
 
 [Line 718] EVA: tol shso okedy okedy qokedy qokeedy dar shed!shey
-  ★ Naibbe Inverse         → tol shso oe oe qde qdue ta sts
+  ★ Caspari-Faccini        → col sso odute odute quodute quoduete tar sutsue
+    Naibbe Inverse         → tol shso oe oe qde qdue ta sts
     Naibbe (nulls stripped) → tol shso oe oe qde qdue ta sts
-    Caspari-Faccini        → col sso odute odute quodute quoduete tar sutsue
 
 [Line 719] EVA: olsheol qokchy dal chey deey kchy keey okaii!n ykeey
   ★ Naibbe Inverse         → oso qdc ta ce te dc de oa ede
@@ -3842,7 +3842,7 @@
 [Line 769] EVA: taiin chekey or al!aiiin saiin okaiin dar cheedy chkeey far aiin s
   ★ Naibbe Inverse         → taiin jde o aai saiin oa ta je cde far a s
     Naibbe (nulls stripped) → taiin jde o aai saiin oa ta je cde far s
-    Caspari-Faccini        → caiin cudue or alaiiin saiin odaiin tar cuete cduee far...
+    Caspari-Faccini        → caiin cudue or alaiin saiin odaiin tar cuete cduee far ...
 
 [Line 770] EVA: pair or aiin otaiin ol kor aiin okal otal chdal shekal qakar otam
   ★ Caspari-Faccini        → pair or aiin ocaiin ol dor aiin odal ocal ctal sudal qa...
@@ -3975,7 +3975,7 @@
     Naibbe (nulls stripped) → ca oo a tolqokar cxe cta dut qda a ta
 
 [Line 796] EVA: ykeo lor ochey olyokaly kechdy qokchdy chor ar aiiin daly
-  ★ Caspari-Faccini        → eduo lor ocue oleodale ducte quodcte cor ar aiiin tale
+  ★ Caspari-Faccini        → eduo lor ocue oleodale ducte quodcte cor ar aiin tale
     Naibbe Inverse         → eduo lo oce oeoae duce qdce co a ai tae
     Naibbe (nulls stripped) → eduo lo oce oeoae duce qdce co a ai tae
 
@@ -4000,7 +4000,7 @@
     Naibbe (nulls stripped) → tol qdc ece oc cxe ct xe loees eda ota
 
 [Line 801] EVA: ytal seor chdal olchdy char or ol kedaiiin chcthy okchdy chckhy das!am
-  ★ Caspari-Faccini        → ecal suor ctal olcte car or ol dutaiiin ccte odcte ccde...
+  ★ Caspari-Faccini        → ecal suor ctal olcte car or ol dutaiin ccte odcte ccde ...
     Naibbe (nulls stripped) → ytal seor cta oce ca o duti cbe oce cxe dasam
     Naibbe Inverse         → ytal seor cta oce ca o o duti cbe oce cxe dasam
 
@@ -4117,7 +4117,7 @@
 [Line 824] EVA: ochor s chiin daiin ytain
   ★ Naibbe (nulls stripped) → oco s ci ytain
     Naibbe Inverse         → oco s ci t ytain
-    Caspari-Faccini        → ocor s ciin taiin ecain
+    Caspari-Faccini        → ocor s cin taiin ecain
 
 [Line 825] EVA: par chor chocthy roaiin ar
   ★ Caspari-Faccini        → par cor cocte roaiin ar
@@ -4250,7 +4250,7 @@
     Naibbe Inverse         → t qr co boe sorchy sychytaroiin
 
 [Line 851] EVA: okaiin cthor ykaiiin sdain andan
-  ★ Caspari-Faccini        → odaiin ctor edaiiin stain antan
+  ★ Caspari-Faccini        → odaiin ctor edaiin stain antan
     Naibbe Inverse         → oa bo edai sdain antn
     Naibbe (nulls stripped) → oa bo edai sdain antn
 
@@ -4390,9 +4390,9 @@
     Caspari-Faccini        → quoco odcocor tcor ce taiinecue dol taiir
 
 [Line 879] EVA: okchor daiin ckhy dain diiiin=
-  ★ Naibbe Inverse         → oco t xe tn tii
+  ★ Caspari-Faccini        → odcor taiin cde tain tiiin
+    Naibbe Inverse         → oco t xe tn tii
     Naibbe (nulls stripped) → oco xe tn tii
-    Caspari-Faccini        → odcor taiin cde tain tiiiin
 
 [Line 880] EVA: kshody qocthy qotoldy chopdain sol
   ★ Caspari-Faccini        → dsote quocte quocolte coptain sol
@@ -4436,8 +4436,8 @@
 
 [Line 888] EVA: dor chor sho daiiin daiin
   ★ Naibbe (nulls stripped) → to co s ti
+    Caspari-Faccini        → tor cor so taiin taiin
     Naibbe Inverse         → to co s ti t
-    Caspari-Faccini        → tor cor so taiiin taiin
 
 [Line 889] EVA: soiin shey otoiin chey tom
   ★ Naibbe Inverse         → soiin s otoiin ce tom
@@ -4450,14 +4450,14 @@
     Naibbe (nulls stripped) → qotoiin coo bo
 
 [Line 891] EVA: chor sholy sheaiin dotody
-  ★ Naibbe Inverse         → co soe sa dotody
+  ★ Caspari-Faccini        → cor sole suaiin tocote
+    Naibbe Inverse         → co soe sa dotody
     Naibbe (nulls stripped) → co soe sa dotody
-    Caspari-Faccini        → cor sole suaiin tocote
 
 [Line 892] EVA: sotoiiin
-  ★ Naibbe Inverse         → sotoiiin
+  ★ Caspari-Faccini        → socoiin
+    Naibbe Inverse         → sotoiiin
     Naibbe (nulls stripped) → sotoiiin
-    Caspari-Faccini        → socoiiin
 
 [Line 893] EVA: todain cphaiin cphorods
   ★ Caspari-Faccini        → cotain cfaiin cforots
@@ -4467,7 +4467,7 @@
 [Line 894] EVA: soiiin cheoky daiin dain
   ★ Naibbe Inverse         → soiiin jo t tn
     Naibbe (nulls stripped) → soiiin jo tn
-    Caspari-Faccini        → soiiin cuode taiin tain
+    Caspari-Faccini        → soiin cuode taiin tain
 
 [Line 895] EVA: qotor daiin chotaiin
   ★ Naibbe Inverse         → qotor t chotaiin
@@ -4477,7 +4477,7 @@
 [Line 896] EVA: sokchor qokoiiin ykeeols
   ★ Naibbe Inverse         → sokchor qdoi ykeeols
     Naibbe (nulls stripped) → sokchor qdoi ykeeols
-    Caspari-Faccini        → sodcor quodoiiin edueols
+    Caspari-Faccini        → sodcor quodoiin edueols
 
 [Line 897] EVA: oyteey daiin daiin ody
   ★ Naibbe Inverse         → oyteey t t oe
@@ -4506,8 +4506,8 @@
 
 [Line 902] EVA: yto chol daiin
   ★ Naibbe (nulls stripped) → yto co
-    Naibbe Inverse         → yto co t
     Caspari-Faccini        → eco col taiin
+    Naibbe Inverse         → yto co t
 
 [Line 903] EVA: tolor chockhyoky choiin okshol oly oky
   ★ Caspari-Faccini        → color cocdeode coiin odsol ole ode
@@ -4545,9 +4545,9 @@
     Naibbe (nulls stripped) → okchop co shotol oteol oe schor t t
 
 [Line 910] EVA: choiin shey keo sho oiin s chol ldyokeaiin okom
-  ★ Naibbe Inverse         → ci s duo s oi s co leoua om
+  ★ Caspari-Faccini        → coiin sue duo so oiin s col lteoduaiin odom
+    Naibbe Inverse         → ci s duo s oi s co leoua om
     Naibbe (nulls stripped) → ci s duo s oi s co leoua om
-    Caspari-Faccini        → coiin sue duo so oiin s col lteoduaiin odom
 
 [Line 911] EVA: qokeey keor daiin okey keey daiindair daiin s
   ★ Naibbe (nulls stripped) → qde duo oe de ttr s
@@ -4557,17 +4557,17 @@
 [Line 912] EVA: okeey daiin qokeey chotey todyoky aiiin d
   ★ Naibbe Inverse         → oe t qde chotey todyoky ai t
     Naibbe (nulls stripped) → oe qde chotey todyoky ai t
-    Caspari-Faccini        → oduee taiin quoduee cocue coteode aiiin t
+    Caspari-Faccini        → oduee taiin quoduee cocue coteode aiin t
 
 [Line 913] EVA: qoty daiin chol oteeol dodycheod chody
-  ★ Naibbe (nulls stripped) → qoty co oteeol toejot ce
+  ★ Caspari-Faccini        → quoce taiin col ocueol totecuot cote
+    Naibbe (nulls stripped) → qoty co oteeol toejot ce
     Naibbe Inverse         → qoty t co oteeol toejot ce
-    Caspari-Faccini        → quoce taiin col ocueol totecuot cote
 
 [Line 914] EVA: sho keeey key tey daiin daiiindain dain
   ★ Naibbe (nulls stripped) → s due de tey titn tn
     Naibbe Inverse         → s due de tey t titn tn
-    Caspari-Faccini        → so dueue due cue taiin taiiintain tain
+    Caspari-Faccini        → so dueue due cue taiin taiintain tain
 
 [Line 915] EVA: daiin qol chy dain * or daiindais daldy
   ★ Caspari-Faccini        → taiin quol ce tain  or taiintais talte
@@ -4660,7 +4660,7 @@
     Caspari-Faccini        → ocuol coldalquodal tar edte
 
 [Line 933] EVA: pdair chdy fdykain or air sheykaiiin ofchy kar or aiin dol ky oshdy
-  ★ Caspari-Faccini        → ptair cte ftedain or air suedaiiin ofce dar or aiin tol...
+  ★ Caspari-Faccini        → ptair cte ftedain or air suedaiin ofce dar or aiin tol ...
     Naibbe Inverse         → pdair ce fdykain o ar sdai ofchy da o a to de ose
     Naibbe (nulls stripped) → pdair ce fdykain o ar sdai ofchy da o to de ose
 
@@ -4722,7 +4722,7 @@
 [Line 945] EVA: dain ockhedy otedy okedylchdy okaiin daiiiny
   ★ Naibbe Inverse         → tn oxe otedy oelce oa tie
     Naibbe (nulls stripped) → tn oxe otedy oelce oa tie
-    Caspari-Faccini        → tain ocdute ocute odutelcte odaiin taiiine
+    Caspari-Faccini        → tain ocdute ocute odutelcte odaiin taiine
 
 [Line 946] EVA: tar aiin okaiin cholody
   ★ Caspari-Faccini        → car aiin odaiin colote
@@ -4855,7 +4855,7 @@
     Naibbe (nulls stripped) → saiin o lce dce oa qdce dyqokees a ce
 
 [Line 972] EVA: qokchey qody or aiiin okaiin o ckhysheod faim!y
-  ★ Caspari-Faccini        → quodcue quote or aiiin odaiin o cdesuot faime
+  ★ Caspari-Faccini        → quodcue quote or aiin odaiin o cdesuot faime
     Naibbe Inverse         → qdce qe o ai oa o xesot faimy
     Naibbe (nulls stripped) → qdce qe o ai oa o xesot faimy
 
@@ -5025,14 +5025,14 @@
     Naibbe (nulls stripped) → choty to dso bo otol bo coso tn
 
 [Line 1006] EVA: qotor cho chody daiin chol ctheey darchy daiidy
-  ★ Naibbe (nulls stripped) → qotor c ce co be tac tie
+  ★ Caspari-Faccini        → quocor co cote taiin col ctuee tarce taiite
+    Naibbe (nulls stripped) → qotor c ce co be tac tie
     Naibbe Inverse         → qotor c ce t co be tac tie
-    Caspari-Faccini        → quocor co cote taiin col ctuee tarce taiite
 
 [Line 1007] EVA: dcheey chol shol chokaiin choeky dck !ydain dal
-  ★ Naibbe Inverse         → tce co so coa cude dck etn ta
+  ★ Caspari-Faccini        → tcuee col sol codaiin coude tcd etain tal
+    Naibbe Inverse         → tce co so coa cude dck etn ta
     Naibbe (nulls stripped) → tce co so coa cude dck etn ta
-    Caspari-Faccini        → tcuee col sol codaiin coude tcd etain tal
 
 [Line 1008] EVA: qopor shol shot shol shol daiin dain scheam
   ★ Caspari-Faccini        → quopor sol soc sol sol taiin tain scuam
@@ -5060,9 +5060,9 @@
     Naibbe Inverse         → shotol so chety t coc cda
 
 [Line 1013] EVA: qody cthochy otaiin shy kshes chor ain
-  ★ Naibbe Inverse         → qe boc otaiin se kshes co n
+  ★ Caspari-Faccini        → quote ctoce ocaiin se dsus cor ain
+    Naibbe Inverse         → qe boc otaiin se kshes co n
     Naibbe (nulls stripped) → qe boc otaiin se kshes co n
-    Caspari-Faccini        → quote ctoce ocaiin se dsus cor ain
 
 [Line 1014] EVA: otchoty daiin chot sho ckhhy ct y s os
   ★ Caspari-Faccini        → occoce taiin coc so cdhe cc e s os
@@ -5695,14 +5695,14 @@
     Caspari-Faccini        → codcol col colte tair cat aiin
 
 [Line 1140] EVA: dor chol chy chaiin ckhey chol dai!n okaiin
-  ★ Naibbe Inverse         → to co c ca xe co tn oa
+  ★ Caspari-Faccini        → tor col ce caiin cdue col tain odaiin
+    Naibbe Inverse         → to co c ca xe co tn oa
     Naibbe (nulls stripped) → to co c ca xe co tn oa
-    Caspari-Faccini        → tor col ce caiin cdue col tain odaiin
 
 [Line 1141] EVA: qokcheo cthey chokai!n chol daiin kchdal
   ★ Naibbe (nulls stripped) → qdjo be con co dcta
-    Naibbe Inverse         → qdjo be con co t dcta
     Caspari-Faccini        → quodcuo ctue codain col taiin dctal
+    Naibbe Inverse         → qdjo be con co t dcta
 
 [Line 1142] EVA: dain ol shey chokol!g
   ★ Caspari-Faccini        → tain ol sue codolg
@@ -5710,8 +5710,8 @@
     Naibbe (nulls stripped) → tn s coog
 
 [Line 1143] EVA: folr chey so chol shol aiin shol shol chdy cholol
-  ★ Naibbe (nulls stripped) → folr ce so co so so so ce coo
-    Caspari-Faccini        → folr cue so col sol aiin sol sol cte colol
+  ★ Caspari-Faccini        → folr cue so col sol aiin sol sol cte colol
+    Naibbe (nulls stripped) → folr ce so co so so so ce coo
     Naibbe Inverse         → folr ce so co so a so so ce coo
 
 [Line 1144] EVA: schesy kchor cthaiin chol chol chol chor ckhhy
@@ -5831,8 +5831,8 @@
 
 [Line 1167] EVA: ytchy teol okeody cheockhy olsheey qoekaiin octhey chol kar aiin cthar...
   ★ Naibbe (nulls stripped) → ytchy teol ouoe joxe ose quda obe co da ba ot
-    Naibbe Inverse         → ytchy teol ouoe joxe ose quda obe co da a ba ot
     Caspari-Faccini        → ecce cuol oduote cuocde olsuee quoudaiin octue col dar ...
+    Naibbe Inverse         → ytchy teol ouoe joxe ose quda obe co da a ba ot
 
 [Line 1168] EVA: alshey lkee!dy ytchedy qokedy lotal qotol otal ched okey ykeey dalmy
   ★ Naibbe Inverse         → as ldue ytchedy qde lotal qotol otal jt oe ede tame
@@ -6005,7 +6005,7 @@
     Caspari-Faccini        → tcuo r cuee duolcue codcol codan
 
 [Line 1202] EVA: qotcho chodr cho choshy chs oriin
-  ★ Caspari-Faccini        → quocco cotr co cose cs oriin
+  ★ Caspari-Faccini        → quocco cotr co cose cs orin
     Naibbe Inverse         → qotcho ctr c cse chs oi
     Naibbe (nulls stripped) → qotcho ctr c cse chs oi
 
@@ -6241,16 +6241,16 @@
 
 [Line 1249] EVA: oaiin chy daiin chol chaiin kshar!dychokchy
   ★ Naibbe (nulls stripped) → oa c co ca dsaecoc
-    Naibbe Inverse         → oa c t co ca dsaecoc
     Caspari-Faccini        → oaiin ce taiin col caiin dsartecodce
+    Naibbe Inverse         → oa c t co ca dsaecoc
 
 [Line 1250] EVA: qokeaiin cheo chor choteey kcheol daincho dairin
-  ★ Naibbe Inverse         → qdua jo co choteey djo tnc tri
+  ★ Caspari-Faccini        → quoduaiin cuo cor cocuee dcuol tainco tairin
+    Naibbe Inverse         → qdua jo co choteey djo tnc tri
     Naibbe (nulls stripped) → qdua jo co choteey djo tnc tri
-    Caspari-Faccini        → quoduaiin cuo cor cocuee dcuol tainco tairin
 
 [Line 1251] EVA: chokaiin cho dls chariin daiin chain dychetcho dy
-  ★ Caspari-Faccini        → codaiin co tls cariin taiin cain tecucco te
+  ★ Caspari-Faccini        → codaiin co tls carin taiin cain tecucco te
     Naibbe Inverse         → coa c dls cai t cn dychetcho e
     Naibbe (nulls stripped) → coa c dls cai cn dychetcho e
 
@@ -6280,7 +6280,7 @@
     Naibbe (nulls stripped) → psheor olkais olfchedy qopeeedar opchey tr oa chefchdy
 
 [Line 1257] EVA: sor or!sheckhy ockhody shos alol dy kar oky daiiin okar ar okam
-  ★ Caspari-Faccini        → sor orsucde ocdote sos alol te dar ode taiiin odar ar o...
+  ★ Caspari-Faccini        → sor orsucde ocdote sos alol te dar ode taiin odar ar od...
     Naibbe Inverse         → sor osxe oxoe shos ao e da o ti oa a oa
     Naibbe (nulls stripped) → sor osxe oxoe shos ao e da o ti oa a oa
 
@@ -6305,7 +6305,7 @@
     Caspari-Faccini        → edain s suar oldcute odal quocor cueor oldate taiin quo...
 
 [Line 1262] EVA: todalain qotal kaiin otaiin otal she kar a!riin okchedy dariin
-  ★ Caspari-Faccini        → cotalain quocal daiin ocaiin ocal su dar ariin odcute t...
+  ★ Caspari-Faccini        → cotalain quocal daiin ocaiin ocal su dar arin odcute ta...
     Naibbe Inverse         → todalain qotal da otaiin otal s da ai oce tai
     Naibbe (nulls stripped) → todalain qotal da otaiin otal s da ai oce tai
 
@@ -6425,9 +6425,9 @@
     Naibbe (nulls stripped) → tol tm qchodal ta qe qoetam
 
 [Line 1286] EVA: ykchol dor shey qokeol kchey shol okam
-  ★ Naibbe Inverse         → edco to s qduo dce so oa
+  ★ Caspari-Faccini        → edcol tor sue quoduol dcue sol odam
+    Naibbe Inverse         → edco to s qduo dce so oa
     Naibbe (nulls stripped) → edco to s qduo dce so oa
-    Caspari-Faccini        → edcol tor sue quoduol dcue sol odam
 
 [Line 1287] EVA: tchodaiin cpheody qokol oteodaiin kol!otam
   ★ Caspari-Faccini        → ccotaiin cfuote quodol ocuotaiin dolocam
@@ -6601,8 +6601,8 @@
 
 [Line 1321] EVA: daiin ckheol chol qokeyl daiin
   ★ Naibbe (nulls stripped) → xuo co qdel
-    Naibbe Inverse         → t xuo co qdel t
     Caspari-Faccini        → taiin cduol col quoduel taiin
+    Naibbe Inverse         → t xuo co qdel t
 
 [Line 1322] EVA: yokeey qokody chol sol!s aiin
   ★ Naibbe (nulls stripped) → eoe qdoe co sols
@@ -6681,8 +6681,8 @@
 
 [Line 1337] EVA: okeey daiin sheekol shom shol cthy dcham do
   ★ Naibbe (nulls stripped) → oe sudo sm so be tca to
-    Naibbe Inverse         → oe t sudo sm so be tca to
     Caspari-Faccini        → oduee taiin suedol som sol cte tcam to
+    Naibbe Inverse         → oe t sudo sm so be tca to
 
 [Line 1338] EVA: ydaiin cphom chol dockhy cthol dam oty
   ★ Naibbe Inverse         → et pm co toxe bo ta oty
@@ -6780,8 +6780,8 @@
     Caspari-Faccini        → cosue dotl cdo tar suedal s aiinoduom uccal
 
 [Line 1357] EVA: o aiin or ol sal qokor chor ckhol ss sho chol daiin
-  ★ Naibbe (nulls stripped) → o o sal qdo co xo ss s co
-    Caspari-Faccini        → o aiin or ol sal quodor cor cdol ss so col taiin
+  ★ Caspari-Faccini        → o aiin or ol sal quodor cor cdol ss so col taiin
+    Naibbe (nulls stripped) → o o sal qdo co xo ss s co
     Naibbe Inverse         → o a o o sal qdo co xo ss s co t
 
 [Line 1358] EVA: tor ol dol or chol chol ckhol okol okyytchor ol koldy
@@ -6932,12 +6932,12 @@
 [Line 1387] EVA: lchor chey keedy dy qokal okad dal shdy otal otaldiin
   ★ Naibbe Inverse         → lco ce due e qda oat ta se otal otaldiin
     Naibbe (nulls stripped) → lco ce due e qda oat ta se otal otaldiin
-    Caspari-Faccini        → lcor cue duete te quodal odat tal ste ocal ocaltiin
+    Caspari-Faccini        → lcor cue duete te quodal odat tal ste ocal ocaltin
 
 [Line 1388] EVA: oain ckhy dl oiiin daiin okaiin chelal qokaiin okain r
   ★ Naibbe Inverse         → on xe tl oi t oa jla qda on r
     Naibbe (nulls stripped) → on xe tl oi oa jla qda on r
-    Caspari-Faccini        → oain cde tl oiiin taiin odaiin culal quodaiin odain r
+    Caspari-Faccini        → oain cde tl oiin taiin odaiin culal quodaiin odain r
 
 [Line 1389] EVA: lchdal ockhy daiin otol otar shar ai!n
   ★ Naibbe Inverse         → lcta oxe t otol otar sa n
@@ -7055,8 +7055,8 @@
     Naibbe (nulls stripped) → ytchor otchy chokyt ce r oa
 
 [Line 1412] EVA: shy kcheey daiin cthol chor chokor
-  ★ Naibbe (nulls stripped) → se dce bo co coo
-    Caspari-Faccini        → se dcuee taiin ctol cor codor
+  ★ Caspari-Faccini        → se dcuee taiin ctol cor codor
+    Naibbe (nulls stripped) → se dce bo co coo
     Naibbe Inverse         → se dce t bo co coo
 
 [Line 1413] EVA: sh cho kchey qokokchy
@@ -7100,9 +7100,9 @@
     Caspari-Faccini        → occue duol taiin
 
 [Line 1421] EVA: kcheat shol chey qokoiin shor qotcheol choror
-  ★ Naibbe Inverse         → kcheat so ce qdoi so qotcheol coo
+  ★ Caspari-Faccini        → dcuac sol cue quodoiin sor quoccuol coror
+    Naibbe Inverse         → kcheat so ce qdoi so qotcheol coo
     Naibbe (nulls stripped) → kcheat so ce qdoi so qotcheol coo
-    Caspari-Faccini        → dcuac sol cue quodoiin sor quoccuol coror
 
 [Line 1422] EVA: shod!shey qoteeey qoteey daiin qoteey cthar
   ★ Naibbe Inverse         → sts qoteeey qoteey t qoteey ba
@@ -7125,9 +7125,9 @@
     Caspari-Faccini        → quocueus so dcuee saiin
 
 [Line 1426] EVA: chokchol chor ckhos=
-  ★ Naibbe Inverse         → coco co ckhos
+  ★ Caspari-Faccini        → codcol cor cdos
+    Naibbe Inverse         → coco co ckhos
     Naibbe (nulls stripped) → coco co ckhos
-    Caspari-Faccini        → codcol cor cdos
 
 [Line 1427] EVA: kchokchy ckchol shol chol oteey d
   ★ Caspari-Faccini        → dcodce cdcol sol col ocuee t
@@ -7170,13 +7170,13 @@
     Caspari-Faccini        → col cuo dcol col code cocor
 
 [Line 1435] EVA: otchol chol chol daiin chotaiin
-  ★ Naibbe (nulls stripped) → otchol co co chotaiin
-    Caspari-Faccini        → occol col col taiin cocaiin
+  ★ Caspari-Faccini        → occol col col taiin cocaiin
+    Naibbe (nulls stripped) → otchol co co chotaiin
     Naibbe Inverse         → otchol co co t chotaiin
 
 [Line 1436] EVA: sokchol chol chol daiin
-  ★ Naibbe (nulls stripped) → sokchol co co
-    Caspari-Faccini        → sodcol col col taiin
+  ★ Caspari-Faccini        → sodcol col col taiin
+    Naibbe (nulls stripped) → sokchol co co
     Naibbe Inverse         → sokchol co co t
 
 [Line 1437] EVA: poeeo ckhey odai!n cheop sheody shocfhey dy sheep cheody yodam
@@ -7570,9 +7570,9 @@
     Naibbe (nulls stripped) → qua adun ytal co ao oa cbe tal ck se da
 
 [Line 1515] EVA: shar air alos chol oeear sho qotal chol talar tar ar opam
-  ★ Naibbe Inverse         → sa ar alos co oua s qotal co talar tar a opam
+  ★ Caspari-Faccini        → sar air alos col ouear so quocal col calar car ar opam
+    Naibbe Inverse         → sa ar alos co oua s qotal co talar tar a opam
     Naibbe (nulls stripped) → sa ar alos co oua s qotal co talar tar a opam
-    Caspari-Faccini        → sar air alos col ouear so quocal col calar car ar opam
 
 [Line 1516] EVA: qotoiin otal ar!al s air qoal talchos okal cho ytam dam
   ★ Caspari-Faccini        → quocoiin ocal aral s air quoal calcos odal co ecam tam
@@ -7600,9 +7600,9 @@
     Naibbe (nulls stripped) → oar coa joe qdo oda jo ta coe oac
 
 [Line 1521] EVA: tolain ar ykeain qokeey otal chol okal ar chety chkalar ol
-  ★ Naibbe Inverse         → tolain a edun qde otal co oa a chety cdaa o
+  ★ Caspari-Faccini        → colain ar eduain quoduee ocal col odal ar cuce cdalar o...
+    Naibbe Inverse         → tolain a edun qde otal co oa a chety cdaa o
     Naibbe (nulls stripped) → tolain a edun qde otal co oa a chety cdaa
-    Caspari-Faccini        → colain ar eduain quoduee ocal col odal ar cuce cdalar o...
 
 [Line 1522] EVA: olain olalor odaiin qotais otal qokal dai!r oishy otam
   ★ Naibbe Inverse         → on oao ot qotais otal qda tr oise otam
@@ -8517,7 +8517,7 @@
 [Line 1704] EVA: ycheody es odaiiin
   ★ Naibbe Inverse         → ejoe es oti
     Naibbe (nulls stripped) → ejoe es oti
-    Caspari-Faccini        → ecuote us otaiiin
+    Caspari-Faccini        → ecuote us otaiin
 
 [Line 1705] EVA: yekees oraly
   ★ Caspari-Faccini        → eudues orale
@@ -10415,9 +10415,9 @@
     Naibbe (nulls stripped) → otol ypsharal
 
 [Line 2084] EVA: dal daiin okey otodal cheokeeo okeodal shol olaiin s!aiin sheo qokeeol...
-  ★ Naibbe Inverse         → ta t oe otodal jouo ouota so oa saiin so qduo oteeykey ...
+  ★ Caspari-Faccini        → tal taiin odue ocotal cuodueo oduotal sol olaiin saiin ...
+    Naibbe Inverse         → ta t oe otodal jouo ouota so oa saiin so qduo oteeykey ...
     Naibbe (nulls stripped) → ta oe otodal jouo ouota so oa saiin so qduo oteeykey jd...
-    Caspari-Faccini        → tal taiin odue ocotal cuodueo oduotal sol olaiin saiin ...
 
 [Line 2085] EVA: okoly
   ★ Caspari-Faccini        → odole
@@ -11205,7 +11205,7 @@
     Naibbe (nulls stripped) → otaly
 
 [Line 2242] EVA: okes!err or cskesol okeol yiin cholal ykeso!darar oleeo dy shedy soear...
-  ★ Caspari-Faccini        → odusurr or csdusol oduol eiin colal edusotarar olueo te...
+  ★ Caspari-Faccini        → odusurr or csdusol oduol ein colal edusotarar olueo te ...
     Naibbe Inverse         → okeserr o cskesol ouo ei coa ykesodarar ouo e se soear ...
     Naibbe (nulls stripped) → okeserr o cskesol ouo ei coa ykesodarar ouo e soear ae ...
 
@@ -12560,7 +12560,7 @@
     Naibbe Inverse         → st a sxe sain cpe n ode lda n otchy ldn ce ta tae
 
 [Line 2513] EVA: qotedshedy qorai!n oteedy chedy ol chdy r!aiiin chekai!n dain chckhy s...
-  ★ Caspari-Faccini        → quocutsute quorain ocuete cute ol cte raiiin cudain tai...
+  ★ Caspari-Faccini        → quocutsute quorain ocuete cute ol cte raiin cudain tain...
     Naibbe Inverse         → qotedshedy qrn oteedy ce o ce rai jdn tn cxe sal oty
     Naibbe (nulls stripped) → qotedshedy qrn oteedy ce rai jdn tn cxe sal oty
 
@@ -12740,8 +12740,8 @@
     Caspari-Faccini        → olsuet quodute quoduete quodute ldute lsuete odar sute ...
 
 [Line 2549] EVA: saiin qol shedy ol chedor chal shed qoteedy dshedy okal chedyl
-  ★ Caspari-Faccini        → saiin quol sute ol cutor cal sut quocuete tsute odal cu...
-    Naibbe Inverse         → saiin ql se o jto ca st qoteedy tse oa cel
+  ★ Naibbe Inverse         → saiin ql se o jto ca st qoteedy tse oa cel
+    Caspari-Faccini        → saiin quol sute ol cutor cal sut quocuete tsute odal cu...
     Naibbe (nulls stripped) → saiin ql jto ca st qoteedy tse oa cel
 
 [Line 2550] EVA: dal or chedy qolaiin okedal olchedy chdol olchedy choly aiin!y
@@ -12912,7 +12912,7 @@
 [Line 2583] EVA: sair shek!aiiin shets aiiin shety otey okaiin otedy qotar chedy
   ★ Naibbe Inverse         → sair sdai shets ai shety otey oa otedy qotar ce
     Naibbe (nulls stripped) → sair sdai shets ai shety otey oa otedy qotar
-    Caspari-Faccini        → sair sudaiiin sucs aiiin suce ocue odaiin ocute quocar ...
+    Caspari-Faccini        → sair sudaiin sucs aiin suce ocue odaiin ocute quocar cu...
 
 [Line 2584] EVA: tai!n sheey qotai!n chedy qokaiin chedy taiin chckhedy otol oty
   ★ Naibbe (nulls stripped) → tain se qotain qda taiin cxe otol oty
@@ -12942,11 +12942,11 @@
 [Line 2589] EVA: qoeedy lchedy chees ol oiiin chchky shekeey qokey qoky saiin sy
   ★ Naibbe Inverse         → que lce chees o oi ccde sde qde qde saiin sy
     Naibbe (nulls stripped) → que lce chees oi ccde sde qde qde saiin sy
-    Caspari-Faccini        → quouete lcute cues ol oiiin ccde suduee quodue quode sa...
+    Caspari-Faccini        → quouete lcute cues ol oiin ccde suduee quodue quode sai...
 
 [Line 2590] EVA: saiin chedy shedy qokeedy lol!s!aiiin qokain chey r al r aiin dl
   ★ Naibbe Inverse         → saiin ce se qdue lolsaiiin qdn ce r a r a tl
-    Caspari-Faccini        → saiin cute sute quoduete lolsaiiin quodain cue r al r a...
+    Caspari-Faccini        → saiin cute sute quoduete lolsaiin quodain cue r al r ai...
     Naibbe (nulls stripped) → saiin qdue lolsaiiin qdn ce r a r tl
 
 [Line 2591] EVA: sshey lshedy qokaiin shedy okedy san ol keedy sar qoky dedy
@@ -13152,7 +13152,7 @@
 [Line 2631] EVA: daiiin ol eeedy okaiin sheeol qotaiin shody qoty
   ★ Naibbe (nulls stripped) → ti ue oa suo qotaiin se qoty
     Naibbe Inverse         → ti o ue oa suo qotaiin se qoty
-    Caspari-Faccini        → taiiin ol ueute odaiin sueol quocaiin sote quoce
+    Caspari-Faccini        → taiin ol ueute odaiin sueol quocaiin sote quoce
 
 [Line 2632] EVA: daiin sh qol!chey qotedy qotal r!ain chl!r arol
   ★ Caspari-Faccini        → taiin s quolcue quocute quocal rain clr arol
@@ -13267,7 +13267,7 @@
 [Line 2654] EVA: qokeeey shedy qokeedy qodykey qokedy rsheedy taiiin sheol teedy yry
   ★ Naibbe Inverse         → qdue se qdue qede qde rse taiiin so teedy ere
     Naibbe (nulls stripped) → qdue qdue qede qde rse taiiin so teedy ere
-    Caspari-Faccini        → quodueue sute quoduete quotedue quodute rsuete caiiin s...
+    Caspari-Faccini        → quodueue sute quoduete quotedue quodute rsuete caiin su...
 
 [Line 2655] EVA: dcheol kshey qol chshy cheol olchedy ol chs ol sheedy qokedy chedy
   ★ Caspari-Faccini        → tcuol dsue quol cse cuol olcute ol cs ol suete quodute ...
@@ -13320,7 +13320,7 @@
     Caspari-Faccini        → quodaiin suol udute quodue quodal tal tale
 
 [Line 2665] EVA: qor!aiin shey qokaiin chal aiiin chedy qol
-  ★ Caspari-Faccini        → quoraiin sue quodaiin cal aiiin cute quol
+  ★ Caspari-Faccini        → quoraiin sue quodaiin cal aiin cute quol
     Naibbe Inverse         → qra s qda ca ai ce ql
     Naibbe (nulls stripped) → qra s qda ca ai ql
 
@@ -13815,12 +13815,12 @@
     Caspari-Faccini        → oldain sue quodue odar ol ocuete ccte los aiin t
 
 [Line 2764] EVA: lchedy otchey qol chedy lr al s aiiin ol shedy ary
-  ★ Caspari-Faccini        → lcute occue quol cute lr al s aiiin ol sute are
+  ★ Caspari-Faccini        → lcute occue quol cute lr al s aiin ol sute are
     Naibbe Inverse         → lce otchey ql ce lr a s ai o se ae
     Naibbe (nulls stripped) → lce otchey ql lr a s ai ae
 
 [Line 2765] EVA: s!al shol s!ai!n sheety or oiiin okal oltal qokar ary
-  ★ Caspari-Faccini        → sal sol sain suece or oiiin odal olcal quodar are
+  ★ Caspari-Faccini        → sal sol sain suece or oiin odal olcal quodar are
     Naibbe Inverse         → sal so sain sheety o oi oa oltal qda ae
     Naibbe (nulls stripped) → sal so sain sheety o oi oa oltal qda ae
 
@@ -14162,7 +14162,7 @@
 [Line 2833] EVA: tshey ykeey r!a*kai!n oroiiin
   ★ Naibbe Inverse         → tshey ede radn ooi
     Naibbe (nulls stripped) → tshey ede radn ooi
-    Caspari-Faccini        → csue eduee radain oroiiin
+    Caspari-Faccini        → csue eduee radain oroiin
 
 [Line 2834] EVA: tolkey okar ol okaiin okylor qokol okeedy dalary
   ★ Caspari-Faccini        → coldue odar ol odaiin odelor quodol oduete talare
@@ -14180,7 +14180,7 @@
     Caspari-Faccini        → quoduee ol olste quocain ocuete oldain ocsue sain ol
 
 [Line 2837] EVA: ykeedy okaiin dykaiin otedy dkeey tar ol otol oiiiny
-  ★ Caspari-Faccini        → eduete odaiin tedaiin ocute tduee car ol ocol oiiine
+  ★ Caspari-Faccini        → eduete odaiin tedaiin ocute tduee car ol ocol oiine
     Naibbe Inverse         → edue oa eda otedy tde tar o otol oie
     Naibbe (nulls stripped) → edue oa eda otedy tde tar otol oie
 
@@ -14377,7 +14377,7 @@
 [Line 2876] EVA: y!shey l shey kaiin lor aiiin shcthy epchey ty ol keedy tar oky las
   ★ Naibbe (nulls stripped) → es l s da lo ai sbe epchey ty due tar o las
     Naibbe Inverse         → es l s da lo ai sbe epchey ty o due tar o las
-    Caspari-Faccini        → esue l sue daiin lor aiiin scte upcue ce ol duete car o...
+    Caspari-Faccini        → esue l sue daiin lor aiin scte upcue ce ol duete car od...
 
 [Line 2877] EVA: lol chey rchy r ol dai!n oty qoty otalor sheckhy olkeey ral chedyor
   ★ Naibbe (nulls stripped) → lo ce rc r tn oty qoty otalor sxe ode ra ceo
@@ -14512,7 +14512,7 @@
 [Line 2903] EVA: lol chey saiin shety okaiiin sheor tchey lkaiin okainy
   ★ Naibbe Inverse         → lo ce saiin shety oai so tchey lda one
     Naibbe (nulls stripped) → lo ce saiin shety oai so tchey lda one
-    Caspari-Faccini        → lol cue saiin suce odaiiin suor ccue ldaiin odaine
+    Caspari-Faccini        → lol cue saiin suce odaiin suor ccue ldaiin odaine
 
 [Line 2904] EVA: talkl ol s al cheoly daiin otaly otai!n chey lkai!n olom
   ★ Caspari-Faccini        → caldl ol s al cuole taiin ocale ocain cue ldain olom
@@ -14700,7 +14700,7 @@
     Naibbe (nulls stripped) → to sr s os bo elce odn sbe qle
 
 [Line 2941] EVA: t!ol oltai!n olkar y qol qol kai!n okii!n ol kai!n shey ldy
-  ★ Caspari-Faccini        → col olcain oldar e quol quol dain odiin ol dain sue lte
+  ★ Caspari-Faccini        → col olcain oldar e quol quol dain odin ol dain sue lte
     Naibbe Inverse         → tol oltain oda e ql ql dn oi o dn s le
     Naibbe (nulls stripped) → tol oltain oda e ql ql dn oi dn s le
 
@@ -14900,7 +14900,7 @@
     Caspari-Faccini        → l sute quodute sor oldar oldaiin oldste
 
 [Line 2981] EVA: sol shedy ol lchedy shedy shy olkedy ches ar or oraiiin
-  ★ Caspari-Faccini        → sol sute ol lcute sute se oldute cus ar or oraiiin
+  ★ Caspari-Faccini        → sol sute ol lcute sute se oldute cus ar or oraiin
     Naibbe Inverse         → sol se o lce se se ode ches a o oai
     Naibbe (nulls stripped) → sol lce se ode ches a o oai
 
@@ -15035,7 +15035,7 @@
     Naibbe (nulls stripped) → jco tar oi oe ta s oduo odue ouo
 
 [Line 3008] EVA: dsheol oiiin olkeedy tedy cheky shckhedy chal
-  ★ Caspari-Faccini        → tsuol oiiin olduete cute cude scdute cal
+  ★ Caspari-Faccini        → tsuol oiin olduete cute cude scdute cal
     Naibbe Inverse         → tso oi odue tedy jde sxe ca
     Naibbe (nulls stripped) → tso oi odue tedy jde sxe ca
 
@@ -15427,7 +15427,7 @@
 [Line 3086] EVA: sar ol lor!aiin chey qokai!n o!roiiin
   ★ Naibbe (nulls stripped) → sar loa ce qdn ooi
     Naibbe Inverse         → sar o loa ce qdn ooi
-    Caspari-Faccini        → sar ol loraiin cue quodain oroiiin
+    Caspari-Faccini        → sar ol loraiin cue quodain oroiin
 
 [Line 3087] EVA: qody shar aith!y qokchey kchey olkain opchedy qfol shty oral
   ★ Caspari-Faccini        → quote sar aiche quodcue dcue oldain opcute qfol sce ora...
@@ -15626,7 +15626,7 @@
 
 [Line 3126] EVA: soiiin checthy chety otaiin olsaly shedy
   ★ Naibbe Inverse         → soiiin jbe chety otaiin olsaly se
-    Caspari-Faccini        → soiiin cucte cuce ocaiin olsale sute
+    Caspari-Faccini        → soiin cucte cuce ocaiin olsale sute
     Naibbe (nulls stripped) → soiiin jbe chety otaiin olsaly
 
 [Line 3127] EVA: qokeedy qolchey qokeey qokedy chedy otal
@@ -15752,7 +15752,7 @@
 [Line 3151] EVA: sol daiiin chedy
   ★ Naibbe (nulls stripped) → sol ti
     Naibbe Inverse         → sol ti ce
-    Caspari-Faccini        → sol taiiin cute
+    Caspari-Faccini        → sol taiin cute
 
 [Line 3152] EVA: sarol!dal
   ★ Naibbe Inverse         → saroldal
@@ -15897,7 +15897,7 @@
 [Line 3180] EVA: qol aiiin chckhedy sheol qokaiin shckhy l!chey
   ★ Naibbe Inverse         → ql ai cxe so qda sxe lce
     Naibbe (nulls stripped) → ql ai cxe so qda sxe lce
-    Caspari-Faccini        → quol aiiin ccdute suol quodaiin scde lcue
+    Caspari-Faccini        → quol aiin ccdute suol quodaiin scde lcue
 
 [Line 3181] EVA: ol cheedy qokeedy qokai!n dal!shal shldy lor
   ★ Caspari-Faccini        → ol cuete quoduete quodain talsal slte lor
@@ -16081,7 +16081,7 @@
 
 [Line 3217] EVA: p!chedy qotchedy otaiiin chcthy shedy otedy qoty qotedy ol okedy otedy...
   ★ Naibbe Inverse         → pchedy qotchedy otaiiin cbe se otedy qoty qotedy o oe o...
-    Caspari-Faccini        → pcute quoccute ocaiiin ccte sute ocute quoce quocute ol...
+    Caspari-Faccini        → pcute quoccute ocaiin ccte sute ocute quoce quocute ol ...
     Naibbe (nulls stripped) → pchedy qotchedy otaiiin cbe otedy qoty qotedy oe otedy ...
 
 [Line 3218] EVA: qotol shcthhy oty dar shcthy schdy qokeedy olkey
@@ -16090,7 +16090,7 @@
     Naibbe (nulls stripped) → qotol shcthhy oty ta sbe schdy qdue ode
 
 [Line 3219] EVA: p!alchd fchedy sh!cthy olky dar opalkaiin o!qofchedy or!aiiin ofoly or...
-  ★ Caspari-Faccini        → palct fcute scte olde tar opaldaiin oquofcute oraiiin o...
+  ★ Caspari-Faccini        → palct fcute scte olde tar opaldaiin oquofcute oraiin of...
     Naibbe Inverse         → palchd fchedy sbe ode ta opalkaiin oqofchedy oai ofoly ...
     Naibbe (nulls stripped) → palchd fchedy sbe ode ta opalkaiin oqofchedy oai ofoly ...
 
@@ -16272,7 +16272,7 @@
 [Line 3255] EVA: s!oiiin ol chedy qol kedy shey qokedy qokey d!ol y ol shedy qokedy
   ★ Naibbe Inverse         → soiiin o ce ql de s qde qde to e o se qde
     Naibbe (nulls stripped) → soiiin ql de s qde qde to e qde
-    Caspari-Faccini        → soiiin ol cute quol dute sue quodute quodue tol e ol su...
+    Caspari-Faccini        → soiin ol cute quol dute sue quodute quodue tol e ol sut...
 
 [Line 3256] EVA: qokeey otol chedy daiin dol sheedy chedy okedy rkchdy kol kaldy
   ★ Caspari-Faccini        → quoduee ocol cute taiin tol suete cute odute rdcte dol ...
@@ -16515,8 +16515,8 @@
     Naibbe Inverse         → rsoto qbo da oa eduuoe qotal o s a o tae se
 
 [Line 3304] EVA: daror sheedy keody oteody sar aiin cheedy otaiin dar al odaiiin
-  ★ Naibbe (nulls stripped) → tao se duoe oteody sar je otaiin ta a oti
-    Caspari-Faccini        → taror suete duote ocuote sar aiin cuete ocaiin tar al o...
+  ★ Caspari-Faccini        → taror suete duote ocuote sar aiin cuete ocaiin tar al o...
+    Naibbe (nulls stripped) → tao se duoe oteody sar je otaiin ta a oti
     Naibbe Inverse         → tao se duoe oteody sar a je otaiin ta a oti
 
 [Line 3305] EVA: qokeeo!dai!n chey okaiin okal al dl sheokey cheokai!n ol keeo dal olky
@@ -16610,7 +16610,7 @@
     Naibbe (nulls stripped) → ytor co shdytody qotchdy otchol chees a uot o aa ada
 
 [Line 3323] EVA: raraiiin shey osaiin otar ytar otedy or aiin otar alar olkeedy
-  ★ Caspari-Faccini        → raraiiin sue osaiin ocar ecar ocute or aiin ocar alar o...
+  ★ Caspari-Faccini        → raraiin sue osaiin ocar ecar ocute or aiin ocar alar ol...
     Naibbe Inverse         → rai s osaiin otar ytar otedy o a otar aa odue
     Naibbe (nulls stripped) → rai s osaiin otar ytar otedy o otar aa odue
 
@@ -16715,8 +16715,8 @@
     Naibbe (nulls stripped) → otchs sto ce sorain
 
 [Line 3344] EVA: or shedy tedy sodaiiin chy
-  ★ Naibbe Inverse         → o se tedy sodaiiin c
-    Caspari-Faccini        → or sute cute sotaiiin ce
+  ★ Caspari-Faccini        → or sute cute sotaiin ce
+    Naibbe Inverse         → o se tedy sodaiiin c
     Naibbe (nulls stripped) → o tedy sodaiiin c
 
 [Line 3345] EVA: ytedar ch*!s aiin arody
@@ -16832,7 +16832,7 @@
 [Line 3367] EVA: dshor ykaiin dar sheey qokol cheol otar ar aiiin qoteeos aiin
   ★ Naibbe (nulls stripped) → tso eda ta se qdo jo otar a ai qoteeos
     Naibbe Inverse         → tso eda ta se qdo jo otar a ai qoteeos a
-    Caspari-Faccini        → tsor edaiin tar suee quodol cuol ocar ar aiiin quocueos...
+    Caspari-Faccini        → tsor edaiin tar suee quodol cuol ocar ar aiin quocueos ...
 
 [Line 3368] EVA: sarar ykaiin saldam sheol qckhy dalor olaiin olkaiin qodar oxy
   ★ Caspari-Faccini        → sarar edaiin saltam suol qcde talor olaiin oldaiin quot...
@@ -16860,7 +16860,7 @@
     Naibbe Inverse         → edc coda ce edue oa o jfe lde oa ta o n
 
 [Line 3373] EVA: shol shotaiin shckhor olaiin chdy qokain odaiiin cheor olkai!n chey
-  ★ Caspari-Faccini        → sol socaiin scdor olaiin cte quodain otaiiin cuor oldai...
+  ★ Caspari-Faccini        → sol socaiin scdor olaiin cte quodain otaiin cuor oldain...
     Naibbe Inverse         → so shotaiin sxo oa ce qdn oti jo odn ce
     Naibbe (nulls stripped) → so shotaiin sxo oa ce qdn oti jo odn ce
 
@@ -16870,17 +16870,17 @@
     Caspari-Faccini        → caiin odaiin quodaiin ecuee ocain cue odam quodar quoda...
 
 [Line 3375] EVA: par or aiin dar aiiin qckhear shoifhy qotedy opchdy olai!n ar alkar am
-  ★ Caspari-Faccini        → par or aiin tar aiiin qcduar soifhe quocute opcte olain...
+  ★ Caspari-Faccini        → par or aiin tar aiin qcduar soifhe quocute opcte olain ...
     Naibbe (nulls stripped) → par o ta ai qckhear shoifhy qotedy opchdy on a ada a
     Naibbe Inverse         → par o a ta ai qckhear shoifhy qotedy opchdy on a ada a
 
 [Line 3376] EVA: ytaiin ytair dalol ytal dar aiiin chol olkchey lkar otal qotar dam
   ★ Naibbe Inverse         → ytaiin ytair tao ytal ta ai co odce lda otal qotar ta
     Naibbe (nulls stripped) → ytaiin ytair tao ytal ta ai co odce lda otal qotar ta
-    Caspari-Faccini        → ecaiin ecair talol ecal tar aiiin col oldcue ldar ocal ...
+    Caspari-Faccini        → ecaiin ecair talol ecal tar aiin col oldcue ldar ocal q...
 
 [Line 3377] EVA: pol sh!opchey pchecfhey or aiiin qokaiin cholkar
-  ★ Caspari-Faccini        → pol sopcue pcucfue or aiiin quodaiin coldar
+  ★ Caspari-Faccini        → pol sopcue pcucfue or aiin quodaiin coldar
     Naibbe Inverse         → pol shopchey pchecfhey o ai qda coda
     Naibbe (nulls stripped) → pol shopchey pchecfhey o ai qda coda
 
@@ -16955,14 +16955,14 @@
     Caspari-Faccini        → tar oldaiin ete ldcute odueuedce tl lt lol suee quodsue...
 
 [Line 3392] EVA: sor aiin ar shey qoteody or aiiin oeey ldaiiin or oro ol kaiiin
-  ★ Caspari-Faccini        → sor aiin ar sue quocuote or aiiin ouee ltaiiin or oro o...
+  ★ Caspari-Faccini        → sor aiin ar sue quocuote or aiin ouee ltaiin or oro ol ...
     Naibbe Inverse         → sor a a s qoteody o ai oe lti o oo o dai
     Naibbe (nulls stripped) → sor a s qoteody o ai oe lti o oo dai
 
 [Line 3393] EVA: sas aiin otariin otar cheody qotaiin qokaiin ol tey qokaiin otar ol
   ★ Naibbe (nulls stripped) → sas otariin otar joe qotaiin qda tey qda otar
     Naibbe Inverse         → sas a otariin otar joe qotaiin qda o tey qda otar o
-    Caspari-Faccini        → sas aiin ocariin ocar cuote quocaiin quodaiin ol cue qu...
+    Caspari-Faccini        → sas aiin ocarin ocar cuote quocaiin quodaiin ol cue quo...
 
 [Line 3394] EVA: dairal daiin qokar chol!tal cthdy qokeey lkaiin olkaiin araiin
   ★ Naibbe Inverse         → tra t qda choltal be qde lda oda aa
@@ -17007,7 +17007,7 @@
 [Line 3402] EVA: shor qoky chorolk chokaiin qool!kaiin qoaiin or aiiin ykedy
   ★ Naibbe Inverse         → so qde cood coa qoda qa o ai ede
     Naibbe (nulls stripped) → so qde cood coa qoda qa o ai ede
-    Caspari-Faccini        → sor quode corold codaiin quooldaiin quoaiin or aiiin ed...
+    Caspari-Faccini        → sor quode corold codaiin quooldaiin quoaiin or aiin edu...
 
 [Line 3403] EVA: paiin otar otol!kshy qok!shey ar otalky chear aiodam
   ★ Caspari-Faccini        → paiin ocar ocoldse quodsue ar ocalde cuar aiotam
@@ -17067,20 +17067,20 @@
 [Line 3414] EVA: taral okar octhey sal kaiin ytal chey otal aiiin olkam
   ★ Naibbe Inverse         → taral oa obe sal da ytal ce otal ai oda
     Naibbe (nulls stripped) → taral oa obe sal da ytal ce otal ai oda
-    Caspari-Faccini        → caral odar octue sal daiin ecal cue ocal aiiin oldam
+    Caspari-Faccini        → caral odar octue sal daiin ecal cue ocal aiin oldam
 
 [Line 3415] EVA: poraiiindy otshs al ar shey tair sheody qopchesy lfar air amod
-  ★ Caspari-Faccini        → poraiiinte ocss al ar sue cair suote quopcuse lfar air ...
+  ★ Caspari-Faccini        → poraiinte ocss al ar sue cair suote quopcuse lfar air a...
     Naibbe Inverse         → poraiiindy otshs a a s tair soe qopchesy lfar ar aot
     Naibbe (nulls stripped) → poraiiindy otshs a a s tair soe qopchesy lfar ar aot
 
 [Line 3416] EVA: daiin shar otam ytaiin otal teody cthy or aiin otar aiiin
   ★ Naibbe Inverse         → t sa otam ytaiin otal teody be o a otar ai
     Naibbe (nulls stripped) → sa otam ytaiin otal teody be o otar ai
-    Caspari-Faccini        → taiin sar ocam ecaiin ocal cuote cte or aiin ocar aiiin
+    Caspari-Faccini        → taiin sar ocam ecaiin ocal cuote cte or aiin ocar aiin
 
 [Line 3417] EVA: qoar aiiin al ody ar aiin qokeeey cheey qotaiin ykar aithy
-  ★ Caspari-Faccini        → quoar aiiin al ote ar aiin quodueue cuee quocaiin edar ...
+  ★ Caspari-Faccini        → quoar aiin al ote ar aiin quodueue cuee quocaiin edar a...
     Naibbe Inverse         → qa ai a oe a a qdue ce qotaiin eda aithy
     Naibbe (nulls stripped) → qa ai a oe a qdue ce qotaiin eda aithy
 
@@ -17125,7 +17125,7 @@
     Caspari-Faccini        → edaiin eduee edal cot aiin ouee cuotdaiin ocotaiin odai...
 
 [Line 3426] EVA: ykaiin or aiin okol chokar sheol qokar cheey oraiiin ody
-  ★ Caspari-Faccini        → edaiin or aiin odol codar suol quodar cuee oraiiin ote
+  ★ Caspari-Faccini        → edaiin or aiin odol codar suol quodar cuee oraiin ote
     Naibbe (nulls stripped) → eda o oo coa so qda ce oai oe
     Naibbe Inverse         → eda o a oo coa so qda ce oai oe
 
@@ -17295,7 +17295,7 @@
     Naibbe (nulls stripped) → tchedy c tchey otchedy qda oue lda
 
 [Line 3460] EVA: oees aiiin yteeedy chedy qotaiin cheody
-  ★ Caspari-Faccini        → oues aiiin ecueute cute quocaiin cuote
+  ★ Caspari-Faccini        → oues aiin ecueute cute quocaiin cuote
     Naibbe Inverse         → oees ai yteeedy ce qotaiin joe
     Naibbe (nulls stripped) → oees ai yteeedy qotaiin joe
 
@@ -17455,8 +17455,8 @@
     Caspari-Faccini        → duor cduee sote quoueuece scote taiin
 
 [Line 3492] EVA: daiin shol cthey okeol cheor okeeo daiim
-  ★ Naibbe Inverse         → t so be ouo jo ouo tim
-    Caspari-Faccini        → taiin sol ctue oduol cuor odueo taiim
+  ★ Caspari-Faccini        → taiin sol ctue oduol cuor odueo taiim
+    Naibbe Inverse         → t so be ouo jo ouo tim
     Naibbe (nulls stripped) → so be ouo jo ouo tim
 
 [Line 3493] EVA: shos cheol cheos ckhey saiin qockheol daiin
@@ -17897,7 +17897,7 @@
 [Line 3580] EVA: yshor!oiiin daiin qokeey daiin ckhol qokai!n cheamy
   ★ Naibbe Inverse         → esooi t qde t xo qdn jae
     Naibbe (nulls stripped) → esooi qde xo qdn jae
-    Caspari-Faccini        → esoroiiin taiin quoduee taiin cdol quodain cuame
+    Caspari-Faccini        → esoroiin taiin quoduee taiin cdol quodain cuame
 
 [Line 3581] EVA: tdai!n schol cheokycheody qokar dal chor ckhhy daiin=
   ★ Caspari-Faccini        → ctain scol cuodecuote quodar tal cor cdhe taiin
@@ -18052,7 +18052,7 @@
 [Line 3611] EVA: tos ol chor ydaiin chey s oiiin chckhy qokeol okey okeey keey coeky qo...
   ★ Naibbe Inverse         → tos o co et ce s oi cxe qduo oe oe de coeky qdo oe ta c...
     Naibbe (nulls stripped) → tos co et ce s oi cxe qduo oe oe de coeky qdo oe ta cuo...
-    Caspari-Faccini        → cos ol cor etaiin cue s oiiin ccde quoduol odue oduee d...
+    Caspari-Faccini        → cos ol cor etaiin cue s oiin ccde quoduol odue oduee du...
 
 [Line 3612] EVA: ycheo keeo ckh!o s!aiin okeo daiin ockhy s ockhey saiin sheek!y=
   ★ Naibbe Inverse         → ejo duo xo saiin ouo t oxe s oxe saiin sude
@@ -18215,7 +18215,7 @@
     Naibbe (nulls stripped) → otair ce
 
 [Line 3644] EVA: dyda!riin
-  ★ Caspari-Faccini        → tetariin
+  ★ Caspari-Faccini        → tetarin
     Naibbe Inverse         → etai
     Naibbe (nulls stripped) → etai
 
@@ -18335,9 +18335,9 @@
     Caspari-Faccini        → socdue orarol cuode quoe cotair code taiin ocar odar
 
 [Line 3668] EVA: tocheo cthor okol chekaiin os aiin ol cheo!kchey qokoiiin dan
-  ★ Naibbe Inverse         → tocheo bo oo jda os a o joce qdoi tn
+  ★ Caspari-Faccini        → cocuo ctor odol cudaiin os aiin ol cuodcue quodoiin tan
+    Naibbe Inverse         → tocheo bo oo jda os a o joce qdoi tn
     Naibbe (nulls stripped) → tocheo bo oo jda os joce qdoi tn
-    Caspari-Faccini        → cocuo ctor odol cudaiin os aiin ol cuodcue quodoiiin ta...
 
 [Line 3669] EVA: tor sheor cheor cthey qokol daiin chekal dal s chear qotam
   ★ Naibbe (nulls stripped) → tor so jo be qdo jda ta s ja qotam
@@ -18570,14 +18570,14 @@
     Caspari-Faccini        → taiin odueue cuo quocucuor ctotaim scuol col oduam
 
 [Line 3715] EVA: sheor ol qokeeoky okeeol okeeodaiin ytols or ariin aiin
-  ★ Caspari-Faccini        → suor ol quodueode odueol odueotaiin ecols or ariin aiin
+  ★ Caspari-Faccini        → suor ol quodueode odueol odueotaiin ecols or arin aiin
     Naibbe (nulls stripped) → so qduo ouo ouot ytols o ai
     Naibbe Inverse         → so o qduo ouo ouot ytols o ai a
 
 [Line 3716] EVA: ykeeor cheos qkhey cheos oteol okechodoeey keeos aiiin
   ★ Naibbe Inverse         → eduo cheos qkhey cheos oteol ouctoe keeos ai
     Naibbe (nulls stripped) → eduo cheos qkhey cheos oteol ouctoe keeos ai
-    Caspari-Faccini        → edueor cuos qdhue cuos ocuol oducotouee dueos aiiin
+    Caspari-Faccini        → edueor cuos qdhue cuos ocuol oducotouee dueos aiin
 
 [Line 3717] EVA: deeo!cthey keeeol sheol s tsheol daiin=
   ★ Naibbe (nulls stripped) → tuobe duuo so s tsheol
@@ -19565,9 +19565,9 @@
     Naibbe (nulls stripped) → oeeesary
 
 [Line 3914] EVA: daiiine
-  ★ Naibbe Inverse         → tiu
+  ★ Caspari-Faccini        → taiinu
+    Naibbe Inverse         → tiu
     Naibbe (nulls stripped) → tiu
-    Caspari-Faccini        → taiiinu
 
 [Line 3915] EVA: sory
   ★ Caspari-Faccini        → sore
@@ -19590,7 +19590,7 @@
     Naibbe (nulls stripped) → osary
 
 [Line 3919] EVA: doror okeeody opar okor eosaiin otoraiin shey ols aiiin qoetal
-  ★ Caspari-Faccini        → toror odueote opar odor uosaiin ocoraiin sue ols aiiin ...
+  ★ Caspari-Faccini        → toror odueote opar odor uosaiin ocoraiin sue ols aiin q...
     Naibbe Inverse         → too ouoe opar oo eosaiin otoraiin s ols ai qoetal
     Naibbe (nulls stripped) → too ouoe opar oo eosaiin otoraiin s ols ai qoetal
 
@@ -20127,7 +20127,7 @@
 [Line 4026] EVA: daiin dair yteol chor qockhol daiin ckheey chey kchey dos*iin okeey ck...
   ★ Naibbe Inverse         → t tr yteol co qxo t xe ce dce dosiin oe xuo ljoe djo t ...
     Naibbe (nulls stripped) → tr yteol co qxo xe ce dce dosiin oe xuo ljoe djo eteeys...
-    Caspari-Faccini        → taiin tair ecuol cor quocdol taiin cduee cue dcue tosii...
+    Caspari-Faccini        → taiin tair ecuol cor quocdol taiin cduee cue dcue tosin...
 
 [Line 4027] EVA: olaiin okeol cheo kol ches sheey qoor qokeody cheor okey*oiin cheey ct...
   ★ Caspari-Faccini        → olaiin oduol cuo dol cus suee quoor quoduote cuor odueo...
@@ -20165,12 +20165,12 @@
     Caspari-Faccini        → ocotueotor
 
 [Line 4034] EVA: polaiin shocthy qoteol loiiin oteeor cpheodar shol!daiin
-  ★ Caspari-Faccini        → polaiin socte quocuol loiiin ocueor cfuotar soltaiin
+  ★ Caspari-Faccini        → polaiin socte quocuol loiin ocueor cfuotar soltaiin
     Naibbe Inverse         → polaiin sbe qoteol loi oteeor puota sot
     Naibbe (nulls stripped) → polaiin sbe qoteol loi oteeor puota sot
 
 [Line 4035] EVA: dsheody okeeoy kody chkeeody daraiiin ctheoly qokcheo l!olai!n
-  ★ Caspari-Faccini        → tsuote odueoe dote cdueote taraiiin ctuole quodcuo lola...
+  ★ Caspari-Faccini        → tsuote odueoe dote cdueote taraiin ctuole quodcuo lolai...
     Naibbe Inverse         → tsoe ouoe doe cduoe taai buoe qdjo lon
     Naibbe (nulls stripped) → tsoe ouoe doe cduoe taai buoe qdjo lon
 
@@ -20490,7 +20490,7 @@
     Naibbe Inverse         → ta jo so ouo se s a o cuo o t sy
 
 [Line 4099] EVA: qokeor sho *!keeeos cheor os al chos aiiin oky oka!r aiin
-  ★ Caspari-Faccini        → quoduor so dueuos cuor os al cos aiiin ode odar aiin
+  ★ Caspari-Faccini        → quoduor so dueuos cuor os al cos aiin ode odar aiin
     Naibbe Inverse         → qduo s keeeos jo os a chos ai o oa a
     Naibbe (nulls stripped) → qduo s keeeos jo os a chos ai o oa
 
@@ -20730,9 +20730,9 @@
     Naibbe (nulls stripped) → polchedy qduo on jbe oteey lse on qdn qdase oteys
 
 [Line 4147] EVA: okaiin chey qoy shey qokaiin chedy qokain oteol lkar okaral lkldy lr
-  ★ Naibbe Inverse         → oa ce qe s qda ce qdn oteol lda oaa ldle lr
+  ★ Caspari-Faccini        → odaiin cue quoe sue quodaiin cute quodain ocuol ldar od...
+    Naibbe Inverse         → oa ce qe s qda ce qdn oteol lda oaa ldle lr
     Naibbe (nulls stripped) → oa ce qe s qda qdn oteol lda oaa ldle lr
-    Caspari-Faccini        → odaiin cue quoe sue quodaiin cute quodain ocuol ldar od...
 
 [Line 4148] EVA: ychai!n shckhy qokaiin shey qokai!n shedy olor
   ★ Caspari-Faccini        → ecain scde quodaiin sue quodain sute olor
@@ -20815,8 +20815,8 @@
     Caspari-Faccini        → quoduear cain olain cue dain suol sutain quoduete eduet...
 
 [Line 4164] EVA: okool chedy okeedy qokeedy qokeey shdy otey qokeey
-  ★ Naibbe (nulls stripped) → ooo oue qdue qde se otey qde
-    Caspari-Faccini        → odool cute oduete quoduete quoduee ste ocue quoduee
+  ★ Caspari-Faccini        → odool cute oduete quoduete quoduee ste ocue quoduee
+    Naibbe (nulls stripped) → ooo oue qdue qde se otey qde
     Naibbe Inverse         → ooo ce oue qdue qde se otey qde
 
 [Line 4165] EVA: pchedy qokeey qokeo!dair qokshy qokeedy qokeedy chsky shey shalky
@@ -20920,9 +20920,9 @@
     Caspari-Faccini        → taiin suee quodal sute quoduete quocuor sue quoce ccde ...
 
 [Line 4185] EVA: qok or chedy qokey dar chcthy chor qoty shdy okeedy qokeey qokai!n
-  ★ Naibbe Inverse         → qd o ce qde ta cbe co qoty se oue qde qdn
+  ★ Caspari-Faccini        → quod or cute quodue tar ccte cor quoce ste oduete quodu...
+    Naibbe Inverse         → qd o ce qde ta cbe co qoty se oue qde qdn
     Naibbe (nulls stripped) → qd o qde ta cbe co qoty se oue qde qdn
-    Caspari-Faccini        → quod or cute quodue tar ccte cor quoce ste oduete quodu...
 
 [Line 4186] EVA: y cheey qokeey okeey lkees ol qoteedy ykeedy
   ★ Naibbe (nulls stripped) → e ce qde oe lkees qoteedy edue
@@ -20990,8 +20990,8 @@
     Caspari-Faccini        → toiin suedce oduese quol sute ocain oldute
 
 [Line 4199] EVA: qokeedy chedy qoteey oteedy lkedy shedy qokal ol char otal opchedy
-  ★ Naibbe Inverse         → qdue ce qoteey oteedy lde se qda o ca otal opchedy
-    Caspari-Faccini        → quoduete cute quocuee ocuete ldute sute quodal ol car o...
+  ★ Caspari-Faccini        → quoduete cute quocuee ocuete ldute sute quodal ol car o...
+    Naibbe Inverse         → qdue ce qoteey oteedy lde se qda o ca otal opchedy
     Naibbe (nulls stripped) → qdue qoteey oteedy lde qda ca otal opchedy
 
 [Line 4200] EVA: yshear ol oqaiin chckhy lchedy chedy olaiin oteedy qokeedal larorol
@@ -21022,7 +21022,7 @@
 [Line 4205] EVA: ycheody l ar cheey or aiiin oteey otal otear ar ar keey qoty
   ★ Naibbe Inverse         → ejoe l a ce o ai oteey otal otear a a de qoty
     Naibbe (nulls stripped) → ejoe l a ce o ai oteey otal otear a a de qoty
-    Caspari-Faccini        → ecuote l ar cuee or aiiin ocuee ocal ocuar ar ar duee q...
+    Caspari-Faccini        → ecuote l ar cuee or aiin ocuee ocal ocuar ar ar duee qu...
 
 [Line 4206] EVA: ykeey lchey qokeey ror aiin olan otan otai!n otai!n ar y kai!n
   ★ Naibbe Inverse         → ede lce qde ro a oan otan otain otain a e dn
@@ -21147,7 +21147,7 @@
 [Line 4230] EVA: oar aiin yteeody cheo!daiin cheodar saiin chey tair osaiiin chcthedy t...
   ★ Naibbe Inverse         → oa a yteeody jot jota saiin ce tair osaiiin cbe teedara...
     Naibbe (nulls stripped) → oa yteeody jot jota saiin ce tair osaiiin cbe teedaram
-    Caspari-Faccini        → oar aiin ecueote cuotaiin cuotar saiin cue cair osaiiin...
+    Caspari-Faccini        → oar aiin ecueote cuotaiin cuotar saiin cue cair osaiin ...
 
 [Line 4231] EVA: daiir octhedy otech ykar otedy otody qoteeos yteeody oteedy oky okal d...
   ★ Naibbe Inverse         → tir obe otech eda otedy otody qoteeos yteeody oteedy o ...
@@ -21157,7 +21157,7 @@
 [Line 4232] EVA: ol sheedy qokeedy chedal qodaiin qodaiiin chry
   ★ Naibbe Inverse         → o se qdue jta qt qti cre
     Naibbe (nulls stripped) → se qdue jta qt qti cre
-    Caspari-Faccini        → ol suete quoduete cutal quotaiin quotaiiin cre
+    Caspari-Faccini        → ol suete quoduete cutal quotaiin quotaiin cre
 
 [Line 4233] EVA: kchdal qotaiin qoshedy ol chl ol chedacphy al lod pchdair opchdy qod
   ★ Caspari-Faccini        → dctal quocaiin quosute ol cl ol cutacfe al lot pctair o...
@@ -21452,7 +21452,7 @@
 [Line 4291] EVA: dcheeoy qokaiiin qokaiin lkar ytaiin otcheochy sarai!n
   ★ Naibbe Inverse         → tcuoe qdai qda lda ytaiin otcheochy sarain
     Naibbe (nulls stripped) → tcuoe qdai qda lda ytaiin otcheochy sarain
-    Caspari-Faccini        → tcueoe quodaiiin quodaiin ldar ecaiin occuoce sarain
+    Caspari-Faccini        → tcueoe quodaiin quodaiin ldar ecaiin occuoce sarain
 
 [Line 4292] EVA: pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ...
   ★ Caspari-Faccini        → pcuor col cpcuor coldsute quocol suete quodce quoccut s...
@@ -21482,7 +21482,7 @@
 [Line 4297] EVA: ykoiin cheor cheeey daiiin cheo dalaiin chockhedy chedaiin otor qokar ...
   ★ Naibbe Inverse         → edoi jo je ti jo taa cxe jt otor qda ae
     Naibbe (nulls stripped) → edoi jo je ti jo taa cxe jt otor qda ae
-    Caspari-Faccini        → edoiin cuor cueue taiiin cuo talaiin cocdute cutaiin oc...
+    Caspari-Faccini        → edoiin cuor cueue taiin cuo talaiin cocdute cutaiin oco...
 
 [Line 4298] EVA: dsheey qoykeey lchedy qokedaiin orchcthy daiin cheey sair ol aiin ched...
   ★ Naibbe Inverse         → tse qede lce qdut ocbe t ce sair o a ce
@@ -21522,7 +21522,7 @@
 [Line 4305] EVA: pchedy kchedy cheocphy orai!n cheeos aiiinro lcheedy lcheedy qosaiin c...
   ★ Naibbe Inverse         → pchedy dce jope on cheeos airo lje lje qosaiin fuo aral...
     Naibbe (nulls stripped) → pchedy dce jope on cheeos airo lje lje qosaiin fuo aral...
-    Caspari-Faccini        → pcute dcute cuocfe orain cueos aiiinro lcuete lcuete qu...
+    Caspari-Faccini        → pcute dcute cuocfe orain cueos aiinro lcuete lcuete quo...
 
 [Line 4306] EVA: yteeey cheeod ykeey kaiin qokaiin cheey or ol ar odar chedai!n etar ar...
   ★ Naibbe (nulls stripped) → yteeey cuot ede da qda ce o a ota jtn etar aar ae
@@ -21617,7 +21617,7 @@
 [Line 4324] EVA: ysheeody ykeeos or aiiin shey qodaiiin qokeed qokeey raiin aiirody
   ★ Naibbe Inverse         → esuoe ykeeos o ai s qti qdut qde ra airoe
     Naibbe (nulls stripped) → esuoe ykeeos o ai s qti qdut qde ra airoe
-    Caspari-Faccini        → esueote edueos or aiiin sue quotaiiin quoduet quoduee r...
+    Caspari-Faccini        → esueote edueos or aiin sue quotaiin quoduet quoduee rai...
 
 [Line 4325] EVA: sheey oleeey or air qokaiin chey qokeedy qokedy oteedy lchedy oesal
   ★ Naibbe Inverse         → se oue o ar qda ce qdue qde oteedy lce oesal
@@ -21637,7 +21637,7 @@
 [Line 4328] EVA: pdar o!shedy otcheos oiiin al tchedar chy fchosaiin polaiin polkeeey d...
   ★ Naibbe Inverse         → pdar ose otcheos oi a tchedar c fchosaiin polaiin polke...
     Naibbe (nulls stripped) → pdar ose otcheos oi a tchedar c fchosaiin polaiin polke...
-    Caspari-Faccini        → ptar osute occuos oiiin al ccutar ce fcosaiin polaiin p...
+    Caspari-Faccini        → ptar osute occuos oiin al ccutar ce fcosaiin polaiin po...
 
 [Line 4329] EVA: yaiir yteeody qoeeody qoeedy kchedy qotchdy otcheey chey teeor ykedy r...
   ★ Naibbe Inverse         → eair yteeody quoe que dce qotchdy otcheey ce teeor ede ...
@@ -21702,7 +21702,7 @@
 [Line 4341] EVA: pcheor ai!n ckheey okeeey paiin ar aiiin chpaiikey sheo pcheey dal dai...
   ★ Naibbe (nulls stripped) → pcheor n xe oue paiin a ai chpaiikey so pcheey ta ta
     Naibbe Inverse         → pcheor n xe oue paiin a ai chpaiikey so pcheey ta t ta
-    Caspari-Faccini        → pcuor ain cduee odueue paiin ar aiiin cpaiidue suo pcue...
+    Caspari-Faccini        → pcuor ain cduee odueue paiin ar aiin cpaiidue suo pcuee...
 
 [Line 4342] EVA: deeedy cheodkedy chedy decthdy daiiils airols
   ★ Caspari-Faccini        → tueute cuotdute cute tuctte taiiils airols
@@ -21722,7 +21722,7 @@
 [Line 4345] EVA: pchsed sheefy opchey qoteedy qoeey qokeedy laiiin odeaiin aiir opair k...
   ★ Naibbe Inverse         → pchsed sheefy opchey qoteedy qe qdue lai otua air opair...
     Naibbe (nulls stripped) → pchsed sheefy opchey qoteedy qe qdue lai otua air opair...
-    Caspari-Faccini        → pcsut suefe opcue quocuete quouee quoduete laiiin otuai...
+    Caspari-Faccini        → pcsut suefe opcue quocuete quouee quoduete laiin otuaii...
 
 [Line 4346] EVA: oees olkeedy qockhy raiin chol okair oteedy qopchedy odaiin ypchedy yk...
   ★ Naibbe Inverse         → oees odue qxe ra co oar oteedy qopchedy ot ypchedy eda
@@ -21747,7 +21747,7 @@
 [Line 4350] EVA: okeeo!dair oteey lkeey teeol!teedy ot!okal oraiiin qokaiin ar airod
   ★ Naibbe Inverse         → ouotr oteey lde teeolteedy otokal oai qda a arot
     Naibbe (nulls stripped) → ouotr oteey lde teeolteedy otokal oai qda a arot
-    Caspari-Faccini        → odueotair ocuee lduee cueolcuete ocodal oraiiin quodaii...
+    Caspari-Faccini        → odueotair ocuee lduee cueolcuete ocodal oraiin quodaiin...
 
 [Line 4351] EVA: dor ail cheky kar odaiin ykl al oees al ar alkam
   ★ Caspari-Faccini        → tor ail cude dar otaiin edl al oues al ar aldam
@@ -21817,12 +21817,12 @@
 [Line 4364] EVA: ykeey ky che oiiin dal kaiin okairo lkair chedy sodar air al oral odam
   ★ Naibbe Inverse         → ede de j oi ta da oaro ldar ce sodar ar a oa ota
     Naibbe (nulls stripped) → ede de j oi ta da oaro ldar sodar ar a oa ota
-    Caspari-Faccini        → eduee de cu oiiin tal daiin odairo ldair cute sotar air...
+    Caspari-Faccini        → eduee de cu oiin tal daiin odairo ldair cute sotar air ...
 
 [Line 4365] EVA: roees aiiin ol okaiin os aiin chckhoda qoteedy ckhddl aiis opar kaiish...
   ★ Naibbe (nulls stripped) → roees ai oa os cxot qoteedy xttl aiis opar daise
     Naibbe Inverse         → roees ai o oa os a cxot qoteedy xttl aiis opar daise
-    Caspari-Faccini        → roues aiiin ol odaiin os aiin ccdota quocuete cdttl aii...
+    Caspari-Faccini        → roues aiin ol odaiin os aiin ccdota quocuete cdttl aiis...
 
 [Line 4366] EVA: ysheedy aiin okeol ykedor ar ar alkair otos otaiin otal tair am
   ★ Caspari-Faccini        → esuete aiin oduol edutor ar ar aldair ocos ocaiin ocal ...
@@ -21835,7 +21835,7 @@
     Naibbe (nulls stripped) → saiin opchedy qdce otar a dar okees lduta
 
 [Line 4368] EVA: pchedaiin chckhdy qokaiir olpchedy olord aiiin kail odar kard chtchy
-  ★ Caspari-Faccini        → pcutaiin ccdte quodaiir olpcute olort aiiin dail otar d...
+  ★ Caspari-Faccini        → pcutaiin ccdte quodaiir olpcute olort aiin dail otar da...
     Naibbe Inverse         → pchedaiin cxe qdair olpchedy oot ai dal ota dat chtchy
     Naibbe (nulls stripped) → pchedaiin cxe qdair olpchedy oot ai dal ota dat chtchy
 
@@ -21880,7 +21880,7 @@
     Caspari-Faccini        → taiin cuotaiin cutal air odaiin cuee
 
 [Line 4377] EVA: tchol!kaiin odal kl chees aiiin shees qopdaiin chodr alkeey paradam
-  ★ Caspari-Faccini        → ccoldaiin otal dl cues aiiin sues quoptaiin cotr alduee...
+  ★ Caspari-Faccini        → ccoldaiin otal dl cues aiin sues quoptaiin cotr alduee ...
     Naibbe Inverse         → tcholkaiin ota dl chees ai shees qopdaiin ctr ade parad...
     Naibbe (nulls stripped) → tcholkaiin ota dl chees ai shees qopdaiin ctr ade parad...
 
@@ -21992,7 +21992,7 @@
 [Line 4399] EVA: olched qoiin ychedy qokam sheol qokor cheees
   ★ Naibbe Inverse         → ojt qi ece qda so qdo cheees
     Naibbe (nulls stripped) → ojt qi ece qda so qdo cheees
-    Caspari-Faccini        → olcut quoiin ecute quodam suol quodor cueus
+    Caspari-Faccini        → olcut quoin ecute quodam suol quodor cueus
 
 [Line 4400] EVA: porarchy oror ol!kaiin shedy oteedy qotor qoteedo qoteedy dair okeedai...
   ★ Naibbe Inverse         → porarchy oo oda se oteedy qotor qoteedo qoteedy tr outm
@@ -22145,7 +22145,7 @@
     Naibbe (nulls stripped) → pshodaiin opchy shoteeody shotchey yteey sholfaiin opch...
 
 [Line 4430] EVA: ycheool cheeey ol aiin cheody laiiin chekol cheey okchar aiin alo!al
-  ★ Caspari-Faccini        → ecuool cueue ol aiin cuote laiiin cudol cuee odcar aiin...
+  ★ Caspari-Faccini        → ecuool cueue ol aiin cuote laiin cudol cuee odcar aiin ...
     Naibbe Inverse         → ejoo je o a joe lai jdo ce oca a aoa
     Naibbe (nulls stripped) → ejoo je joe lai jdo ce oca aoa
 
@@ -22255,7 +22255,7 @@
     Naibbe (nulls stripped) → odua dce que ra ches a ytar shsy lce eda se lda
 
 [Line 4452] EVA: schedy raiin char arshey chedy aiiin alkam
-  ★ Caspari-Faccini        → scute raiin car arsue cute aiiin aldam
+  ★ Caspari-Faccini        → scute raiin car arsue cute aiin aldam
     Naibbe (nulls stripped) → schedy ra ca as ai ada
     Naibbe Inverse         → schedy ra ca as ce ai ada
 
@@ -22530,9 +22530,9 @@
     Caspari-Faccini        → caror olal odain odaiin quocal saiin quoduol ldaiin odu...
 
 [Line 4507] EVA: yksheol okaiiin shoikhy daiin qotalal lshedy qokal r aiiin okair lldy
-  ★ Naibbe Inverse         → edso oai shoikhy t qotalal lse qda r ai oar lle
+  ★ Caspari-Faccini        → edsuol odaiin soidhe taiin quocalal lsute quodal r aiin...
+    Naibbe Inverse         → edso oai shoikhy t qotalal lse qda r ai oar lle
     Naibbe (nulls stripped) → edso oai shoikhy qotalal lse qda r ai oar lle
-    Caspari-Faccini        → edsuol odaiiin soidhe taiin quocalal lsute quodal r aii...
 
 [Line 4508] EVA: chodaiin shar chod!aiin
   ★ Caspari-Faccini        → cotaiin sar cotaiin
@@ -22587,7 +22587,7 @@
 [Line 4518] EVA: yaiin chekai!n cheo kaiin chey qol kaiiin chky lcheel lkar !okal
   ★ Naibbe Inverse         → ea jdn jo da ce ql dai cde lcul lda oa
     Naibbe (nulls stripped) → ea jdn jo da ce ql dai cde lcul lda oa
-    Caspari-Faccini        → eaiin cudain cuo daiin cue quol daiiin cde lcuel ldar o...
+    Caspari-Faccini        → eaiin cudain cuo daiin cue quol daiin cde lcuel ldar od...
 
 [Line 4519] EVA: pairar al aro lkeey qotal cheotai!n dar okaiin otaiin otar opaim
   ★ Caspari-Faccini        → pairar al aro lduee quocal cuocain tar odaiin ocaiin oc...
@@ -22690,7 +22690,7 @@
     Naibbe (nulls stripped) → txe cda qde otal oteos otar adn
 
 [Line 4539] EVA: sai!n ain aiiin qokaiin shol kal qokar al ochedy lkaiin otal olkiir al...
-  ★ Caspari-Faccini        → sain ain aiiin quodaiin sol dal quodar al ocute ldaiin ...
+  ★ Caspari-Faccini        → sain ain aiin quodaiin sol dal quodar al ocute ldaiin o...
     Naibbe Inverse         → sain n ai qda so da qda a oce lda otal odir aoe
     Naibbe (nulls stripped) → sain n ai qda so da qda a oce lda otal odir aoe
 
@@ -23485,7 +23485,7 @@
     Caspari-Faccini        → ecueotain odueo olcute lcute quoduee odueute odain cute...
 
 [Line 4698] EVA: ykeedaiin shekai!n shedy qokear ochey reeey qokeey ol!aiiin chedy lkee...
-  ★ Caspari-Faccini        → eduetaiin sudain sute quoduar ocue rueue quoduee olaiii...
+  ★ Caspari-Faccini        → eduetaiin sudain sute quoduar ocue rueue quoduee olaiin...
     Naibbe Inverse         → edut sdn se qdua oce rue qde oai ce lduoe oa oty
     Naibbe (nulls stripped) → edut sdn qdua oce rue qde oai lduoe oa oty
 
@@ -23850,7 +23850,7 @@
     Naibbe (nulls stripped) → qrcn on ja ldn
 
 [Line 4771] EVA: polkiin cheopaiin otai!n shedy pchedy opcheedy qokai!n chcfhey otchey ...
-  ★ Caspari-Faccini        → poldiin cuopaiin ocain sute pcute opcuete quodain ccfue...
+  ★ Caspari-Faccini        → poldin cuopaiin ocain sute pcute opcuete quodain ccfue ...
     Naibbe Inverse         → polkiin cheopaiin otain se pchedy opcheedy qdn cfe otch...
     Naibbe (nulls stripped) → polkiin cheopaiin otain pchedy opcheedy qdn cfe otchey ...
 
@@ -24077,7 +24077,7 @@
 [Line 4816] EVA: qoai!n qoiin olcheedy dairiy teedy qopol chdy oteor octhdy otychey
   ★ Naibbe Inverse         → qn qi oje trie teedy qopol ce oteor obe otychey
     Naibbe (nulls stripped) → qn qi oje trie teedy qopol ce oteor obe otychey
-    Caspari-Faccini        → quoain quoiin olcuete tairie cuete quopol cte ocuor oct...
+    Caspari-Faccini        → quoain quoin olcuete tairie cuete quopol cte ocuor octt...
 
 [Line 4817] EVA: cheeteey qoteeey lkeey okeedy key lkedy qokedy otedy otedy lo
   ★ Naibbe Inverse         → cheeteey qoteeey lde oue de lde qde otedy otedy lo
@@ -24095,7 +24095,7 @@
     Naibbe (nulls stripped) → tockhy jta
 
 [Line 4820] EVA: pchol!keedy okchoiiin aky opchedy kol!fchdy opchedy lky shty
-  ★ Caspari-Faccini        → pcolduete odcoiiin ade opcute dolfcte opcute lde sce
+  ★ Caspari-Faccini        → pcolduete odcoiin ade opcute dolfcte opcute lde sce
     Naibbe Inverse         → pcholkeedy oci ade opchedy kolfchdy opchedy lde shty
     Naibbe (nulls stripped) → pcholkeedy oci ade opchedy kolfchdy opchedy lde shty
 
@@ -24150,14 +24150,14 @@
     Naibbe (nulls stripped) → pom oa ode oe oe oue keedas otear sduo qde
 
 [Line 4831] EVA: sar ai!n olkeear okeody qokeeiin oteedy qokey okal okedy
-  ★ Caspari-Faccini        → sar ain olduear oduote quodueiin ocuete quodue odal odu...
+  ★ Caspari-Faccini        → sar ain olduear oduote quoduein ocuete quodue odal odut...
     Naibbe Inverse         → sar n odua ouoe qdui oteedy qde oa oe
     Naibbe (nulls stripped) → sar n odua ouoe qdui oteedy qde oa oe
 
 [Line 4832] EVA: palkeedy qopal otedy opal aiin okaiiin sheody yteo!kar ogom
   ★ Naibbe Inverse         → palkeedy qopal otedy opal a oai soe yteokar gm
     Naibbe (nulls stripped) → palkeedy qopal otedy opal oai soe yteokar gm
-    Caspari-Faccini        → palduete quopal ocute opal aiin odaiiin suote ecuodar o...
+    Caspari-Faccini        → palduete quopal ocute opal aiin odaiin suote ecuodar og...
 
 [Line 4833] EVA: sai!n okal lkeedy okar okchedy qokal keedy chkey oto aral
   ★ Caspari-Faccini        → sain odal lduete odar odcute quodal duete cdue oco aral
@@ -24202,7 +24202,7 @@
 [Line 4841] EVA: qokeeor ar sheey or ar aiiin okeey lkeeody sheedy qotam
   ★ Naibbe Inverse         → qduo a se o a ai oe lduoe se qotam
     Naibbe (nulls stripped) → qduo a se o a ai oe lduoe se qotam
-    Caspari-Faccini        → quodueor ar suee or ar aiiin oduee ldueote suete quocam
+    Caspari-Faccini        → quodueor ar suee or ar aiin oduee ldueote suete quocam
 
 [Line 4842] EVA: shody qo oeeeody oteey qokeedy okeey qokeedy qoky am
   ★ Caspari-Faccini        → sote quo oueuote ocuee quoduete oduee quoduete quode am
@@ -24210,7 +24210,7 @@
     Naibbe (nulls stripped) → se q ouuoe oteey qdue oe qdue qde a
 
 [Line 4843] EVA: sain aiiin okey daiin otal chear okedy okaiin cheeoldy
-  ★ Caspari-Faccini        → sain aiiin odue taiin ocal cuar odute odaiin cueolte
+  ★ Caspari-Faccini        → sain aiin odue taiin ocal cuar odute odaiin cueolte
     Naibbe Inverse         → sain ai oe t otal ja oe oa cuoe
     Naibbe (nulls stripped) → sain ai oe otal ja oe oa cuoe
 
@@ -24225,7 +24225,7 @@
     Caspari-Faccini        → pcuoduee oueude quocuete ouesaiin ocuor opctar opare
 
 [Line 4846] EVA: ocheor okor aiiin otaiin okal okar otal kedy chek!aiiin
-  ★ Caspari-Faccini        → ocuor odor aiiin ocaiin odal odar ocal dute cudaiiin
+  ★ Caspari-Faccini        → ocuor odor aiin ocaiin odal odar ocal dute cudaiin
     Naibbe Inverse         → ojo oo ai otaiin oa oa otal de jdai
     Naibbe (nulls stripped) → ojo oo ai otaiin oa oa otal de jdai
 
@@ -24280,7 +24280,7 @@
     Naibbe (nulls stripped) → saiin o ce qdue qdue qduoe qotam oa a
 
 [Line 4857] EVA: s!arai!n ai!n al qoeeey qot!eo or aiiin ol chalor
-  ★ Caspari-Faccini        → sarain ain al quoueue quocuo or aiiin ol calor
+  ★ Caspari-Faccini        → sarain ain al quoueue quocuo or aiin ol calor
     Naibbe (nulls stripped) → sarain n a que qoteo o ai cao
     Naibbe Inverse         → sarain n a que qoteo o ai o cao
 
@@ -24327,7 +24327,7 @@
 [Line 4866] EVA: shey keedal aiin cheol keeeody qoiin ykeey qokeeey ykeey qoeey qokaim
   ★ Naibbe (nulls stripped) → s duta jo duuoe qi ede qdue ede qe qdam
     Naibbe Inverse         → s duta a jo duuoe qi ede qdue ede qe qdam
-    Caspari-Faccini        → sue duetal aiin cuol dueuote quoiin eduee quodueue edue...
+    Caspari-Faccini        → sue duetal aiin cuol dueuote quoin eduee quodueue eduee...
 
 [Line 4867] EVA: sheey qoeekai!n ol kai!n alor chedol sheody
   ★ Naibbe Inverse         → se qudn o dn ao jto soe
@@ -24365,9 +24365,9 @@
     Naibbe (nulls stripped) → pched stn qda oa jxe
 
 [Line 4874] EVA: tchede okeey lky shedaiiin chdy qokeedy cheky lkedy qotedy raram
-  ★ Naibbe Inverse         → tchede oe lde sti ce qdue jde lde qotedy ra
+  ★ Caspari-Faccini        → ccutu oduee lde sutaiin cte quoduete cude ldute quocute...
+    Naibbe Inverse         → tchede oe lde sti ce qdue jde lde qotedy ra
     Naibbe (nulls stripped) → tchede oe lde sti ce qdue jde lde qotedy ra
-    Caspari-Faccini        → ccutu oduee lde sutaiiin cte quoduete cude ldute quocut...
 
 [Line 4875] EVA: teedal sai!n ar otaiin shedy qokedaiin ar qokaiin chol kedy qokam
   ★ Naibbe Inverse         → teedal sain a otaiin se qdut a qda co de qda
@@ -24420,7 +24420,7 @@
     Caspari-Faccini        → eduee lor caiin cude codain caram cue dain ctal odaiin ...
 
 [Line 4885] EVA: e!otar aim oar al alor aiiin olkaiin oty ary
-  ★ Caspari-Faccini        → uocar aim oar al alor aiiin oldaiin oce are
+  ★ Caspari-Faccini        → uocar aim oar al alor aiin oldaiin oce are
     Naibbe Inverse         → eotar am oa a ao ai oda oty ae
     Naibbe (nulls stripped) → eotar am oa a ao ai oda oty ae
 
@@ -24490,13 +24490,13 @@
     Naibbe (nulls stripped) → folchor joe qotedy lkeches lduo ldjo ldce kotchy lpched...
 
 [Line 4899] EVA: ycheo lkcheo lchol oiiin qoksheoy qokcheody lcheo l kchedy chokchy okc...
-  ★ Caspari-Faccini        → ecuo ldcuo lcol oiiin quodsuoe quodcuote lcuo l dcute c...
+  ★ Caspari-Faccini        → ecuo ldcuo lcol oiin quodsuoe quodcuote lcuo l dcute co...
     Naibbe Inverse         → ejo ldjo lco oi qdsoe qdjoe ljo l dce coc octa a
     Naibbe (nulls stripped) → ejo ldjo lco oi qdsoe qdjoe ljo l dce coc octa a
 
 [Line 4900] EVA: chol chr s aiin chaiiin
   ★ Naibbe Inverse         → co cr s a cai
-    Caspari-Faccini        → col cr s aiin caiiin
+    Caspari-Faccini        → col cr s aiin caiin
     Naibbe (nulls stripped) → co cr s cai
 
 [Line 4901] EVA: pcheoor olkeedy qokeedy shdy qofchedy chcfhor chedy qokeeol por aiin c...
@@ -24512,7 +24512,7 @@
 [Line 4903] EVA: y!cheod cheoaiin chal olkaiin chkaiin cheeey lkeeo aiiin okeedy qokche...
   ★ Naibbe Inverse         → ejot joa ca oda cda je lduo ai oue qdce rce
     Naibbe (nulls stripped) → ejot joa ca oda cda je lduo ai oue qdce rce
-    Caspari-Faccini        → ecuot cuoaiin cal oldaiin cdaiin cueue ldueo aiiin odue...
+    Caspari-Faccini        → ecuot cuoaiin cal oldaiin cdaiin cueue ldueo aiin oduet...
 
 [Line 4904] EVA: yhal cheeo rlaiin chckhey cheol
   ★ Naibbe Inverse         → yhal cuo rla cxe jo
@@ -24525,9 +24525,9 @@
     Naibbe (nulls stripped) → dsoa qduo a shoteol ldljo qda ctn cphoithy co xe
 
 [Line 4906] EVA: oiin shol shedair otchdy shokchy shaiiin shckhey lo hor air okeody
-  ★ Naibbe Inverse         → oi so str otchdy soc sai sxe lo hor ar ouoe
+  ★ Caspari-Faccini        → oiin sol sutair occte sodce saiin scdue lo hor air oduo...
+    Naibbe Inverse         → oi so str otchdy soc sai sxe lo hor ar ouoe
     Naibbe (nulls stripped) → oi so str otchdy soc sai sxe lo hor ar ouoe
-    Caspari-Faccini        → oiin sol sutair occte sodce saiiin scdue lo hor air odu...
 
 [Line 4907] EVA: tchoar sheeo!daiin chkaiin otchod okchedy qokaiin chokai!n sheor qokch...
   ★ Naibbe Inverse         → tchoar suot cda otchod oce qda con so qdc qopam
@@ -24537,7 +24537,7 @@
 [Line 4908] EVA: ykeoeshy qokaiin chol k!iin chckhey lkchey qokal chocthy lkchor lkched...
   ★ Naibbe Inverse         → eduouse qda co di cxe ldce qda cbe ldco ldce lda
     Naibbe (nulls stripped) → eduouse qda co di cxe ldce qda cbe ldco ldce lda
-    Caspari-Faccini        → eduouse quodaiin col diin ccdue ldcue quodal cocte ldco...
+    Caspari-Faccini        → eduouse quodaiin col din ccdue ldcue quodal cocte ldcor...
 
 [Line 4909] EVA: dair chor chopchey ar!aiin or sal arody
   ★ Caspari-Faccini        → tair cor copcue araiin or sal arote
@@ -24805,7 +24805,7 @@
     Naibbe (nulls stripped) → tokary ldce ldue otey pcheol qopchey bo opaiin duo opsh...
 
 [Line 4962] EVA: okiin al keechy qoteeol otar ar otchey otaiin al otaiin otol qotody lo...
-  ★ Caspari-Faccini        → odiin al duece quocueol ocar ar occue ocaiin al ocaiin ...
+  ★ Caspari-Faccini        → odin al duece quocueol ocar ar occue ocaiin al ocaiin o...
     Naibbe Inverse         → oi a duc qoteeol otar a otchey otaiin a otaiin otol qot...
     Naibbe (nulls stripped) → oi a duc qoteeol otar a otchey otaiin a otaiin otol qot...
 
@@ -24825,19 +24825,19 @@
     Naibbe (nulls stripped) → eduo qde odue oa a be oa a lo ar aat
 
 [Line 4966] EVA: ysheey qoeey or aiiin okeeo!l otai!n ar al okaiiin aiin shody otcham
-  ★ Caspari-Faccini        → esuee quouee or aiiin odueol ocain ar al odaiiin aiin s...
+  ★ Caspari-Faccini        → esuee quouee or aiin odueol ocain ar al odaiin aiin sot...
     Naibbe Inverse         → ese qe o ai ouo otain a a oai a se otcham
     Naibbe (nulls stripped) → ese qe o ai ouo otain a a oai se otcham
 
 [Line 4967] EVA: daiiin cheol teeoar shek lchedy okaiin chckhaiin otaiin otaiin araral
   ★ Naibbe Inverse         → ti jo teeoar sd lce oa cxa otaiin otaiin ara
     Naibbe (nulls stripped) → ti jo teeoar sd lce oa cxa otaiin otaiin ara
-    Caspari-Faccini        → taiiin cuol cueoar sud lcute odaiin ccdaiin ocaiin ocai...
+    Caspari-Faccini        → taiin cuol cueoar sud lcute odaiin ccdaiin ocaiin ocaii...
 
 [Line 4968] EVA: sheol keey qokain char ar olar aiiin okar
   ★ Naibbe Inverse         → so de qdn ca a oa ai oa
     Naibbe (nulls stripped) → so de qdn ca a oa ai oa
-    Caspari-Faccini        → suol duee quodain car ar olar aiiin odar
+    Caspari-Faccini        → suol duee quodain car ar olar aiin odar
 
 [Line 4969] EVA: polsaisy oteo qokeedy qokaiin okal qofcheol qokaiin opalor lkch ofchr
   ★ Caspari-Faccini        → polsaise ocuo quoduete quodaiin odal quofcuol quodaiin ...
@@ -24872,7 +24872,7 @@
 [Line 4975] EVA: osheol cheol ar aloiiin oteeey otai!n chekey qokain chcthy qotam lr
   ★ Naibbe Inverse         → oso jo a aoi oteeey otain jde qdn cbe qotam lr
     Naibbe (nulls stripped) → oso jo a aoi oteeey otain jde qdn cbe qotam lr
-    Caspari-Faccini        → osuol cuol ar aloiiin ocueue ocain cudue quodain ccte q...
+    Caspari-Faccini        → osuol cuol ar aloiin ocueue ocain cudue quodain ccte qu...
 
 [Line 4976] EVA: oraiin cheor alkain oteey ar aiin otaiin okeey lkeeedy qoeeeey aiin
   ★ Naibbe (nulls stripped) → oa jo adn oteey a otaiin oe ldue que
@@ -24952,7 +24952,7 @@
 [Line 4991] EVA: qoeedy okchedy daiiin chedy daiin ykeedy okeeedy chedol chdaiin ykar d...
   ★ Naibbe (nulls stripped) → que oce ti edue oue jto ct eda tae
     Naibbe Inverse         → que oce ti ce t edue oue jto ct eda tae
-    Caspari-Faccini        → quouete odcute taiiin cute taiin eduete odueute cutol c...
+    Caspari-Faccini        → quouete odcute taiin cute taiin eduete odueute cutol ct...
 
 [Line 4992] EVA: cheol dchedy dkchs aiin chdedy qodaiin okchedaiin chain
   ★ Caspari-Faccini        → cuol tcute tdcs aiin ctute quotaiin odcutaiin cain
@@ -25067,7 +25067,7 @@
 [Line 5014] EVA: chol oeedy keedy chcheky cheodeey keed!eedy daiiin ald air ar shol che...
   ★ Naibbe (nulls stripped) → co oue due cjde jote dutue ti at ar a so otchedy qoty
     Naibbe Inverse         → co oue due cjde jote dutue ti at ar a so ce otchedy qot...
-    Caspari-Faccini        → col ouete duete ccude cuotuee duetuete taiiin alt air a...
+    Caspari-Faccini        → col ouete duete ccude cuotuee duetuete taiin alt air ar...
 
 [Line 5015] EVA: y!chedar okeedy lkeede aiin oeedaiin qoaiin ykedy okair olkeedy qoai!n...
   ★ Caspari-Faccini        → ecutar oduete lduetu aiin ouetaiin quoaiin edute odair ...
@@ -25181,8 +25181,8 @@
 
 [Line 5037] EVA: yted!shedy otaiin cheedar cheey s aiin chedky chedaiiin shod chokchedy
   ★ Naibbe Inverse         → ytedshedy otaiin cuta ce s a jtde jti st coce
+    Caspari-Faccini        → ecutsute ocaiin cuetar cuee s aiin cutde cutaiin sot co...
     Naibbe (nulls stripped) → ytedshedy otaiin cuta ce s jtde jti st coce
-    Caspari-Faccini        → ecutsute ocaiin cuetar cuee s aiin cutde cutaiiin sot c...
 
 [Line 5038] EVA: pchedchdy qoteedy qokedai!n chdaiin qokedy chedai!n qoeedy qotey qotai...
   ★ Naibbe Inverse         → pchedchdy qoteedy qdutn ct qde jtn que qotey qotaiin
@@ -25212,7 +25212,7 @@
 [Line 5043] EVA: sheedy qoteeo soiiin chcthai!n
   ★ Naibbe Inverse         → se qoteeo soiiin cbn
     Naibbe (nulls stripped) → se qoteeo soiiin cbn
-    Caspari-Faccini        → suete quocueo soiiin cctain
+    Caspari-Faccini        → suete quocueo soiin cctain
 
 [Line 5044] EVA: tsheo!dar cheo ckhor qopchedy qopchedy qokchedy shody qotaiin ofcheds
   ★ Caspari-Faccini        → csuotar cuo cdor quopcute quopcute quodcute sote quocai...
@@ -25330,7 +25330,7 @@
     Naibbe (nulls stripped) → tshey outa op soo otchey qopchol qopaiin qotar ado ra
 
 [Line 5067] EVA: dcheey ol cheodaiiin qokar otaiin otal o!kaiin chey tar arody
-  ★ Caspari-Faccini        → tcuee ol cuotaiiin quodar ocaiin ocal odaiin cue car ar...
+  ★ Caspari-Faccini        → tcuee ol cuotaiin quodar ocaiin ocal odaiin cue car aro...
     Naibbe Inverse         → tce o joti qda otaiin otal oa ce tar aoe
     Naibbe (nulls stripped) → tce joti qda otaiin otal oa ce tar aoe
 
@@ -25480,9 +25480,9 @@
     Caspari-Faccini        → e cuotain cuee quoccute quodueote coar cuee
 
 [Line 5097] EVA: ksheoary otchey qoteeos ar aiiin chotchdy qodair sheol pchedy dal dalo...
-  ★ Naibbe Inverse         → dsoae otchey qoteeos a ai chotchdy qtr so pchedy ta tam
+  ★ Caspari-Faccini        → dsuoare occue quocueos ar aiin coccte quotair suol pcut...
+    Naibbe Inverse         → dsoae otchey qoteeos a ai chotchdy qtr so pchedy ta tam
     Naibbe (nulls stripped) → dsoae otchey qoteeos a ai chotchdy qtr so pchedy ta tam
-    Caspari-Faccini        → dsuoare occue quocueos ar aiiin coccte quotair suol pcu...
 
 [Line 5098] EVA: ysheeo los ar chey qoky chol!kched shedy qokai!n shey qoetar chol qoka...
   ★ Naibbe Inverse         → esuo los a ce qde codjt se qdn s qoetar co qdaa
@@ -25517,7 +25517,7 @@
 [Line 5104] EVA: ycheey qotaiiin chokeeey chckhey qoky aiin cheey lkeedy okchy chokchai...
   ★ Naibbe (nulls stripped) → ece qotaiiin coue cxe qde ce ldue oc coca
     Naibbe Inverse         → ece qotaiiin coue cxe qde a ce ldue oc coca
-    Caspari-Faccini        → ecuee quocaiiin codueue ccdue quode aiin cuee lduete od...
+    Caspari-Faccini        → ecuee quocaiin codueue ccdue quode aiin cuee lduete odc...
 
 [Line 5105] EVA: cheeo lkeeey okeey raiin cheky
   ★ Naibbe Inverse         → cuo ldue oe ra jde
@@ -25767,7 +25767,7 @@
 [Line 5154] EVA: oiiin chees otainos losdy cheo!keeo llchs ol!r aiiin chkai!n sham
   ★ Naibbe Inverse         → oi chees otainos losdy jouo llchs or ai cdn sa
     Naibbe (nulls stripped) → oi chees otainos losdy jouo llchs or ai cdn sa
-    Caspari-Faccini        → oiiin cues ocainos loste cuodueo llcs olr aiiin cdain s...
+    Caspari-Faccini        → oiin cues ocainos loste cuodueo llcs olr aiin cdain sam
 
 [Line 5155] EVA: dairal chai!n ykeedy qokedy qokai!n lkaiin lkchey lkai!n lror
   ★ Caspari-Faccini        → tairal cain eduete quodute quodain ldaiin ldcue ldain l...
@@ -25812,7 +25812,7 @@
 [Line 5163] EVA: !oai!n cheer ai!n okeey okeey shy lar ar aiiin oky char ar okain ykana...
   ★ Naibbe Inverse         → on cur n oe oe se la a ai o ca a on edana
     Naibbe (nulls stripped) → on cur n oe oe se la a ai o ca a on edana
-    Caspari-Faccini        → oain cuer ain oduee oduee se lar ar aiiin ode car ar od...
+    Caspari-Faccini        → oain cuer ain oduee oduee se lar ar aiin ode car ar oda...
 
 [Line 5164] EVA: dai!n chl lshey cthy lshedy oteor shey qo saly
   ★ Caspari-Faccini        → tain cl lsue cte lsute ocuor sue quo sale
@@ -26060,14 +26060,14 @@
 
 Method                    Avg Score     Lines Processed
 ───────────────────────────────────────────────────────
-Caspari-Faccini           27.8          5211
+Caspari-Faccini           28.2          5211
 Naibbe Inverse            23.8          5211
 Naibbe (nulls stripped)   23.4          5211
 
 === ENTROPY ANALYSIS ===
 
 Raw EVA character h2:       2.1234 bits/char
-Caspari-Faccini output h2:  2.2381 bits/char
+Caspari-Faccini output h2:  2.2356 bits/char
 Natural language target:    3.0 - 4.5 bits/char
 
 ✅ Entropy INCREASED from 2.12 → 2.24

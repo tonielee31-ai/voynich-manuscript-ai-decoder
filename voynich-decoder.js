@@ -139,9 +139,13 @@ function naibbeDecodeWord(evaWord) {
 const CASPARI_MAP = {
     // Trigraphs (check first)
     'cth': 'ct', 'ckh': 'cd', 'cph': 'cf', 'cfh': 'cf',
+    'iin': 'in',
     // Digraphs
     'ch': 'c',  'sh': 's',  'qo': 'quo',
-    'ee': 'ue', 'ii': 'ii', 'in': 'in',
+    'ee': 'ue', 'ii': 'ii',
+    'ai': 'ai', 'oi': 'oi',
+    'dy': 'te', 'ey': 'ue',
+    'ok': 'od', 'ol': 'ol',
     // Single characters
     'a': 'a', 'o': 'o', 'e': 'u', 'y': 'e',
     'd': 't', 'l': 'l', 'r': 'r', 'i': 'i',
@@ -390,11 +394,13 @@ const LATIN_WORDS = new Set([
 
 
 // ─────────────────────────────────────────────────────────────────────────────
-// MODULE 4: CURRIER A/B SPLIT ANALYSIS
+// MODULE 4: CURRIER A/B SPLIT + CONTENT DOMAIN AWARENESS
 // Currier (1976) identified two "languages" in the VM:
 //   A: Herbal/pharmaceutical sections (f1r–f57v, f87r–f102v)
 //   B: Balneological/astrological/cosmological (f57v–f86v, f103r–f116v)
 // Since eva-takahashi.txt lacks folio markers, we use line ranges as proxy.
+// Beyond A/B, approximate folio/line ranges map to content sections for
+// domain-specific vocabulary boosting.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Approximate line ranges for Currier A/B in the stripped EVA text
@@ -402,6 +408,80 @@ const CURRIER_SECTIONS = {
     A: { label: 'Herbal/Pharmaceutical (Currier A)', startLine: 0, endLine: 2500 },
     B: { label: 'Balneological/Astrological (Currier B)', startLine: 2500, endLine: 5211 }
 };
+
+// Approximate content-domain line ranges (best-effort, no folio markers available)
+const CONTENT_DOMAINS = [
+    { start: 0,    end: 1600,  domain: 'herbal',   label: 'Herbal A (f1-f57)' },
+    { start: 1600, end: 2000,  domain: 'pharma',   label: 'Pharmaceutical (f57v-f66r)' },
+    { start: 2000, end: 2500,  domain: 'herbal',   label: 'Herbal B (f67r-f84v)' },
+    { start: 2500, end: 3200,  domain: 'astro',    label: 'Astronomical (f67r2-f73v)' },
+    { start: 3200, end: 3800,  domain: 'cosmo',    label: 'Cosmological (f75-f86v)' },
+    { start: 3800, end: 4200,  domain: 'balneo',   label: 'Balneological (f75-f84v)' },
+    { start: 4200, end: 4800,  domain: 'pharma',   label: 'Pharmaceutical B (f88r-f102v)' },
+    { start: 4800, end: 5211,  domain: 'recipe',   label: 'Recipes/stars (f103-f116)' },
+];
+
+// Domain-specific vocabulary boosts
+const DOMAIN_VOCAB = {
+    herbal: new Set([
+        'fiore', 'fiori', 'foglia', 'foglie', 'radice', 'erba', 'erbe',
+        'pianta', 'seme', 'frutto', 'corteccia', 'succo', 'rosa', 'viola',
+        'lavanda', 'salvia', 'menta', 'rosmarino', 'timo', 'finocchio',
+        'zafferano', 'cannella', 'oppio', 'balsamo', 'ortica', 'assenzio',
+        'camomilla', 'verbena', 'ruta', 'alloro', 'olivo', 'noce', 'albero',
+        'verde', 'flor', 'fuelha', 'planta', 'arbor', 'col', 'sol', 'cor',
+        'flos', 'folium', 'radix', 'herba', 'semen', 'cortex',
+    ]),
+    astro: new Set([
+        'sole', 'sol', 'luna', 'stella', 'stelle', 'cielo', 'pianeta',
+        'segno', 'ariete', 'toro', 'gemelli', 'cancro', 'leone',
+        'vergine', 'bilancia', 'scorpione', 'sagittario', 'capricorno',
+        'acquario', 'pesci', 'saturno', 'giove', 'marte', 'venere',
+        'mercurio', 'eclisse', 'ascendente',
+        'estela', 'cel', 'planeta', 'signe', 'eclipsi',
+    ]),
+    balneo: new Set([
+        'bagno', 'acqua', 'fonte', 'vasca', 'vapore', 'calda', 'fredda',
+        'sudore', 'nudo', 'nuda', 'donna', 'donne', 'corpo', 'corpi',
+        'cute', 'pelle', 'caldo', 'freddo', 'lavare', 'lavar',
+        'banh', 'aiga', 'font', 'tina', 'vapor',
+        'aqua', 'cutis', 'pellis',
+    ]),
+    pharma: new Set([
+        'ricetta', 'dose', 'cura', 'rimedio', 'polvere', 'decotto',
+        'infuso', 'unguento', 'sciroppo', 'impiastro', 'pillola',
+        'medicina', 'oncia', 'libra', 'dramma', 'grano', 'parte',
+        'recipe', 'dosis', 'remedium', 'pulvis', 'decoctum',
+        'unguentum', 'sirupus', 'emplastrum',
+    ]),
+    cosmo: new Set([
+        'sole', 'luna', 'stella', 'cielo', 'terra', 'acqua', 'fuoco',
+        'aria', 'calore', 'colore', 'mondo', 'centro',
+        'sol', 'luna', 'terra', 'ignis', 'aer', 'aqua', 'orbis',
+    ]),
+    recipe: new Set([
+        'ricetta', 'dose', 'oncia', 'libra', 'parte', 'mescolare',
+        'bollire', 'cuocere', 'acqua', 'olio', 'sale', 'miele', 'vino',
+        'aceto', 'polvere', 'fare',
+        'recipe', 'dosis', 'miscere', 'bullire', 'coquere',
+    ]),
+};
+
+function getContentDomain(lineIndex) {
+    for (const cd of CONTENT_DOMAINS) {
+        if (lineIndex >= cd.start && lineIndex < cd.end) return cd.domain;
+    }
+    return 'herbal';
+}
+
+// ── ENHANCED NULL WORD DETECTION ─────────────────────────────────────────
+// Top-10 most frequent EVA words — very likely nulls or function words.
+// We track them separately rather than blindly stripping.
+const HIGH_FREQ_WORDS = new Set([
+    'daiin', 'ol', 'chedy', 'aiin', 'shedy', 'chol', 'or', 'ar',
+    'chey', 'qokeey', 'qokeedy', 'dar', 'shey', 'qokedy', 'qokaiin',
+    'al', 'dal', 'dy', 'chor', 's', 'y',
+]);
 
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -576,7 +656,8 @@ function wordPlausibility(word) {
 }
 
 // Score a candidate plaintext string for linguistic plausibility
-function scoreCandidate(plaintext, method) {
+// lineIndex is optional — if provided, enables domain-specific vocabulary boosting
+function scoreCandidate(plaintext, method, lineIndex) {
     const text = plaintext.toLowerCase();
     const chars = text.replace(/\s+/g, '').split('');
     if (chars.length === 0) return { total: 0, h2: '0', vowelRatio: '0%', bigramMatch: '0%', dictMatch: '0%', morphScore: '0%' };
@@ -637,13 +718,30 @@ function scoreCandidate(plaintext, method) {
     }
     score -= Math.min(10, clusterPenalty * 2);
 
+    // 6. Domain-specific vocabulary boost (if lineIndex provided)
+    let domainBonus = 0;
+    let domainName = '';
+    if (typeof lineIndex === 'number') {
+        domainName = getContentDomain(lineIndex);
+        const domainSet = DOMAIN_VOCAB[domainName];
+        if (domainSet) {
+            for (const w of words) {
+                if (domainSet.has(w)) {
+                    domainBonus += 3; // Extra points for domain-relevant words
+                }
+            }
+        }
+    }
+    score += Math.min(10, domainBonus);
+
     return {
         total: Math.max(0, Math.round(score)),
         h2: h2.toFixed(3),
         vowelRatio: (vowelRatio * 100).toFixed(1) + '%',
         bigramMatch: (avgBigramScore).toFixed(1),
         dictMatch: (dictRatio * 100).toFixed(1) + '%',
-        morphScore: (avgPlausibility * 100).toFixed(1) + '%'
+        morphScore: (avgPlausibility * 100).toFixed(1) + '%',
+        domain: domainName
     };
 }
 
@@ -652,7 +750,7 @@ function scoreCandidate(plaintext, method) {
 // MAIN DECODER PIPELINE
 // ─────────────────────────────────────────────────────────────────────────────
 
-function decodeLine(evaLine) {
+function decodeLine(evaLine, lineIndex) {
     const words = evaLine.replace(/<[^>]+>/g, '').trim()
         .split(/[\s.]+/)
         .filter(w => w.length > 0 && !w.startsWith('<'));
@@ -688,22 +786,22 @@ function decodeLine(evaLine) {
     const caspariText = caspariWords.join(' ');
     const occitanText = occitanWords.join(' ');
 
-    // Score each method
+    // Score each method (pass lineIndex for domain-aware scoring)
     const results = [
         {
             method: 'Naibbe Inverse',
             plaintext: naibbeText,
-            score: scoreCandidate(naibbeText, 'naibbe')
+            score: scoreCandidate(naibbeText, 'naibbe', lineIndex)
         },
         {
             method: 'Naibbe (nulls stripped)',
             plaintext: naibbeNoNullText,
-            score: scoreCandidate(naibbeNoNullText, 'naibbe')
+            score: scoreCandidate(naibbeNoNullText, 'naibbe', lineIndex)
         },
         {
             method: 'Caspari-Faccini',
             plaintext: caspariText,
-            score: scoreCandidate(caspariText, 'caspari')
+            score: scoreCandidate(caspariText, 'caspari', lineIndex)
         },
     ];
 
@@ -781,7 +879,7 @@ function appendOutput(str) {
 }
 
 for (let i = startLine; i < endIdx; i++) {
-    const result = decodeLine(lines[i]);
+    const result = decodeLine(lines[i], i);
     if (!result) continue;
     totalLines++;
 
@@ -794,7 +892,8 @@ for (let i = startLine; i < endIdx; i++) {
         appendOutput(`  ${marker} ${r.method.padEnd(22)} → ${r.plaintext.slice(0, 55)}${r.plaintext.length > 55 ? '...' : ''}`);
 
         if (showDetail) {
-            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch} | morph=${r.score.morphScore}`);
+            const domainTag = r.score.domain ? ` [${r.score.domain}]` : '';
+            appendOutput(`    Score: ${r.score.total}/100 | h2=${r.score.h2} | vowels=${r.score.vowelRatio} | bigrams=${r.score.bigramMatch} | dict=${r.score.dictMatch} | morph=${r.score.morphScore}${domainTag}`);
         }
 
         if (!methodScores[r.method]) methodScores[r.method] = { total: 0, count: 0 };
@@ -832,7 +931,7 @@ if (sortedMethods.length > 0) {
     const bestMethod = sortedMethods[0].method;
     const bestLines = [];
     for (let i = startLine; i < endIdx; i++) {
-        const result = decodeLine(lines[i]);
+        const result = decodeLine(lines[i], i);
         if (!result) continue;
         const best = result.results.find(r => r.method === bestMethod);
         if (best) bestLines.push(best.plaintext);
@@ -856,7 +955,7 @@ appendOutput('\n=== DICTIONARY-MATCHED WORDS (Italian / Latin / Occitan) ===\n')
 
 const dictMatches = new Map();
 for (let i = startLine; i < Math.min(startLine + 100, endIdx); i++) {
-    const result = decodeLine(lines[i]);
+    const result = decodeLine(lines[i], i);
     if (!result) continue;
 
     for (const r of result.results) {

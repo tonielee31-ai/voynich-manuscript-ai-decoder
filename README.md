@@ -199,6 +199,15 @@ node voynich-consensus-analyzer.js
 ```
 *Key finding: 1,480 lines have exact agreement among at least 3 methods, while 4,503 lines have first-token agreement among 3 or more methods. The strongest pairwise consensus is between Caspari-Faccini and Occitan-Caspari, matching exactly on 5,126 lines.*
 
+#### 14. Semantic Pattern Mining (`voynich-semantic-patterns.js`)
+**[NEW — April 2026]** Extracts recurring lexical and phrase patterns from the highest-consensus V5 decoding lines. Focuses on exact 3+-method agreement and surfaces frequent tokens, first/last words, bigrams, and semantic anchors such as `sol`, `cor`, `col`, and `chedy`.
+
+**Usage:**
+```bash
+node voynich-semantic-patterns.js
+```
+*Key finding: The top consensus lines show repeated anchor tokens like `sol`, `cor`, and `col`, with 1,480 lines agreeing on at least three methods. The semantic report is saved to `voynich-semantic-patterns-report.txt`.*
+
 #### 7. Scribe Cluster Analyzer (`scribe-cluster-analyzer.js`)
 **[NEW — April 2026]** Implements Lisa Fagin Davis's 2024 breakthrough confirming **5 different scribes** wrote the Voynich Manuscript. The script segregates `eva-takahashi.txt` into 5 sub-corpora using a per-folio bifolium-aware scribe assignment map, then runs independent word-frequency, bigram, character distribution, and $h_2$ entropy analysis on each scribe's text.
 

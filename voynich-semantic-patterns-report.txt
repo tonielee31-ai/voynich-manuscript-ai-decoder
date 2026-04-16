@@ -1,0 +1,152 @@
+Voynich Semantic Pattern Mining Report
+=======================================
+Consensus lines (>=3 matching methods): 1480
+Total V5 lines: 5211
+
+Top 25 consensus tokens:
+- s: 37
+- sol: 34
+- o: 29
+- cuee: 25
+- so: 24
+- oce: 23
+- car: 22
+- ode: 22
+- odal: 21
+- ocute: 21
+- saiin: 20
+- quodal: 20
+- oduee: 20
+- odain: 19
+- cuor: 18
+- cuote: 18
+- sar: 18
+- tair: 17
+- ocal: 17
+- suee: 16
+- odar: 16
+- cuo: 15
+- tam: 15
+- odute: 15
+- ocar: 15
+
+Top 20 consensus first tokens:
+- o: 15
+- e: 11
+- sol: 8
+- so: 7
+- tair: 7
+- odal: 7
+- ode: 7
+- sar: 7
+- oduote: 7
+- ecol: 6
+- saiin: 6
+- tsute: 6
+- col: 6
+- oduee: 6
+- ocale: 6
+- ocal: 6
+- ocute: 6
+- soiin: 5
+- odain: 5
+- oduot: 5
+
+Top 20 consensus last tokens:
+- o: 21
+- s: 13
+- e: 12
+- ode: 10
+- tam: 9
+- odal: 8
+- sar: 8
+- oce: 7
+- oduote: 7
+- ocale: 7
+- ocute: 7
+- am: 6
+- ctol: 6
+- odol: 6
+- odar: 6
+- odale: 6
+- saiin: 5
+- cuote: 5
+- ocole: 5
+- odare: 5
+
+Top 25 consensus bigrams:
+- s cuor: 2
+- cuo r: 2
+- dcol sol: 2
+- car cude: 2
+- odute cte: 2
+- tor cuee: 2
+- r cuee: 2
+- suee oduote: 2
+- ocal quodal: 2
+- oduor suee: 2
+- quodcte quodol: 2
+- oduee are: 2
+- quodal oduee: 2
+- cal car: 2
+- oduol oduol: 2
+- cuete quocaiin: 2
+- oduee raiin: 2
+- odair ccl: 2
+- odain cuar: 2
+- sar ain: 2
+- tcaiindcse cataiin: 1
+- cataiin ololccue: 1
+- ololccue car: 1
+- car cfar: 1
+- cfar am: 1
+
+Anchor token counts in consensus lines:
+- sol: 33
+- cor: 4
+- col: 10
+- daiin: 8
+- aiin: 5
+- otaiin: 9
+
+Top 20 high-consensus line examples:
+Line 6 (count=3): EVA=ydar!aish!y
+  Consensus: etaraise
+Line 28 (count=3): EVA=dchaiin=kchsy chadaiin ololtchey char cfhar am
+  Consensus: tcaiindcse cataiin ololccue car cfar am
+Line 41 (count=3): EVA=chaindychtod dycphy dal!schokaiin d
+  Consensus: cainteccot tecfe talscodaiin t
+Line 42 (count=3): EVA=otochor alshodaiinchol !danytchaiin dan
+  Consensus: ococor alsotaiincol taneccaiin tan
+Line 45 (count=3): EVA=kydain shaiin qoy s shol fodanyksh olsheey daiildy
+  Consensus: detain saiin quoe s sol fotaneds olsuee taiilte
+Line 54 (count=3): EVA=sho cholo cheor chodaiin
+  Consensus: so colo cuor cotaiin
+Line 63 (count=3): EVA=qokol chololy s cham cthol
+  Consensus: quodol colole s cam ctol
+Line 70 (count=3): EVA=okadaiin qokchor qoschodam octhy
+  Consensus: odataiin quodcor quoscotam octe
+Line 76 (count=3): EVA=pcheoldom shodaiin qopchor qopol opchol qotyotolom
+  Consensus: pcuoltom sotaiin quopcor quopol opcol quoceocolom
+Line 79 (count=3): EVA=koaiin cphor qotoy sha ckhol ykoaiin s oly
+  Consensus: doaiin cfor quocoe sa cdol edoaiin s ole
+Line 83 (count=3): EVA=yeeear otchal eeor eear ckhy!
+  Consensus: eueuar occal ueor uear cde
+Line 89 (count=3): EVA=sho shockho ckhy tchor chodaiin chom
+  Consensus: so socdo cde ccor cotaiin com
+Line 90 (count=3): EVA=osh chodair ytchy tchor kcham s
+  Consensus: os cotair ecce ccor dcam s
+Line 103 (count=3): EVA=qotchoiin sheyr qoty
+  Consensus: quoccoiin suer quoce
+Line 104 (count=3): EVA=soiin chaiin chaiin
+  Consensus: soiin caiin caiin
+Line 106 (count=3): EVA=pchooiin ksheo kchoy chopchy doldsdlod
+  Consensus: pcooiin dsuo dcoe copce toltstlot
+Line 111 (count=3): EVA=ytchoy shokchy cph!ody=
+  Consensus: eccoe sodce cfote
+Line 118 (count=3): EVA=shody s cheor chokody shodaiin qoty
+  Consensus: sote s cuor codote sotaiin quoce
+Line 119 (count=3): EVA=ochody chy!key chtody
+  Consensus: ocote cedue ccote
+Line 123 (count=3): EVA=otain sheody chan s cheor chocthy
+  Consensus: ocain suote can s cuor cocte

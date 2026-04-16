@@ -1,7 +1,13 @@
 {
   "name": "voynich-analysis",
   "version": "1.0.0",
+  "description": "AI-driven cryptanalysis & unified decryption of the 15th-century Voynich Manuscript using 5 competing theories with ensemble scoring.",
+  "author": "tonielee31_ai via OpenClaw framework",
+  "license": "MIT",
   "main": "index.js",
+  "engines": {
+    "node": ">=23.11.0"
+  },
   "scripts": {
     "test": "node naibbe-generator.js && node dai-anchor-parser.js && node scribe-cluster-analyzer.js",
     "naibbe-gen": "node naibbe-generator.js",
@@ -26,11 +32,14 @@
     "consensus": "node voynich-consensus-analyzer.js",
     "semantic-patterns": "node voynich-semantic-patterns.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "pdf-parse": "^2.4.5"
-  }
+  "keywords": [
+    "voynich-manuscript",
+    "cryptanalysis",
+    "decryption",
+    "cipher",
+    "naibbe",
+    "medieval",
+    "computational-linguistics"
+  ],
+  "dependencies": {}
 }

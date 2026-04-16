@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Large output files
+decoded-output*.txt
+voynich-semantic-patterns-report.txt
+voynich-consensus-report.txt
+arrhythmic-output.txt
+
+# Temporary/debug files
+*.tmp
+*.temp
+debug/
+.cache/

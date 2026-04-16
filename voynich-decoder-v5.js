@@ -2,6 +2,31 @@ const fs = require('fs');
 const path = require('path');
 
 // =============================================================================
+// ENVIRONMENT CHECKS & VALIDATION
+// =============================================================================
+function validateEnvironment() {
+  const nodeVer = process.versions.node.split('.').map(Number);
+  if (nodeVer[0] < 23 || (nodeVer[0] === 23 && nodeVer[1] < 11)) {
+    console.warn('WARNING: Node.js v23.11+ recommended. Current: v' + process.versions.node);
+  }
+  
+  const platform = process.platform;
+  if (platform === 'win32') {
+    console.warn('WARNING: Project tested on Linux/macOS. Some path logic may differ on Windows.');
+  }
+  if (platform === 'darwin') {
+    console.warn('INFO: Running on macOS. Locale assumptions may differ from Linux.');
+  }
+  
+  const evaFile = path.join(__dirname, 'eva-takahashi.txt');
+  if (!fs.existsSync(evaFile)) {
+    console.error('ERROR: eva-takahashi.txt not found at ' + evaFile);
+    process.exit(1);
+  }
+}
+validateEnvironment();
+
+// =============================================================================
 // VOYNICH MANUSCRIPT UNIFIED DECODER V5
 // =============================================================================
 // Integrates ALL decipherment theories into a single pipeline:

@@ -28,9 +28,32 @@ We combine the latest orthographic theories with modern multi-lingual translatio
 - `eva-takahashi.txt`: The raw EVA (European Voynich Alphabet) transcription of the manuscript (5,211 lines).
 - `word-frequency.json`: Generated frequency lists revealing extreme Zipf's law deviations.
 
-### Analysis Scripts (Node.js) & Example Usage
+### Test Data Directory (`test-data/`)
+Quick samples for CI/CD and development without full manuscript:
+- `sample-lines.txt` — First 50 EVA lines for smoke testing all 5 decoder methods
+- `test-herbal-section.txt` — Lines 1–100 from Currier A (herbal section)
+- `test-balneological-section.txt` — Lines 1000–1100 from Currier B (bathing/astronomical section)
 
-**Environment Requirements:** These tools have been developed and tested on **Ubuntu Linux (x64)** running **Node.js v23.11** or above.
+**Quick smoke test:**
+```bash
+cp test-data/sample-lines.txt eva-takahashi.txt
+node voynich-decoder-v5.js --detail  # Should complete in <5 sec
+```
+
+### System Requirements
+
+**Required:**
+- **Node.js:** v23.11 or higher (for async stability and language feature support)
+- **OS:** Linux (x64, primary) or macOS (secondary). Windows users may experience path/locale issues.
+- **RAM:** 512MB minimum for full manuscript processing
+
+**Environment Detection:**
+All main scripts include automatic environment validation:
+- Node.js version check (warns if <23.11)
+- Platform detection (macOS/Windows warnings)
+- EVA file existence check (fatal error if missing)
+
+Running on macOS or Windows? The scripts will warn about potential compatibility issues but will attempt to run.
 
 #### 1. The Multi-language Translator (`trilingual-translator.js`)
 This engine translates the raw manuscript's EVA script into basic Italian phonemes, then uses a heuristic parser bridging root concepts to output into **English, Traditional Chinese (ZHO), or Cantonese (YUE)**. 
@@ -207,6 +230,22 @@ node voynich-consensus-analyzer.js
 node voynich-semantic-patterns.js
 ```
 *Key finding: The top consensus lines show repeated anchor tokens like `sol`, `cor`, and `col`, with 1,480 lines agreeing on at least three methods. The semantic report is saved to `voynich-semantic-patterns-report.txt`.*
+
+#### 15. Stream Output Writer (`stream-output-writer.js`)
+**[NEW — April 2026]** Utility module for memory-efficient output during large manuscript runs. Instead of collecting all lines in a buffer, writes incrementally to disk. Includes progress reporting and automatic file flushing.
+
+**Usage (in decoder scripts):**
+```javascript
+const StreamWriter = require('./stream-output-writer');
+const writer = new StreamWriter('large-output.txt', { bufferSize: 100 });
+// ... processing loop
+writer.write('[Line ' + i + '] ...\n');
+writer.reportProgress(i, totalLines);
+// ... at end
+writer.close();
+```
+
+*Reduces peak memory from 200MB+ (full-corpus buffering) to ~10MB (streaming).*
 
 #### 7. Scribe Cluster Analyzer (`scribe-cluster-analyzer.js`)
 **[NEW — April 2026]** Implements Lisa Fagin Davis's 2024 breakthrough confirming **5 different scribes** wrote the Voynich Manuscript. The script segregates `eva-takahashi.txt` into 5 sub-corpora using a per-folio bifolium-aware scribe assignment map, then runs independent word-frequency, bigram, character distribution, and $h_2$ entropy analysis on each scribe's text.

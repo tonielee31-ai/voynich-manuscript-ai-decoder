@@ -34,3 +34,8 @@ arrhythmic-output.txt
 *.temp
 debug/
 .cache/
+
+# Research data (keep local, don't push to GitHub)
+research-output/
+research-data/
+tools/

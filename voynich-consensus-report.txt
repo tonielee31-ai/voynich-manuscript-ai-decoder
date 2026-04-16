@@ -1,0 +1,48 @@
+Voynich Consensus Analyzer Report
+=================================
+Total lines analyzed: 5211
+Exact consensus (>=3 methods): 1480
+Exact consensus (2 methods): 3646
+No exact consensus: 85
+First-token consensus (>=3 methods): 4503
+First-token consensus (2 methods): 623
+
+Top method wins:
+- Caspari-Faccini: 1838 wins
+- EVA-Romance: 1508 wins
+- Naibbe Inverse: 1422 wins
+- EM-Refined: 383 wins
+
+Pairwise exact agreement counts:
+- Caspari-Faccini <> Occitan-Caspari: 5126
+- Caspari-Faccini <> EVA-Romance: 1458
+- EVA-Romance <> Occitan-Caspari: 1458
+- Caspari-Faccini <> EM-Refined: 93
+- EM-Refined <> Occitan-Caspari: 93
+- EM-Refined <> EVA-Romance: 72
+- Caspari-Faccini <> Naibbe Inverse: 69
+- Naibbe Inverse <> Occitan-Caspari: 69
+- EVA-Romance <> Naibbe Inverse: 58
+- EM-Refined <> Naibbe Inverse: 10
+
+Top 20 lines with >=3-method exact consensus:
+Line 6: 3 methods agree on “[etaraise]”
+Line 28: 3 methods agree on “[tcaiindcse cataiin ololccue car cfar am]”
+Line 41: 3 methods agree on “[cainteccot tecfe talscodaiin t]”
+Line 42: 3 methods agree on “[ococor alsotaiincol taneccaiin tan]”
+Line 45: 3 methods agree on “[detain saiin quoe s sol fotaneds olsuee taiilte]”
+Line 54: 3 methods agree on “[so colo cuor cotaiin]”
+Line 63: 3 methods agree on “[quodol colole s cam ctol]”
+Line 70: 3 methods agree on “[odataiin quodcor quoscotam octe]”
+Line 76: 3 methods agree on “[pcuoltom sotaiin quopcor quopol opcol quoceocolom]”
+Line 79: 3 methods agree on “[doaiin cfor quocoe sa cdol edoaiin s ole]”
+Line 83: 3 methods agree on “[eueuar occal ueor uear cde]”
+Line 89: 3 methods agree on “[so socdo cde ccor cotaiin com]”
+Line 90: 3 methods agree on “[os cotair ecce ccor dcam s]”
+Line 103: 3 methods agree on “[quoccoiin suer quoce]”
+Line 104: 3 methods agree on “[soiin caiin caiin]”
+Line 106: 3 methods agree on “[pcooiin dsuo dcoe copce toltstlot]”
+Line 111: 3 methods agree on “[eccoe sodce cfote]”
+Line 118: 3 methods agree on “[sote s cuor codote sotaiin quoce]”
+Line 119: 3 methods agree on “[ocote cedue ccote]”
+Line 123: 3 methods agree on “[ocain suote can s cuor cocte]”

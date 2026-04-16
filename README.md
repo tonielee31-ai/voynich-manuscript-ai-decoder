@@ -190,6 +190,15 @@ node voynich-decoder-v5.js --section=B --detail
 ```
 *Key finding: EVA-Romance method achieves the highest average score (32.6/100 across 5,211 lines, 28.9% win rate) in the full-corpus run. Within the first 20 lines, Caspari-Faccini leads (37.5/100, 45% win rate). Notable consistent dictionary matches across methods: `shol`→`sol` (sun), `chor`→`cor` (heart), `chol`→`col` (with/color). IC of decoded text (2.26–2.51) consistently exceeds raw EVA (2.00), confirming the decoding increases linguistic structure.*
 
+#### 13. Consensus Analyzer (`voynich-consensus-analyzer.js`)
+**[NEW — April 2026]** Compares the V5 decoder's method outputs and ranks lines by agreement strength. Identifies where multiple methods converge on the same decoding, measuring exact full-output consensus and first-token agreement across all five candidate decoders.
+
+**Usage:**
+```bash
+node voynich-consensus-analyzer.js
+```
+*Key finding: 1,480 lines have exact agreement among at least 3 methods, while 4,503 lines have first-token agreement among 3 or more methods. The strongest pairwise consensus is between Caspari-Faccini and Occitan-Caspari, matching exactly on 5,126 lines.*
+
 #### 7. Scribe Cluster Analyzer (`scribe-cluster-analyzer.js`)
 **[NEW — April 2026]** Implements Lisa Fagin Davis's 2024 breakthrough confirming **5 different scribes** wrote the Voynich Manuscript. The script segregates `eva-takahashi.txt` into 5 sub-corpora using a per-folio bifolium-aware scribe assignment map, then runs independent word-frequency, bigram, character distribution, and $h_2$ entropy analysis on each scribe's text.
 

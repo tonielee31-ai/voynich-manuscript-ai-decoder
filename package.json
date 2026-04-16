@@ -14,7 +14,15 @@
     "decode-detail": "node voynich-decoder.js --detail",
     "decode-a": "node voynich-decoder.js --section=A --detail",
     "decode-b": "node voynich-decoder.js --section=B --detail",
-    "decode-full": "node voynich-decoder.js --full --output=decoded-output.txt"
+    "decode-full": "node voynich-decoder.js --full --output=decoded-output.txt",
+    "arrhythmic-parse": "node arrhythmic-cycle-parser.js",
+    "stat-validate": "node statistical-language-validator.js",
+    "nlp-analyze": "node nlp-structural-analyzer.js",
+    "decode-v5": "node voynich-decoder-v5.js",
+    "decode-v5-detail": "node voynich-decoder-v5.js --detail",
+    "decode-v5-full": "node voynich-decoder-v5.js --full --output=decoded-output-v5.txt",
+    "decode-v5-a": "node voynich-decoder-v5.js --section=A --detail",
+    "decode-v5-b": "node voynich-decoder-v5.js --section=B --detail"
   },
   "keywords": [],
   "author": "",

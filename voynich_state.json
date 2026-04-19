@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-04-17T17:28:53.827804",
+  "total_cycles": 9,
+  "total_papers_analyzed": 24,
+  "completed_hypotheses": [
+    "naibbe_cipher_verbose_homophonic",
+    "caspari_faccini_eva_italian",
+    "rtl_judeo_italian",
+    "statistical_symbolism_prime_fibonacci",
+    "evolutionary_glyph_mapping",
+    "topic_modeling_lda",
+    "comparative_corpora_hebrew"
+  ],
+  "invalidated_hypotheses": [],
+  "current_focus": "ciphermysteries_research",
+  "knowledge_base": {
+    "arxiv_papers": [],
+    "web_research": [
+      "arxiv_20260417_105024_0.json",
+      "arxiv_20260417_105024_1.json",
+      "arxiv_20260417_105024_2.json",
+      "arxiv_20260417_145718_0.json",
+      "arxiv_20260417_145718_1.json",
+      "arxiv_20260417_145718_2.json",
+      "arxiv_20260417_151138_0.json",
+      "arxiv_20260417_151138_1.json",
+      "arxiv_20260417_151138_2.json",
+      "arxiv_20260417_151432_0.json",
+      "arxiv_20260417_151432_1.json",
+      "arxiv_20260417_151432_2.json",
+      "arxiv_20260417_151549_0.json",
+      "arxiv_20260417_151549_1.json",
+      "arxiv_20260417_151549_2.json",
+      "arxiv_20260417_172439_0.json",
+      "arxiv_20260417_172439_1.json",
+      "arxiv_20260417_172439_2.json",
+      "arxiv_20260417_172533_0.json",
+      "arxiv_20260417_172533_1.json",
+      "arxiv_20260417_172533_2.json",
+      "arxiv_20260417_172813_0.json",
+      "arxiv_20260417_172813_1.json",
+      "arxiv_20260417_172813_2.json"
+    ],
+    "github_repos": []
+  },
+  "research_gaps": [
+    "exact_glyph_to_phoneme_mapping",
+    "no_confirmed_parallel_text",
+    "no_confirmed_words_cribs",
+    "directionality_ltr_vs_rtl_debated",
+    "why_mathematical_patterns_exist"
+  ],
+  "next_focus_queue": [],
+  "preferred_search_domains": [
+    "arxiv.org",
+    "voynich.nu",
+    "stephenbax.net",
+    "ciphermysteries.com",
+    "voynich.ninja",
+    "github.com"
+  ],
+  "rate_limiting": {
+    "web_scrape_interval_hours": 2,
+    "arxiv_api_interval_hours": 1,
+    "github_api_interval_hours": 1,
+    "local_analysis_interval_minutes": 15,
+    "last_web_scrape": null,
+    "last_arxiv_search": "2026-04-17T17:28:13.043848",
+    "last_github_search": "2026-04-17T17:28:13.784498",
+    "domains_scraped_today": []
+  },
+  "last_run_findings": "Currier analysis: 15 A pages, 26 B pages",
+  "last_run_timestamp": "2026-04-17T17:28:53.827794",
+  "manuscript_stats": {
+    "total_characters": 195590,
+    "total_words": 37187,
+    "unique_words": 9463,
+    "unique_characters": 27,
+    "zipf_coefficient": -0.543,
+    "conditional_entropy_h2": 2.254,
+    "writing_system": "abjad",
+    "best_corpus_match": "hebrew_biblical",
+    "best_decoder": "caspari_faccini",
+    "confidence_scores": {
+      "naibbe": 0.85,
+      "hebrew": 0.75,
+      "statistical": 0.75,
+      "rtl": 0.7,
+      "italian": 0.65,
+      "occitan": 0.6,
+      "pahlavi": 0.6
+    }
+  },
+  "hmm_completed": true,
+  "currier_analysis": {
+    "completed": true,
+    "timestamp": "2026-04-17T23:35:59.627996",
+    "total_pages": 53,
+    "currier_a_pages": 15,
+    "currier_b_pages": 26
+  }
+}

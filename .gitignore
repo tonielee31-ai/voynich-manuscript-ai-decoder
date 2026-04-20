@@ -39,3 +39,15 @@ debug/
 research-output/
 research-data/
 tools/
+
+# Documentation files (keep local only)
+*.md
+!README.md
+
+# AI tool memory and research
+RESEARCH_CYCLE_REPORT.md
+DECODING_SKILL_SET.md
+GITHUB_REPOS_ANALYSIS_REPORT.md
+PERSISTENT_STORAGE_GUIDE.md
+RECOMMENDATIONS_IMPLEMENTATION_REPORT.md
+RESEARCH_LOOP_GUIDE.md

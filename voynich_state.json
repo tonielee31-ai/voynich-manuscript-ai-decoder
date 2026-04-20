@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "last_updated": "2026-04-17T17:28:53.827804",
-  "total_cycles": 9,
-  "total_papers_analyzed": 24,
+  "last_updated": "2026-04-20T15:28:54.034281",
+  "total_cycles": 16,
+  "total_papers_analyzed": 33,
   "completed_hypotheses": [
     "naibbe_cipher_verbose_homophonic",
     "caspari_faccini_eva_italian",
@@ -40,7 +40,16 @@
       "arxiv_20260417_172533_2.json",
       "arxiv_20260417_172813_0.json",
       "arxiv_20260417_172813_1.json",
-      "arxiv_20260417_172813_2.json"
+      "arxiv_20260417_172813_2.json",
+      "arxiv_20260420_092333_0.json",
+      "arxiv_20260420_092333_1.json",
+      "arxiv_20260420_092333_2.json",
+      "arxiv_20260420_122244_0.json",
+      "arxiv_20260420_122244_1.json",
+      "arxiv_20260420_122244_2.json",
+      "arxiv_20260420_152854_0.json",
+      "arxiv_20260420_152854_1.json",
+      "arxiv_20260420_152854_2.json"
     ],
     "github_repos": []
   },
@@ -66,12 +75,12 @@
     "github_api_interval_hours": 1,
     "local_analysis_interval_minutes": 15,
     "last_web_scrape": null,
-    "last_arxiv_search": "2026-04-17T17:28:13.043848",
-    "last_github_search": "2026-04-17T17:28:13.784498",
+    "last_arxiv_search": "2026-04-20T15:28:53.437333",
+    "last_github_search": "2026-04-20T15:28:54.032223",
     "domains_scraped_today": []
   },
-  "last_run_findings": "Currier analysis: 15 A pages, 26 B pages",
-  "last_run_timestamp": "2026-04-17T17:28:53.827794",
+  "last_run_findings": "Focus: ciphermysteries_research\nSearch results: 3\n- arxiv: Topic Modeling in the Voynich Manuscript\n- arxiv: How the Voynich Manuscript was created\n- arxiv: The Voynich Manuscript is Written in Natural Language: The P",
+  "last_run_timestamp": "2026-04-20T15:28:54.034270",
   "manuscript_stats": {
     "total_characters": 195590,
     "total_words": 37187,

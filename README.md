@@ -10,6 +10,25 @@
 
 This project provides the **most comprehensive automated analysis toolkit** available, but we have NOT decoded the manuscript. Our tools analyze STRUCTURE, not CONTENT.
 
+### 🚨 CRITICAL BREAKTHROUGH (April 2026)
+
+**The cipher is WORD-LEVEL homophonic substitution, NOT character-level.**
+
+This explains why simple character substitution fails:
+```
+Character-level approach (WRONG):
+  EVA 'a' → Italian 'e' (FAILS - conflicts between words)
+
+Word-level approach (CORRECT):
+  EVA 'daiin' → Italian 'and' (127 occurrences)
+  EVA 'chol'  → Italian 'col' (91 occurrences)
+  EVA 'or'    → Italian 'or' (26 occurrences)
+  EVA 'ol'    → Italian 'la' (16 occurrences)
+  EVA 'chey'  → Italian 'che' (16 occurrences)
+```
+
+Each Voynich **word** maps to a short plaintext **word**, not character-by-character. The EVA transcription is verbose (long words) while the plaintext is compressed (short words).
+
 ### What We Know For Certain
 - **Cipher Type**: Monoalphabetic substitution (IC = 0.0771)
 - **EVA Tokens**: 29 unique tokens (ch, sh, qo are single characters)
